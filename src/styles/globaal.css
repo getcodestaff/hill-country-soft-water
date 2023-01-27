@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* test area */
+
+
+/* end test area */
+
+/* layour is tailwind */
+@layer components {
+    .menu-item {
+        @apply text-black uppercase hover:text-chsblue;
+    }
+}
+
+
+.debug-red {
+    border: solid 2px red;
+}
+
+.debug-green {
+    border: solid 2px green;
+}
+
+.debug-blue {
+    border: solid 2px blue;
+}
+
+.debug-black {
+    border: solid 2px black;
+}
+
+.debug-white {
+    border: solid 2px white;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+.font-sans {
+    font-family: Montserrat;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.hero-btn {
+    display        : inline-block;
+    padding        : 0 2em;
+    border-radius  : 2em;
+    box-sizing     : border-box;
+    text-decoration: none;
+    font-weight    : 500;
+    text-align     : center;
+    transition     : all 0.2s;
+}

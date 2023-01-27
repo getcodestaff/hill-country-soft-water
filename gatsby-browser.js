@@ -3,5 +3,8 @@
  *
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
  */
-
-// You can delete this file if you're not using it
+import './src/styles/global.css'
+import "@fontsource/montserrat"
+import "@fontsource/montserrat/500.css" // Weight 500.
+import "@fontsource/montserrat/600.css"
+import "@fontsource/montserrat/700.css" 
