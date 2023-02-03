@@ -43,20 +43,20 @@ export const Section1 = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2">
           <div className="fixwidth flex flex-col space-y-8">
             <div className="text-chsblue text-lg font-semibold">ABOUT US</div>
-            <h1 className="section-title mt-1">
+            <h1 className="section-title mt-1 text-left">
               We treat all our customers like family!
             </h1>
             <div className="text-direction-b pb-2 space-y-8">
-              <p className="m-0 text-black font-medium">
+              <p className="m-0 text-black font-medium text-left">
                 Designing, creating, building, modifying and/or repairing home
                 projects for you is something we LOVE doing! Doing it well is
                 our passion!
               </p>
-              <p className="m-0 text-black font-medium">
-                Over 40+ years of experience with the hightest standards of
+              <p className="m-0 text-black font-medium  text-left">
+                Over 50+ years of experience with the hightest standards of
                 service. Performing rennovations, repairs and installations for
                 you home. We are a local and family owned business. We are
                 centered on providing you with the hightest quality of

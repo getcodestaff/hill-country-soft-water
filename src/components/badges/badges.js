@@ -9,22 +9,36 @@ import { Trex } from "./trex"
 export const Badges = () => {
   return (
     <div>
-      <div className="flex justify-around p-16 mx-4">
-        <Link className="w-[8%]" to="/">
+      <div className="flex flex-col md:flex-row md:justify-around md:p-16 mx-4">
+        <div className="flex justify-around my-4 md:flex-none md:w-[8%]">
+          <Link to="/">
           <Angies />
         </Link>
-        <Link className="w-[16%]" to="/">
+        </div>
+
+        <div className="flex justify-around my-4 md:flex-none md:w-[16%]">
+          <Link to="/">
           <Trex />
         </Link>
-        <Link className="w-[16%]" to="/">
+        </div>
+
+        <div className="flex justify-around my-4 md:flex-none md:w-[16%]">
+          <Link to="/">
           <Contractor />
         </Link>
-        <Link className="w-[8%]" to="/">
+        </div>
+
+        <div className="flex justify-around my-4 md:flex-none md:w-[8%]">
+          <Link to="/">
           <TopRated />
         </Link>
-        <Link className="w-[8%]" to="/">
+        </div>
+        
+        <div className="flex justify-around my-4 md:flex-none md:w-[8%]">
+          <Link to="/">
           <Elite />
         </Link>
+        </div>
       </div>
     </div>
   )

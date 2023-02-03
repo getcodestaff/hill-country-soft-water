@@ -1,10 +1,15 @@
-import React from "react"
+import React, { useContext } from 'react';
 import PropTypes from "prop-types"
 import logo from "../images/logoipsum-289.svg"
 import { Navbar } from "./navbar/navbar"
 import { FaPhone } from "react-icons/fa"
+import { LayoutContext } from '../contexts/layout-context';
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
+    const { layout } = useContext(LayoutContext);
+    const phone = layout.siteMetadata.phone
+    const phonelink = `tel:${phone}`   
+
   return (
     <header className="text-black">
       <div className="flex px-5 py-4 items-center justify-between">
@@ -22,9 +27,9 @@ const Header = ({ siteTitle }) => {
           </div>
           <div className="hidden md:flex justify-center">
             <div className="hidden md:flex justify-center pb-2">
-              <a href="tel:123-456-7890" className="submit-button bg-chsblue">
+              <a href={phonelink} className="submit-button bg-chsblue">
                 <span className="nowrap">
-                  <FaPhone size="20px"/>916-257-8310
+                  <FaPhone size="20px"/>{phone}
                 </span>
               </a>
             </div>
@@ -38,7 +43,7 @@ const Header = ({ siteTitle }) => {
         <div className="hidden lg:flex">
           <div className="hidden md:flex justify-center pb-2">
             <a href="tel:123-456-7890" className="submit-button bg-chsblue mr-8">
-                <FaPhone className="inline m-2 ml-0" size="20px"/>916-257-8310
+                <FaPhone className="inline m-2 ml-0" size="20px"/>{phone}
             </a>
           </div>
         </div>

@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-// import * as styles from 'src/components/services/service.module.css'
 import * as styles from "../service.module.css"
 
 export const DeckingBanner = () => {

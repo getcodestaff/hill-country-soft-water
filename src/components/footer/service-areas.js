@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 export const ServiceAreas = ({ location, classline }) => {
-    let classes = `links ${classline}`;
+  let classes = `links ${classline}`
 
-    let mapframe = '';
+  let mapframe = ""
 
     if (location && location.map) {
         mapframe = (
@@ -17,7 +17,7 @@ export const ServiceAreas = ({ location, classline }) => {
                 allowFullScreen=""
                 loading="lazy"
             />
-        );
+    )
     } else if (location && location.city) {
         const city = location.city.replace(/ /g, '+');
         const stateAbrev = location.stateshort.replace(/ /g, '-');
@@ -34,7 +34,7 @@ export const ServiceAreas = ({ location, classline }) => {
                 loading="lazy"
                 src={srcString}
             />
-        );
+    )
     }
 
     return (
@@ -58,30 +58,30 @@ export const ServiceAreas = ({ location, classline }) => {
             ) : (
                 <div>
                     <div>
-                        <Link className={classes} to="/" alt="Citrus Heights">
+            <Link className={classes} to="/">
                             Citrus Heights
                         </Link>
-                        <Link className={classes} to="/" alt="Folsom">
+            <Link className={classes} to="/" >
                             Folsom
                         </Link>
-                        <Link className={classes} to="/" alt="El Dorado Hills">
+            <Link className={classes} to="/" >
                             El Dorado Hills
                         </Link>
-                        <Link className={classes} to="/" alt="Auburn">
+            <Link className={classes} to="/" >
                             Auburn
                         </Link>
-                        <Link className={classes} to="/" alt="Carmichael">
+            <Link className={classes} to="/" >
                             Carmichael
                         </Link>
-                        <Link className={classes} to="/" alt="Placerville">
-                            Placerville
+            <Link className={classes} to="/" >
+              Fair Oaks
                         </Link>
-                        <Link className={classes} to="/" alt="Placerville">
+            <Link className={classes} to="/" >
                             More...
                         </Link>                        
                     </div>
                 </div>
             )}
         </React.Fragment>
-    );
-};
+  )
+}

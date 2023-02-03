@@ -10,7 +10,7 @@ export const MainTemplate = () => {
     <React.Fragment>
       <Hero />
       <Section1 />
-      <Services />
+      <Services imagesOnly='false'/>
       <Stories />
       <Badges />
     </React.Fragment>

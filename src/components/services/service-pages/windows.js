@@ -1,4 +1,5 @@
 import React from "react"
+import Seo from "../../seo"
 import { WindowsBanner } from "./windows-banner"
 
 export const Windows = () => {
@@ -7,4 +8,8 @@ export const Windows = () => {
       <WindowsBanner />
     </React.Fragment>
   )
+}
+
+export const Head = ({ location }) => {
+  return <Seo url={location.href} />
 }

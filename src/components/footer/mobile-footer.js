@@ -4,34 +4,28 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { FooterSocial } from './footer-social';
 import { FooterAccordion } from './footer-accordion';
 import { ServicesLinks } from './services-links';
-import { FooterContacts } from './footer-contacts';
-// import { PopularPages } from './popular-pages.js';
-import { Copyright } from './copyright';
+import { ServiceAreas } from './service-areas';
 
 export const MobileFooter = ({ location }) => {
     return (
-        <div className="footer1 mobile-toggle">
+        <div className="footer1 block md:hidden">
             <div className="container">
                 <div className="container m-auto">
                     <FooterSocial />
-                    <div className="text-white mb-16">
+                    <div className="text-white mb-8 mx-4">
                         <FooterAccordion>
                             <h4 className="footer-title">OUR SERVICES</h4>
                             <ServicesLinks />
                             <h4 className="footer-title">SERVICE AREAS</h4>
-                            <FooterContacts />
+                            <ServiceAreas />
                             <h4 className="footer-title">CONTACT US</h4>
-                            {/* <PopularPages
-                                location={location}
-                                classline="mt-2"
-                            /> */}
                         </FooterAccordion>
                     </div>
                 </div>
             </div>
 
-            <div className="mt-8">
-                <Link className="text-center m-auto block" to="/">
+            <div className="">
+                <Link className="text-center m-auto block pb-8" to="/">
                     <StaticImage
                         alt="logo"
                         src="../../images/layout/footer-logo_11_11zon.webp"
@@ -39,7 +33,6 @@ export const MobileFooter = ({ location }) => {
                     />
                 </Link>
             </div>
-            <Copyright />
         </div>
     );
 };

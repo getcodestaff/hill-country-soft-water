@@ -11,7 +11,7 @@ import * as styles from './footer.module.css';
 
 export const FooterSocial = () => {
     return (
-        <div className="flex flex-wrap items-center justify-around flex-col mb-8 pr-8">
+        <div className="flex flex-wrap items-center justify-around flex-col mb-8 pl-2 pr-8">
             <div className="flex self-stretch justify-around text-xl">
                 <div className={styles.social_icon}>
                     <FaFacebook className="inline-block text-chsblue" />

@@ -5,7 +5,6 @@ import { FaArrowRight } from "react-icons/fa"
 import { SwitchableLink } from "./switchable-link"
 
 export const CardCore = ({ data }) => {
-console.log('CardCord data: ', data)
 
   let image = getImage(data.cardImage)
   const staticImage = image ? null : data.cardImage.publicURL
@@ -13,7 +12,7 @@ console.log('CardCord data: ', data)
   const serviceLink = `${data.serviceLink}/`
 
   return (
-    <div className="flex w-[23%] m-4 flex-col">
+    <div className="my-4 md:m-4">
       <div className="flex flex-col h-[100%] card bg-white curved">
         <SwitchableLink lnk={serviceLink}>
           {image ? (
@@ -28,18 +27,18 @@ console.log('CardCord data: ', data)
         </SwitchableLink>
 
         <SwitchableLink lnk={serviceLink}>
-          <div className="m-[6%]">
+          <div className="m-[6%] pb-2">
             <CardUnderset title={data.title} anchor={serviceLink}>
-              <p className="text-xs h-16">{data.cardDescription}</p>
+              <p className="text-xs h-16 text-left">{data.cardDescription}</p>
             </CardUnderset>
           </div>
         </SwitchableLink>
 
         <SwitchableLink lnk={serviceLink}>
-          <div className="flex-none margin-auto pb-4">
-            <h4 className="font-semibold text-xs inline">READ MORE</h4>
+          <div className="flex justify-center my-4" style={{marginTop: 'auto'}}>
+            <div className="font-semibold text-xs inline">READ MORE</div>
             <FaArrowRight
-              className="inline my-2 ml-4 mr-0 text-chsblue font-bold"
+              className="inline ml-4 mr-0 text-chsblue font-bold"
               size="12px"
             />
           </div>

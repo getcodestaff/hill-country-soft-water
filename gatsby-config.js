@@ -3,9 +3,14 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Service Starter | A template for service oriented business websites`,
-    description: `A quick start on creating service oriented websites`,
+    title: `Hill Country Soft Water | [todo add tag line]`,
+    description: `todo add a better description than A website for Hill Country Soft Water`,
     siteUrl: "https://www.witcraft.io",
+    phone: '210-635-7418',
+    addressName: 'Hill Country Soft Water',
+    addressLine1:'7812 Pomeroy Way',
+    addressCsz: 'Citrus Heights, CA 95610',
+    email: 'info@watersoftenersanantonio.co',
     author: `@witcradg`,
   },
   plugins: [

@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple starter to get up and developing quickly with the Services template",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Dean Witcraft <dean.witcraft@outlook.com>",
   "dependencies": {
     "@fontsource/montserrat": "^4.5.14",
     "gatsby": "^5.5.0",

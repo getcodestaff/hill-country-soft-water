@@ -1,8 +1,8 @@
+//https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-plugin-image#background-images
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import scrollTo from "gatsby-plugin-smoothscroll"
-import { getImage } from "gatsby-plugin-image"
-import { BgImage } from "gbimage-bridge" 
 import { FaArrowRight } from "react-icons/fa"
 
 export const Hero = () => {
@@ -18,30 +18,31 @@ export const Hero = () => {
             buttonText
             featuredImage {
               childImageSharp {
-                gatsbyImageData(
-                  layout: FULL_WIDTH
-                  quality: 50
-                  webpOptions: { quality: 70 }
-                )
+                gatsbyImageData(quality: 50, webpOptions: { quality: 70 })
               }
+              relativePath
             }
           }
         }
       }
     `
   )
-
   const data = queryResult.markdownRemark.frontmatter
-  const pluginImage = getImage(data.featuredImage)
+  const img = data.featuredImage.childImageSharp.gatsbyImageData
+
+  const x = getImage(img)
 
   return (
-    <BgImage image={pluginImage} className="hero-image">
-      <div className="tp-caption ml-20">
+    <div className="w-[100%] relative">
+      <GatsbyImage className="relative z-0" alt="" image={x} />
+      <div className="z-20 absolute top-0 tp-caption l-0 md:ml-20">
         <div
-          className="tp-caption1-wd-2 page-indent uppercase"
+          className="tp-caption1-wd-2 page-indent uppercase whitespace-nowrap"
           style={{ color: data.textColor }}
         >
-          <div className="w-2/3">Carruth Home Solutions</div>
+          Carruth Home
+          <br />
+          Solutions
         </div>
         <div
           className="small-hero-text page-indent"
@@ -49,15 +50,17 @@ export const Hero = () => {
         >
           {data.text}
         </div>
-        <button
-          className="btn-xl btn-info hero-btn bg-white page-indent"
-          onClick={() => scrollTo("#services")}
-        >
-          {data.buttonText}
-          <FaArrowRight className="inline my-2 ml-4 mr-0" size="18px" />
-        </button>
-        <br />
+        <div className="hidden">
+          <button
+            className="btn-xl btn-info hero-btn bg-white page-indent"
+            onClick={() => scrollTo("#services")}
+          >
+            KNOW MORE ABOUT OUR SERVICES
+            <FaArrowRight className="inline my-2 ml-4 mr-0" size="18px" />
+          </button>
+          <br />
+        </div>
       </div>
-    </BgImage>
+    </div>
   )
 }

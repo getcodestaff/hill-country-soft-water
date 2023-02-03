@@ -20,15 +20,18 @@ export const Stories = () => {
       </h1>
 
       <div style={{ margin: "auto" }}>
-        <div className="flex justify-around px-16">
+        <div className="flex flex-col md:flex-row justify-around px-8 md:px-16">
           <Story1Card />
           <Story2Card />
           <Story3Card />
         </div>
-        <button className="btn-xl btn-info hero-btn bg-chsblue text-white mb-8">
+        <a
+          href="https://www.homeadvisor.com/rated.CarruthHomeSolutions.63697568.html"
+          className="text-xs md:text-xl btn-xl btn-info hero-btn bg-chsblue text-white mb-8"
+        >
           CARRUTH HOME SOLUTIONS REVIEWS
-          <FaArrowRight className="inline my-2 ml-4 mr-0" size="18px" />
-        </button>
+          <FaArrowRight className="inline my-2 ml-4 mr-0" />
+        </a>
       </div>
     </div>
   )

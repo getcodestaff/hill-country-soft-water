@@ -3,15 +3,16 @@
 @tailwind utilities;
 
 /* test area */
+
+
+/* end test area */
+
+/* layour is tailwind */
 @layer components {
     .menu-item {
         @apply text-black uppercase hover:text-chsblue;
     }
 }
-
-
-/* end test area */
-
 
 .debug-red {
     border: solid 2px red;

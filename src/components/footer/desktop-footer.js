@@ -8,7 +8,7 @@ import * as styles from './footer.module.css'
 
 export const DesktopFooter = ({ location }) => {
   return (
-    <footer className="footer-background  ml-16 desktop-toggle">
+    <footer className="footer-background ml-8 hidden md:block">
       <div className="display-n" style={{ fontSize: "13px" }}>
         <div
           className="flex justify-around"

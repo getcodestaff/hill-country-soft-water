@@ -25,8 +25,6 @@ export const Story2Card = () => {
 		`
 	);
 
-    console.log({queryResult})
-
 	return (
 		<CardCore data={queryResult.markdownRemark.frontmatter} />
 	);	
