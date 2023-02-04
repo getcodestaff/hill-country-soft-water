@@ -3,13 +3,13 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Hill Country Soft Water | [todo add tag line]`,
+    title: `San Antonio Water Softerner Experts | Hill Country Soft Water`,
     description: `todo add a better description than A website for Hill Country Soft Water`,
-    siteUrl: "https://www.witcraft.io",
+    siteUrl: "https://watersoftenersanantonio.co",
     phone: '210-635-7418',
     addressName: 'Hill Country Soft Water',
     addressLine1:'123 Some St.',
-    addressCsz: 'Sacramento, CA 95832',
+    addressCsz: 'San Antoni, TX 95832',
     email: 'info@watersoftenersanantonio.co',
     author: `@witcradg`,
   },
