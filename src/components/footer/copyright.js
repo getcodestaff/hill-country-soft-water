@@ -14,7 +14,7 @@ export const Copyright = () => {
                 <div className="flex justify-center mt-4">
                     <p className="mb-0">
                         © Copyright 2020 - {year}{' '}
-                        <strong>Carruth Home Solutions</strong>
+                        <strong>Hill Country Soft Water</strong>
                     </p>
                     <p>&nbsp;All Rights Reserved</p>
                 </div>

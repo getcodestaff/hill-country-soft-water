@@ -16,7 +16,7 @@ export const Stories = () => {
         />
       </div>
       <h1 className="section-title mt-1 mb-4">
-        Watch Carruth Client Success Stories
+        WAater Softener Success Stories
       </h1>
 
       <div style={{ margin: "auto" }}>
@@ -26,10 +26,10 @@ export const Stories = () => {
           <Story3Card />
         </div>
         <a
-          href="https://www.homeadvisor.com/rated.CarruthHomeSolutions.63697568.html"
+          href="https://www.homeadvisor.com/"
           className="text-xs md:text-xl btn-xl btn-info hero-btn bg-chsblue text-white mb-8"
         >
-          CARRUTH HOME SOLUTIONS REVIEWS
+          WATER FILTRATION
           <FaArrowRight className="inline my-2 ml-4 mr-0" />
         </a>
       </div>
