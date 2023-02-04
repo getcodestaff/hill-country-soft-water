@@ -7,7 +7,7 @@ export const SampleRow = ({ nodes }) => {
   const arrayOfImages = []
   nodes.map(galleryImage => arrayOfImages.push(galleryImage))
 
-  const altTemp = "decking" //todo add image alt to markdown and query
+  const altTemp = "water-softeners" //todo add image alt to markdown and query
 
   return (
     <div className="flex justify-around p-6">

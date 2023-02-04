@@ -6,7 +6,7 @@ export const TopRated = data => {
   const queryResult = useStaticQuery(
     graphql`
       query {
-        allFile(filter: {name: {eq: "home-top-rated_12_11zon"}}) {
+        allFile(filter: {name: {eq: "b4_5_11zon"}}) {
             nodes {
               name
               childImageSharp {

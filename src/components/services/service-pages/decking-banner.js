@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import * as styles from "../service.module.css"
 
-export const DeckingBanner = () => {
+export const WaterSoftenersBanner = () => {
     const queryResult = useStaticQuery(
       graphql`
         query {
@@ -33,12 +33,12 @@ export const DeckingBanner = () => {
   return (
     <React.Fragment>
       <div className="relative text-center bg-gray-200">
-        <GatsbyImage image={image} alt="decking with steps" />
+        <GatsbyImage image={image} alt="water-softeners with steps" />
         <div
           className={`tp-caption1-wd-2 ${styles.title} `}
           style={{ color: data.textColor }}
         >
-          Decking
+          Water Softeners
         </div>
         <div
           className={`small-hero-text ${styles.subTitle}`}

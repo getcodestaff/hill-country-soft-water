@@ -6,7 +6,7 @@ export const Contractor = data => {
   const queryResult = useStaticQuery(
     graphql`
       query {
-        allFile(filter: {name: {eq: "contractor_6_11zon"}}) {
+        allFile(filter: {name: {eq: "b3_4_11zon"}}) {
             nodes {
               name
               childImageSharp {

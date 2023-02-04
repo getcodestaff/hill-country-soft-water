@@ -1,12 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { DeckingBanner } from "./decking-banner"
+import { WaterSoftenersBanner } from "./water-softeners-banner"
 import { Services } from "../services"
 import { Badges } from "../../badges/badges"
 import { SampleRow } from "../sample-row"
 
-export const Decking = () => {
+export const WaterSofteners = () => {
   const queryResult = useStaticQuery(
     graphql`
       query {
@@ -86,7 +86,7 @@ export const Decking = () => {
 
   return (
     <React.Fragment>
-      <DeckingBanner />
+      <WaterSoftenersBanner />
       <style>
         {`
             h1 {

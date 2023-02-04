@@ -6,7 +6,7 @@ export const Angies = data => {
   const queryResult = useStaticQuery(
     graphql`
       query {
-        allFile(filter: { name: { eq: "angi_2_11zon" } }) {
+        allFile(filter: { name: { eq: "b1_2_11zon" } }) {
           nodes {
             name
             childImageSharp {

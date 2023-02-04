@@ -6,7 +6,7 @@ export const Trex = data => {
   const queryResult = useStaticQuery(
     graphql`
       query {
-        allFile(filter: {name: {eq: "trex_20_11zon"}}) {
+        allFile(filter: {name: {eq: "b2_3_11zon"}}) {
             nodes {
               name
               childImageSharp {

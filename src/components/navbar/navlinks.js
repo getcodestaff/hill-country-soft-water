@@ -24,43 +24,43 @@ export const NavLinks = props => {
                     text-xl text-left leading-relaxed z-40 rounded-md"
           >
             <Nav.Item>
-              <Link to="/decking" className="menu-item font-medium">
-                Decking
+              <Link to="/water-softeners" className="menu-item font-medium">
+                Water Softeners
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to="/balconies" className="menu-item font-medium">
-                Balconies
+              <Link to="/water-filtration" className="menu-item font-medium">
+                Water Filtration
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to="/windows" className="menu-item font-medium">
-                Windows
+              <Link to="/reverse-osmosis" className="menu-item font-medium">
+                Reverse Osmosis
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to="/doors" className="menu-item font-medium">
-                Doors
+              <Link to="/hard-water-filters" className="menu-item font-medium">
+                Hard Water Filters
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to="/dry-rot-repairs" className="menu-item font-medium">
-                Dry Rot Repairs
+              <Link to="/water-testing" className="menu-item font-medium">
+                Water Testing
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to="/siding" className="menu-item font-medium">
-                Siding
+              <Link to="/water-treatment" className="menu-item font-medium">
+                Water Treatment
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to="/pergolas" className="menu-item font-medium">
-                Pergolas
+              <Link to="/house-water-filters" className="menu-item font-medium">
+              House Water Filters
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to="/plumbing" className="menu-item font-medium">
-                Plumbing
+              <Link to="/well-water-systems" className="menu-item font-medium">
+                Well Water Systems
               </Link>
             </Nav.Item>
           </div>
