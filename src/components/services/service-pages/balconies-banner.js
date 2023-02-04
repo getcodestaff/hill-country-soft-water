@@ -41,7 +41,7 @@ export const BalconiesBanner = () => {
           className={`tp-caption1-wd-2 ${styles.title} `}
           style={{ color: data.textColor }}
         >
-          Balconies
+          Water Filtration
         </div>
         <div
           className={`small-hero-text ${styles.subTitle}`}

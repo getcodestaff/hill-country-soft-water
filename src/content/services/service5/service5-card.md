@@ -3,9 +3,9 @@ cardName: WaterTestingCard
 crumbsPath: 
 crumbsLabel: 
 cardImage: ../../../images/water-testing/water_testing_card.webp
-cardImageAlt: Pergola
-title: Pergolas
+cardImageAlt: Water Testing San Antonio
+title: Water Testing San Antonio
 serviceLink: /pergolas
-cardDescription: Designs, products, and styles are endless. We work with you on your budget to design and build the best and safest Pergola system for a great value.
+cardDescription: Get your water tested by a pro in San Antonio. Our experts have over 50 years of experience. We have been in business since 1969. Well Water Testing, Hard Water Testing, Soft Water Testing in Texas. 
 
 ---
