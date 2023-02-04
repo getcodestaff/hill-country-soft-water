@@ -55,7 +55,7 @@ export const NavLinks = props => {
             </Nav.Item>
             <Nav.Item>
               <Link to="/house-water-filters" className="menu-item font-medium">
-              House Water Filters
+                House Water Filters
               </Link>
             </Nav.Item>
             <Nav.Item>
