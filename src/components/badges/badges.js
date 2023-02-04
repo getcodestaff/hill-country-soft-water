@@ -1,9 +1,10 @@
 import { Link } from "gatsby"
 import React from "react"
-import { Angies } from "./angies"
-import { Contractor } from "./contractor"
-import { TopRated } from "./top-rated"
-import { Trex } from "./trex"
+import { Badge1 } from "./badge1"
+import { Badge2 } from "./badge2"
+import { Badge3 } from "./badge3"
+import { Badge4 } from "./badge4"
+import { Badge5 } from "./badge5"
 
 export const Badges = () => {
   return (
@@ -11,27 +12,33 @@ export const Badges = () => {
       <div className="flex flex-col md:flex-row md:justify-around md:p-16 mx-4">
         <div className="flex justify-around my-4 md:flex-none md:w-[8%]">
           <Link to="/">
-          <Angies />
-        </Link>
+            <Badge1 />
+          </Link>
         </div>
 
         <div className="flex justify-around my-4 md:flex-none md:w-[16%]">
           <Link to="/">
-          <Trex />
-        </Link>
+            <Badge2 />
+          </Link>
         </div>
 
         <div className="flex justify-around my-4 md:flex-none md:w-[16%]">
           <Link to="/">
-          <Contractor />
-        </Link>
+            <Badge3 />
+          </Link>
         </div>
 
         <div className="flex justify-around my-4 md:flex-none md:w-[8%]">
           <Link to="/">
-          <TopRated />
-        </Link>
+            <Badge4 />
+          </Link>
         </div>
+{/* 
+        <div className="flex justify-around my-4 md:flex-none md:w-[8%]">
+          <Link to="/">
+            <Badge5 />
+          </Link>
+        </div> */}
       </div>
     </div>
   )

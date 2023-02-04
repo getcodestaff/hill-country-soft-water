@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-export const Angies = data => {
+export const Badge1 = () => {
   const queryResult = useStaticQuery(
     graphql`
       query {

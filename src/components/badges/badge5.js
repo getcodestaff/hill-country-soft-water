@@ -2,11 +2,11 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-export const TopRated = data => {
+export const Badge5 = () => {
   const queryResult = useStaticQuery(
     graphql`
       query {
-        allFile(filter: {name: {eq: "b4_5_11zon"}}) {
+        allFile(filter: {name: {eq: "b5_6_11zon"}}) {
             nodes {
               name
               childImageSharp {
