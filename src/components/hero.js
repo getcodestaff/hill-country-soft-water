@@ -40,9 +40,9 @@ export const Hero = () => {
           className="tp-caption1-wd-2 page-indent uppercase whitespace-nowrap"
           style={{ color: data.textColor }}
         >
-          Carruth Home
+          San Antonio
           <br />
-          Solutions
+          Water Softeners
         </div>
         <div
           className="small-hero-text page-indent"
@@ -55,7 +55,7 @@ export const Hero = () => {
             className="btn-xl btn-info hero-btn bg-white page-indent"
             onClick={() => scrollTo("#services")}
           >
-            KNOW MORE ABOUT OUR SERVICES
+            SCHEDULE A CALL
             <FaArrowRight className="inline my-2 ml-4 mr-0" size="18px" />
           </button>
           <br />
