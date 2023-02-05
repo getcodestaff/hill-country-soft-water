@@ -22,14 +22,15 @@ const servicesTitle = props => {
 const servicesText = () => (
   <>
     <h1 className="section-title mt-1 mb-4 text-left">
-      Doing it well is our passion!
+      In Business For Over 50 Years!
     </h1>
     <div className="text-direction-b pb-2 space-y-8">
       <p className="m-0 text-black font-medium text-left">
-        We provide services for pergolas, balconies, wood and composite decks,
-        wood and metal railings, windows, doors, siding, dry rot repairs,
-        interior and exterior renovations, water heater replacement and general
-        home repairs. [rewrite to add plumbing]
+        Whole House Water Filtration Experts in San Antonio. If you are having problem with
+        the tase or smell of the water in your home we are here to help. Finding the right 
+        Water Softener in San Antonio can be tricky. The water systems in an around the san antonio
+        area provide different concerns so not every system is adequate for that particlar case. Give
+        us a call and we will be glad to point you in the right direction.
       </p>
     </div>
   </>
