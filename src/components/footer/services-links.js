@@ -15,14 +15,14 @@ export const ServicesLinks = ({ classline }) => {
                 }
               `}
 			</style>
-            <Link className={classes} to="/">Decksing</Link>
-            <Link className={classes} to="/">Balconies</Link>
-            <Link className={classes} to="/">Windows</Link>
-            <Link className={classes} to="/">Doors</Link>
-            <Link className={classes} to="/">Dry Rot Repairs</Link>
-            <Link className={classes} to="/">Siding</Link>
-            <Link className={classes} to="/">Pergolas</Link>
-            <Link className={classes} to="/">Plumbing</Link>
+            <Link className={classes} to="/">Whole House Filters San Antonio</Link>
+            <Link className={classes} to="/">Water Filters San Antonio</Link>
+            <Link className={classes} to="/">Reverse Osmosis San Antonio</Link>
+            <Link className={classes} to="/">Alkaline Water San Antonio</Link>
+            <Link className={classes} to="/">Water Testing San Antonio</Link>
+            <Link className={classes} to="/">Well Water Testing San Antonio</Link>
+            <Link className={classes} to="/">Well Water Treatement San Antonio</Link>
+            <Link className={classes} to="/">Water Softeners San Antonio</Link>
 		</div>
 	);
 };

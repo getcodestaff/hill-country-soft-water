@@ -52,16 +52,16 @@ export const Section1 = () => {
             </h1>
             <div className="text-direction-b pb-2 space-y-8">
               <p className="m-0 text-black font-medium text-left">
-                Designing, creating, building, modifying and/or repairing home
-                projects for you is something we LOVE doing! Doing it well is
-                our passion!
+                Image clean water for your dishes, laundry, showers sinks and whole home!
+                No more bottled water runs and spending thousands on plastic waste. Go Green
+                and Provide clean water for your family at the same time. 
               </p>
               <p className="m-0 text-black font-medium  text-left">
                 Over 50+ years of experience with the hightest standards of
-                service. Performing rennovations, repairs and installations for
-                you home. We are a local and family owned business. We are
+                service. Performing water softener installation and installations for
+                Reverse Osmosis Water Treatement systems. We are a local and family owned business. We are
                 centered on providing you with the hightest quality of
-                craftsmanship for a great value!
+                water for a great value!
               </p>
               <button className="btn-xl btn-info hero-btn bg-chsblue text-white">
                 READ MORE
