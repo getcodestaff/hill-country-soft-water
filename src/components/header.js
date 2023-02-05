@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import PropTypes from "prop-types"
-import logo from "../images/logoipsum-289.svg"
+//import logo from "../images/logoipsum-289.svg"
 import { Navbar } from "./navbar/navbar"
 import { FaPhone } from "react-icons/fa"
 import { LayoutContext } from '../contexts/layout-context';
@@ -15,7 +15,7 @@ const Header = () => {
       <div className="flex px-5 py-4 items-center justify-between">
         {/* <div id="left" className="px-0 w-1/4 max-h-48"> */}
         <div className="logo-container">
-          <img alt="Hill Country Soft Water logo" src={logo} />
+          <img alt="Hill Country Soft Water logo" src="https://www.gaines-softwater.com/wp-content/uploads/2016/10/static1.squarespace.com_.png" />
           {/* <Link to="/" className="text-xl font-bold no-underline inline-block pl-4">
                 {siteTitle}
           </Link> */}
