@@ -13,7 +13,7 @@ const servicesTitle = props => {
 
   return (
     <div className="md:px-16">
-      <div className={`${textColor} text-lg font-semibold`}>OUR SERVICES</div>
+      <div className={`${textColor} text-lg font-semibold`}>IN BUSINESS FOR OVER 50 YEARS!</div>
       {props.imagesOnly === true ? null : servicesText()}
     </div>
   )
@@ -22,7 +22,7 @@ const servicesTitle = props => {
 const servicesText = () => (
   <>
     <h1 className="section-title mt-1 mb-4 text-left">
-      In Business For Over 50 Years!
+      San Antonio Whole House Water Filtration Systems
     </h1>
     <div className="text-direction-b pb-2 space-y-8">
       <p className="m-0 text-black font-medium text-left">

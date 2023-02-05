@@ -3,9 +3,9 @@ cardName: WaterTreatmentCard
 crumbsPath: 
 crumbsLabel: 
 cardImage: ../../../images/water-treatment/water_treatment_card.webp
-cardImageAlt: Dry rot in window
-title: Dry Rot Repair
-serviceLink: /dry-rot-repairs
-cardDescription: Without pulling punches, dry rot is cancer to a home's structure!! Without warning, it can create tens of thousands of dollars in damages in a very short time period, if not attended to, when [??????]
+cardImageAlt: Alkaline Water Systems
+title: Alkaline Water
+serviceLink: /#
+cardDescription: Alkaline Water Systems are so important if you want to maintain a high quality water and alkaline environment for your body. Increasing the ph of the water you drink is linked to huge health benefits. 
 
 ---
