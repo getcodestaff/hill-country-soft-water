@@ -59,22 +59,22 @@ export const ServiceAreas = ({ location, classline }) => {
                 <div>
                     <div>
             <Link className={classes} to="/">
-                            San Antonio
+                            San Antonio, TX
                         </Link>
             <Link className={classes} to="/" >
-                            Boerne
+                            Boerne, TX
                         </Link>
             <Link className={classes} to="/" >
-                            New Braunfels
+                            New Braunfels, TX
                         </Link>
             <Link className={classes} to="/" >
-                            Canyon Lake
+                            Canyon Lake, TX
                         </Link>
             <Link className={classes} to="/" >
-                            Medina
+                            Medina, TX
                         </Link>
             <Link className={classes} to="/" >
-              Fair Oaks
+                            San Antonio, TX
                         </Link>
             <Link className={classes} to="/" >
                             More...
