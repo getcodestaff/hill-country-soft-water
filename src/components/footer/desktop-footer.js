@@ -28,13 +28,14 @@ export const DesktopFooter = ({ location }) => {
 
                 <StaticImage
                   alt="logo"
-                  src="../../images/layout/footer-logo_11_11zon.webp"
+                  src="https://www.gaines-softwater.com/wp-content/uploads/2016/10/static1.squarespace.com_.png"
                   width={190}
                 />
               </nav>
             </div>
-            <div className="p-6">We are a sons and father team that has over 60 years of combined
-                 experience! We have a blast wotking with each other! We use both old and TBCOMPLETED</div>
+            <div className="p-6">We have been proving the San Antonio Texas Area with Clean Drinking Options
+            for Over 50 Years. We love providing clean water and we tank you for allowing us ot do it. We strive
+            to maintain the highest standards for Water Purity in our Drinking Water.</div>
             <div>
               <FooterSocial />
             </div>

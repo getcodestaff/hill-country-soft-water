@@ -16,7 +16,7 @@ export const Stories = () => {
         />
       </div>
       <h1 className="section-title mt-1 mb-4">
-        WAater Softener Success Stories
+        Water Softener Success Stories
       </h1>
 
       <div style={{ margin: "auto" }}>
