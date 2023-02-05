@@ -74,7 +74,7 @@ export const Services = props => {
           <div className="text-center mt-6">
             Need any help call us at{" "}
             <span className="text-chsblue font-semibold whitespace-nowrap">
-              916-257-8310
+              210-635-7418
             </span>
           </div>
         </div>
