@@ -1,5 +1,5 @@
 ---
-cardName: WaterSoftenersCard
+cardName: Service1Card
 crumbsPath: 
 crumbsLabel: 
 cardImage: ../../../images/water-softeners/water_softener_card.webp
