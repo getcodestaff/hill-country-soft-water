@@ -45,22 +45,27 @@ export const Section1 = () => {
         </div>
         <div className="w-full md:w-1/2">
           <div className="fixwidth flex flex-col space-y-8">
-            <div className="text-chsblue text-lg font-semibold">ABOUT US</div>
+            <div className="text-chsblue text-lg font-semibold">
+              Treating Contaminatin, Soft+Hard Water Problems
+            </div>
             <h1 className="section-title mt-1 text-left">
-              We treat all our customers like family!
+              Clean Water Your Whole Family Can Enjoy. Water Filtration and
+              Water Softener Options For Every Situation.
             </h1>
             <div className="text-direction-b pb-2 space-y-8">
               <p className="m-0 text-black font-medium text-left">
-                Designing, creating, building, modifying and/or repairing home
-                projects for you is something we LOVE doing! Doing it well is
-                our passion!
+                Imagine clean water for your dishes, laundry, showers sinks and
+                whole home! No more bottled water runs and spending thousands on
+                plastic waste. Go Green and Provide clean water for your family
+                at the same time.
               </p>
               <p className="m-0 text-black font-medium  text-left">
-                Over 60+ years of combined experiences with the highest
-                standards of service. Performing renovations, repairs,
-                installations, and full- service plumbing for you home. We are a
-                local and family-owned business. We are centered on providing
-                you with the highest quality of craftsmanship for a great value!
+                Over 50+ years of experience with the hightest standards of
+                service. Performing water softener installation and
+                installations for Reverse Osmosis Water Treatement systems. We
+                are a local and family owned business. We are centered on
+                providing you with the hightest quality of water for a great
+                value!
               </p>
               <button className="btn-xl btn-info hero-btn bg-chsblue text-white">
                 READ MORE
