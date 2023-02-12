@@ -39,9 +39,9 @@ export const Hero = () => {
           className="tp-caption1-wd-2 page-indent uppercase whitespace-nowrap"
           style={{ color: data.textColor }}
         >
-          Carruth Home
+          Hill Country
           <br />
-          Solutions
+          Soft Water
         </div>
         <div
           className="small-hero-text page-indent"

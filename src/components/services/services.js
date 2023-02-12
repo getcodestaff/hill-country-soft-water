@@ -1,12 +1,12 @@
 import React from "react"
-import { WaterSoftenersCard } from "./service-cards/water-softeners-card"
-import { WaterFiltrationCard } from "./service-cards/water-filtration-card"
-import { ReverseOsmosisCard } from "./service-cards/reverse-osmosis-card"
-import { HardWaterFiltersCard } from "./service-cards/hard-water-filters-card"
-import { WaterTestingCard } from "./service-cards/water-testing-card"
-import { WaterTreatmentCard } from "./service-cards/water-treatment-card"
-import { HouseWaterFiltersCard } from "./siding-card"
-import { WaterWellSystemsCard } from "./service-cards/plumbing-card"
+import { Service1Card } from "./service-cards/service1-card"
+import { Service2Card } from "./service-cards/service2-card"
+import { Service3Card } from "./service-cards/service3-card"
+import { Service4Card } from "./service-cards/service4-card"
+import { Service5Card } from "./service-cards/service5-card"
+import { Service6Card } from "./service-cards/service6-card"
+import { Service7Card } from "./service-cards/service7-card"
+import { Service8Card } from "./service-cards/service8-card"
 
 const servicesTitle = props => {
   const textColor = props.imagesOnly === true ? "text-black" : "text-chsblue"
@@ -44,30 +44,30 @@ export const Services = props => {
         <div style={{ margin: "auto" }}>
           <div className="flex flex-col md:flex-row justify-around">
             <div className="w-full">
-              <WaterSoftenersCard />
+              <Service1Card />
             </div>
             <div className="w-full">
-              <WaterFiltrationCard />
+              <Service2Card />
             </div>
             <div className="w-full">
-              <ReverseOsmosisCard />
+              <Service3Card />
             </div>
             <div className="w-full">
-              <HardWaterFiltersCard />
+              <Service4Card />
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-around">
             <div className="w-full">
-              <WaterTestingCard />
+              <Service5Card />
             </div>
             <div className="w-full">
-              <WaterTreatmentCard />
+              <Service6Card />
             </div>
             <div className="w-full">
-              <HouseWaterFiltersCard />
+              <Service7Card />
             </div>
             <div className="w-full">
-              <WaterWellSystemsCard />
+              <Service8Card />
             </div>
           </div>
           <div className="text-center mt-6">

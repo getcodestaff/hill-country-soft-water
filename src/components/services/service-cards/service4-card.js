@@ -2,11 +2,11 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { CardCore } from '../../card-core';
 
-export const ReverseOsmosisCard = () => {
+export const Service4Card = () => {
 	const queryResult = useStaticQuery(
 		graphql`
 			query {
-				markdownRemark(frontmatter: { cardName: { eq: "ReverseOsmosisCard" } }) {
+				markdownRemark(frontmatter: { cardName: { eq: "Service4Card" } }) {
 					frontmatter {
 						cardName
 						title
