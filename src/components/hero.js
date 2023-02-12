@@ -28,13 +28,12 @@ export const Hero = () => {
     `
   )
   const data = queryResult.markdownRemark.frontmatter
-  const img = data.featuredImage.childImageSharp.gatsbyImageData
 
-  const x = getImage(img)
+  const image = getImage(data.featuredImage.childImageSharp.gatsbyImageData)
 
   return (
     <div className="w-[100%] relative">
-      <GatsbyImage className="relative z-0" alt="" image={x} />
+      <GatsbyImage className="relative z-0" alt="" image={image} />
       <div className="z-20 absolute top-0 tp-caption l-0 md:ml-20">
         <div
           className="tp-caption1-wd-2 page-indent uppercase whitespace-nowrap"
@@ -50,16 +49,14 @@ export const Hero = () => {
         >
           {data.text}
         </div>
-        <div className="hidden">
-          <button
-            className="btn-xl btn-info hero-btn bg-white page-indent"
-            onClick={() => scrollTo("#services")}
-          >
-            KNOW MORE ABOUT OUR SERVICES
-            <FaArrowRight className="inline my-2 ml-4 mr-0" size="18px" />
-          </button>
-          <br />
-        </div>
+        <button
+          className="text-xs btn-xl btn-info hero-btn bg-white page-indent whitespace-nowrap"
+          onClick={() => scrollTo("#services")}
+        >
+          KNOW MORE ABOUT OUR SERVICES
+          <FaArrowRight className="inline my-2 ml-4 mr-0" size="18px" />
+        </button>
+        <br />
       </div>
     </div>
   )

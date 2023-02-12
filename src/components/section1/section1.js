@@ -56,11 +56,11 @@ export const Section1 = () => {
                 our passion!
               </p>
               <p className="m-0 text-black font-medium  text-left">
-                Over 50+ years of experience with the hightest standards of
-                service. Performing rennovations, repairs and installations for
-                you home. We are a local and family owned business. We are
-                centered on providing you with the hightest quality of
-                craftsmanship for a great value!
+                Over 60+ years of combined experiences with the highest
+                standards of service. Performing renovations, repairs,
+                installations, and full- service plumbing for you home. We are a
+                local and family-owned business. We are centered on providing
+                you with the highest quality of craftsmanship for a great value!
               </p>
               <button className="btn-xl btn-info hero-btn bg-chsblue text-white">
                 READ MORE

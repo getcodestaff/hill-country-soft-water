@@ -29,13 +29,25 @@ export const CardCore = ({ data }) => {
         <SwitchableLink lnk={serviceLink}>
           <div className="m-[6%] pb-2">
             <CardUnderset title={data.title} anchor={serviceLink}>
-              <p className="text-xs h-16 text-left">{data.cardDescription}</p>
+              <div className="text-xs h-16 text-left">
+                {data.cardDescription.includes("</") ? (
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: data.cardDescription }}
+                  />
+                ) : (
+                  data.cardDescription
+                )}
+              </div>
             </CardUnderset>
           </div>
         </SwitchableLink>
 
         <SwitchableLink lnk={serviceLink}>
-          <div className="flex justify-center my-4" style={{marginTop: 'auto'}}>
+          <div
+            className="flex justify-center my-4"
+            style={{ marginTop: "auto" }}
+          >
             <div className="font-semibold text-xs inline">READ MORE</div>
             <FaArrowRight
               className="inline ml-4 mr-0 text-chsblue font-bold"

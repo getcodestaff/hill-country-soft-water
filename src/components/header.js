@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import { Navbar } from "./navbar/navbar"
