@@ -13,10 +13,8 @@ const Layout = ({ children, location }) => {
           siteMetadata {
             title
             description
+            businessName
             phone
-            addressName
-            addressLine1
-            addressCsz
           }
         }
       }
@@ -25,8 +23,6 @@ const Layout = ({ children, location }) => {
 
   const siteMetadata = site.siteMetadata
   const [layout, setLayout] = useState({location, siteMetadata})
-
-  console.log('layout: ', layout)
 
   const copyrightMobile = () => {
     let titleMobile = site.siteMetadata?.title.split("|")
@@ -45,7 +41,7 @@ const Layout = ({ children, location }) => {
   return (
     <React.Fragment>
       <LayoutContext.Provider value={{ layout, setLayout }}>
-        <Header siteTitle={title} />
+      <Header metaData={siteMetadata} />
         <div
           style={{
             margin: `0 auto`,
