@@ -13,6 +13,8 @@ export const Hero = () => {
           frontmatter {
             component
             date
+            titleLine1
+            titleLine2
             text
             textColor
             buttonText
@@ -39,9 +41,9 @@ export const Hero = () => {
           className="tp-caption1-wd-2 page-indent uppercase whitespace-nowrap"
           style={{ color: data.textColor }}
         >
-          Hill Country
+          {data.titleLine1}
           <br />
-          Soft Water
+          {data.titleLine2}
         </div>
         <div
           className="small-hero-text page-indent"
@@ -53,7 +55,7 @@ export const Hero = () => {
           className="text-xs btn-xl btn-info hero-btn bg-white page-indent whitespace-nowrap"
           onClick={() => scrollTo("#services")}
         >
-          KNOW MORE ABOUT OUR SERVICES
+          {data.buttonText}
           <FaArrowRight className="inline my-2 ml-4 mr-0" size="18px" />
         </button>
         <br />
