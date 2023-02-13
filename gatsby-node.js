@@ -30,7 +30,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     const usState = node.state_varchar_20.toLowerCase()
     const usCity = node.city_varchar_25.toLowerCase()
-    let slug = `serving/${usState}/${usCity}/`.replace(/ /g, "-")
+    let slug = `${usState}/${usCity}/`.replace(/ /g, "-")
     createPage({
       path: slug,
       component: serviceAreasTemplate,
