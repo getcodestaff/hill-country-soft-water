@@ -5,7 +5,10 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import { FaArrowRight } from "react-icons/fa"
 
-export const Hero = () => {
+export const Hero = ({cityState}) => {
+    console.log('cityState: ', cityState)
+    console.log('typeof: ', typeof cityState)
+
   const queryResult = useStaticQuery(
     graphql`
       query {
@@ -44,6 +47,7 @@ export const Hero = () => {
           {data.titleLine1}
           <br />
           {data.titleLine2}
+          {cityState ? <div>{cityState}</div> : null}
         </div>
         <div
           className="small-hero-text page-indent"

@@ -26,6 +26,13 @@ module.exports = {
         name: `content-markdown`,
       },
     },
+    {
+        resolve: `gatsby-transformer-csv`,
+        options: {
+            extensions: [ `csv` ],
+            delimiter: '\t'
+        }
+    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

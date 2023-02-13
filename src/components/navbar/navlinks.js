@@ -54,7 +54,7 @@ export const NavLinks = props => {
           className="pl-3 menu-item font-semibold"
         >
           <div
-            className="absolute m-2 ml-8 p-2 text-black bg-chsltblue
+            className="absolute m-2 ml-8 p-2 text-white md:text-black bg-chsltblue
                     text-xl text-left leading-relaxed z-40 rounded-md"
           >
             {dropdown.map(item => {

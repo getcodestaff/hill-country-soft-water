@@ -31,6 +31,7 @@ export const Badges = () => {
                 childImageSharp {
                   gatsbyImageData
                 }
+                name
               }
               classNames
             }
@@ -46,7 +47,7 @@ export const Badges = () => {
     <div>
       <div className="flex flex-col md:flex-row md:justify-around md:p-16 mx-4">
         {nodes.map(node => (
-          <div className={node.frontmatter.classNames}>
+          <div key={node.frontmatter.badgeImage.name} className={node.frontmatter.classNames}>
             {displayBadge(node.frontmatter)}
           </div>
         ))}

@@ -1,0 +1,17 @@
+zip:varchar:5	lat:decimal:10,6	long:decimal:10,6	city:varchar:25	stateshort:varchar:2	state:varchar:20	county:varchar:21
+90001	33.973951	-118.249509	Los Angeles	CA	California	Los Angeles
+90069	33.786594	-118.381697	West Hollywood	CA	California	Los Angeles
+90201	33.976663	-118.171368	Bell	CA	California	Los Angeles
+90202	33.786594	-118.298662	Bell Gardens	CA	California	Los Angeles
+90209	33.786594	-118.298662	Beverly Hills	CA	California	Los Angeles
+90220	33.874815	-118.234451	Compton	CA	California	Los Angeles
+90230	33.786594	-118.393617	Culver City	CA	California	Los Angeles
+90239	33.786594	-118.298662	Downey	CA	California	Los Angeles
+90245	33.786594	-118.404267	El Segundo	CA	California	Los Angeles
+90247	33.888315	-118.297967	Gardena	CA	California	Los Angeles
+90250	33.786594	-118.348083	Hawthorne	CA	California	Los Angeles
+90254	33.786594	-118.399303	Hermosa Beach	CA	California	Los Angeles
+90255	33.977987	-118.217438	Huntington Park	CA	California	Los Angeles
+90260	33.786594	-118.351813	Lawndale	CA	California	Los Angeles
+90262	33.924538	-118.200705	Lynwood	CA	California	Los Angeles
+90263	33.786594	-118.707992	Malibu	CA	California	Los Angeles

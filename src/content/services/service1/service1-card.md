@@ -1,7 +1,5 @@
 ---
 cardName: Service1Card
-crumbsPath: 
-crumbsLabel: 
 cardImage: ../../../images/water-softeners/water_softener_card.webp
 cardImageAlt: water-softeners with steps
 title: Water Softeners

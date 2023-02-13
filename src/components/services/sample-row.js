@@ -3,17 +3,15 @@ import { getImage, GatsbyImage } from "gatsby-plugin-image"
 
 //https://stackoverflow.com/questions/68416396/gatsby-get-multiple-images-from-an-array-in-a-markdown-file
 
-export const SampleRow = ({ nodes }) => {
+export const SampleRow = ({ nodes, alts }) => {
   const arrayOfImages = []
   nodes.map(galleryImage => arrayOfImages.push(galleryImage))
 
-  const altTemp = "water-softeners" //todo add image alt to markdown and query
-
   return (
-    <div className="flex justify-around p-6">
-      {arrayOfImages.map(image => (
-        <div>
-          <GatsbyImage image={getImage(image)} alt={altTemp} />
+    <div className="flex justify-around py-8">
+      {arrayOfImages.map((image, index) => (
+        <div key={image.name}>
+          <GatsbyImage image={getImage(image)} alt={alts[index]} />
         </div>
       ))}
     </div>
