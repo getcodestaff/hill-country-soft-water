@@ -6,8 +6,6 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 import { FaArrowRight } from "react-icons/fa"
 
 export const Hero = ({cityState}) => {
-    console.log('cityState: ', cityState)
-    console.log('typeof: ', typeof cityState)
 
   const queryResult = useStaticQuery(
     graphql`
