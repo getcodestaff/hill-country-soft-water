@@ -1,11 +1,11 @@
 ---
-component: "hero"
-titleLine1: Gatsby
-titleLine2: Service Starter
-date: "2023-01-25"
-text: "WE BUILD YOUR BUSINESS TRAFFIC"
+component: hero
+titleLine1: San Antonio
+titleLine2: Water Softeners
+date: "2023-02-12"
+text: San Antonio Water Softerners for Homes and Businesses. Drinking water treatement systems in San Antonio. Sales, Installation and Service for Whole House Water Filtration Systems and RO Systems in San Antonio
 textColor: white
 featuredImage: ../images/hero_banner.webp
-buttonText: LEARN MORE ABOUT OUR SERVICES
+buttonText: KNOW MORE ABOUT OUR SERVICES
 
 ---
