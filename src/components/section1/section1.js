@@ -4,34 +4,35 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { FaArrowRight } from "react-icons/fa"
 
 export const Section1 = () => {
-  const queryResult = useStaticQuery(
-    graphql`
-      query {
-        markdownRemark(frontmatter: { component: { eq: "section1" } }) {
-          frontmatter {
-            component
-            text
-            textColor
-            featuredImage {
-              childImageSharp {
-                gatsbyImageData
-              }
-              publicURL
-            }
-            featuredImageAlt
-          }
-        }
-      }
-    `
-  )
+//   const queryResult = useStaticQuery(
+//     graphql`
+//       query {
+//         markdownRemark(frontmatter: { component: { eq: "section1" } }) {
+//           frontmatter {
+//             component
+//             text
+//             textColor
+//             featuredImage {
+//               childImageSharp {
+//                 gatsbyImageData
+//               }
+//               publicURL
+//             }
+//             featuredImageAlt
+//           }
+//         }
+//       }
+//     `
+//   )
 
-  const frontmatter = queryResult.markdownRemark.frontmatter
-  let image = getImage(frontmatter.featuredImage)
-  const staticImage = image ? null : frontmatter.featuredImage.publicURL
+//   const frontmatter = queryResult.markdownRemark.frontmatter
+//   let image = getImage(frontmatter.featuredImage)
+//   const staticImage = image ? null : frontmatter.featuredImage.publicURL
 
   return (
     <div>
-      <div className="content2x-section-b items-center mt-14">
+        placeholder section1
+      {/* <div className="content2x-section-b items-center mt-14">
         <div className="content2x-element w-1/2">
           <div className="p-0 iframe-container-16-9">
             <div>
@@ -74,7 +75,7 @@ export const Section1 = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
