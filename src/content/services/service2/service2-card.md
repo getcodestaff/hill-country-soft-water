@@ -1,9 +1,8 @@
 ---
 cardName: Service2Card
-cardImage: ../../../images/balconies/balconies_card.webp
-cardImageAlt: Balconies with steps
-title: Balconies
-serviceLink: /balconies
-cardDescription: It is IMPERATIVE for a raised deck or balcony to be constructed properly for safety. Proper engineering goes into each balcony as no 2 are ever the same.
-
+cardImage: ../../../images/water-filtration/water_filtration_card.webp
+cardImageAlt: woman serving a glass of water
+title: Water Filtration
+serviceLink: /water-filtration
+cardDescription: Filtering any type of water can require an expert to test and suggest a system that meets your reauirements. Water Filtration made easy by Water Softeners San Antonio.
 ---
