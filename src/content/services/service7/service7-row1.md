@@ -1,13 +1,10 @@
 ---
 component: service7_row
 position: 1
-rowImage: ../../../images/pergolas/pergolas1.jpg
-rowImageAlt: hilarious decking disaster
+rowImage: ../../../images/house-water-filters/house_water_filters_card.webp
+rowImageAlt: house water filter system
 ---
-#  Pergolas
+#  House Water Filters
 
-We love building customized pergolas. You give us an idea and an area and off we go, making it come true. From Simple ones in the Roseville, CA area of Placer County
-
-To Pergolas to fit a decking project in the town of Carmichael Cal and beyond..
-
+placeholder House Water Filters
 

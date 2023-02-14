@@ -1,10 +1,9 @@
 ---
 component: service7_row
 position: 4
-rowImage: ../../../images/pergolas/pergolas4.jpg
-rowImageAlt: decking
+rowImage: ../../../images/house-water-filters/house_water_filters_card.webp
+rowImageAlt: house water filter system
 ---
-#  Pergolas
+#  House Water Filters
 
-Placeholder
-
+placeholder House Water Filters

@@ -1,9 +1,11 @@
 ---
 cardName: Service7Card
-cardImage: ../../../images/pergolas/pergolas_card.webp
-cardImageAlt: Pergola
-title: Pergolas
-serviceLink: /pergolas
-cardDescription: Designs, products, and styles are endless. We work with you on your budget to design and build the best and safest Pergola system for a great value.
+crumbsPath: 
+crumbsLabel: 
+cardImage: ../../../images/house-water-filters/house_water_filters_card.webp
+cardImageAlt: house water filters temporary alt
+title: House Water Systems
+serviceLink: /house-water-filters
+cardDescription: House water filters description
 
 ---
