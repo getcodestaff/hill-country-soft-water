@@ -1,9 +1,9 @@
 ---
 component: service5_row
 position: 4
-rowImage: ../../../images/dry-rot/dryrot4.jpg
-rowImageAlt: decking
+rowImage: ../../../images/water-testing/water_testing_card.webp
+rowImageAlt: water testing temporary alt
 ---
-#  Dry Rot Repairs
+#  Water Testing
 
-The completed deck/balcony. Homeowner will have her husband do the painting and redwood treatment to save some money.
+placeholder water testing

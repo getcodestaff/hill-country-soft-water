@@ -1,9 +1,9 @@
 ---
 component: service5_row
 position: 3
-rowImage: ../../../images/dry-rot/dryrot3.jpg
-rowImageAlt: decking
+rowImage: ../../../images/water-testing/water_testing_card.webp
+rowImageAlt: water testing temporary alt
 ---
-#  Dry Rot Repairs
+#  Water Testing
 
-placeholder 3
+placeholder water testing

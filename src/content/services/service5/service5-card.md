@@ -1,8 +1,11 @@
 ---
 cardName: Service5Card
-cardImage: ../../../images/dry-rot/dry_rot_repairs_card.webp
-cardImageAlt: Dry rot in window
-title: Dry Rot Repairs
-serviceLink: /dry-rot-repairs
-cardDescription: <div>Dry rot in your home can create thousands of dollars of damage in a short period of time.</div><div>Once noticed, call us right away.</div>
+crumbsPath: 
+crumbsLabel: 
+cardImage: ../../../images/water-testing/water_testing_card.webp
+cardImageAlt: test tube in hand over water surface
+title: Alkaline Water
+serviceLink: /water-testing
+cardDescription: Get your water tested by a pro in San Antonio. Our experts have over 50 years of experience. We have been in business since 1969. Well Water Testing, Hard Water Testing, Soft Water Testing in Texas.
+
 ---
