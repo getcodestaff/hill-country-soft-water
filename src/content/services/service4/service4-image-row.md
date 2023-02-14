@@ -5,17 +5,17 @@ images:
     mainImage: "saved for reference.jpg",
     galleryAlts:
       [
-        "doors1 temporary alt",
-        "doors2 temporary alt",
-        "doors3 temporary alt",
-        "doors4 temporary alt",
+        "hard water filters temporary alt",
+        "hard water filters temporary alt",
+        "hard water filters temporary alt",
+        "hard water filters temporary alt",
       ],
     galleryImages:
       [
-        "../../../images/doors/doors1.jpg",
-        "../../../images/doors/doors2.jpg",
-        "../../../images/doors/doors3.jpg",
-        "../../../images/doors/doors4.jpg",
+        "../../../images/hard-water-filters/hard_water_filters_card.webp",
+        "../../../images/hard-water-filters/hard_water_filters_card.webp",
+        "../../../images/hard-water-filters/hard_water_filters_card.webp",
+        "../../../images/hard-water-filters/hard_water_filters_card.webp",
       ],
   }
 ---

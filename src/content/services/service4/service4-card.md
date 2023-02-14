@@ -1,6 +1,8 @@
 ---
 cardName: Service4Card
-cardImage: ../../../images/doors/doors_card.webp
+crumbsPath: 
+crumbsLabel: 
+cardImage: ../../../images/hard-water-filters/hard_water_filters_card.webp
 cardImageAlt: Doors
 title: Doors
 serviceLink: /doors
