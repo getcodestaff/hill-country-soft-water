@@ -1,9 +1,9 @@
 ---
 cardName: Service6Card
-cardImage: ../../../images/water-treatment/water_treatment_card.webp
-cardImageAlt: over head view of a water treament facility
-title: Water Treatment
-serviceLink: /water-treatment
-cardDescription: Water Treatment sed do eiusmod tempor incididunt ut labore et dolore 
+cardImage: ../../../images/siding/siding_card.webp
+cardImageAlt: Siding
+title: Siding
+serviceLink: /siding
+cardDescription: Plywood paneled styles or horizontal fiber cement board or “smart wood” lap siding. We NEVER use MDF siding in our projects.
 
 ---

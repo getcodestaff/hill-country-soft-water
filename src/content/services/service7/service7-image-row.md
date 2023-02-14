@@ -12,10 +12,10 @@ images:
       ],
     galleryImages:
       [
-        "../../../images/house-water-filters/house_water_filters_card.webp", 
-        "../../../images/house-water-filters/house_water_filters_card.webp", 
-        "../../../images/house-water-filters/house_water_filters_card.webp", 
-        "../../../images/house-water-filters/house_water_filters_card.webp"
+        "../../../images/pergolas/pergolas1.jpg",
+        "../../../images/pergolas/pergolas2.jpg",
+        "../../../images/pergolas/pergolas3.jpg",
+        "../../../images/pergolas/pergolas4.jpg",
       ],
   }
 ---

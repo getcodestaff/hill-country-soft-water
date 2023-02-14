@@ -12,10 +12,10 @@ images:
       ],
     galleryImages:
       [
-        "../../../images/water-treatment/water_treatment_card.webp", 
-        "../../../images/water-treatment/water_treatment_card.webp", 
-        "../../../images/water-treatment/water_treatment_card.webp", 
-        "../../../images/water-treatment/water_treatment_card.webp"
+        "../../../images/siding/siding1.jpg",
+        "../../../images/siding/siding2.jpg",
+        "../../../images/siding/siding3.jpg",
+        "../../../images/siding/siding4.jpg",
       ],
   }
 ---

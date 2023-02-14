@@ -1,9 +1,8 @@
 ---
 cardName: Service5Card
-cardImage: ../../../images/water-testing/water_testing_card.webp
-cardImageAlt: hand with a test tube over a water source
-title: Water Testing
-serviceLink: /water-testing
-cardDescription: Water Testing sed do eiusmod tempor incididunt ut labore et dolore 
-
+cardImage: ../../../images/dry-rot/dry_rot_repairs_card.webp
+cardImageAlt: Dry rot in window
+title: Dry Rot Repairs
+serviceLink: /dry-rot-repairs
+cardDescription: <div>Dry rot in your home can create thousands of dollars of damage in a short period of time.</div><div>Once noticed, call us right away.</div>
 ---

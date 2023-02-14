@@ -1,5 +1,5 @@
 ---
-component: "service4_images_row"
+component: "doors_images_row"
 images:
   {
     mainImage: "saved for reference.jpg",
@@ -12,10 +12,10 @@ images:
       ],
     galleryImages:
       [
-        "../../../images/hard-water-filters/hard_water_filters_card.webp", 
-        "../../../images/hard-water-filters/hard_water_filters_card.webp", 
-        "../../../images/hard-water-filters/hard_water_filters_card.webp", 
-        "../../../images/hard-water-filters/hard_water_filters_card.webp"
+        "../../../images/doors/doors1.jpg",
+        "../../../images/doors/doors2.jpg",
+        "../../../images/doors/doors3.jpg",
+        "../../../images/doors/doors4.jpg",
       ],
   }
 ---

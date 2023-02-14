@@ -12,10 +12,10 @@ images:
       ],
     galleryImages:
       [
-        "../../../images/water-testing/water_testing_card.webp", 
-        "../../../images/water-testing/water_testing_card.webp", 
-        "../../../images/water-testing/water_testing_card.webp", 
-        "../../../images/water-testing/water_testing_card.webp"
+        "../../../images/dry-rot/dryrot1.jpg",
+        "../../../images/dry-rot/dryrot2.jpg",
+        "../../../images/dry-rot/dryrot3.jpg",
+        "../../../images/dry-rot/dryrot4.jpg",
       ],
   }
 ---

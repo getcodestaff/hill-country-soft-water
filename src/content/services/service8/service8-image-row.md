@@ -12,10 +12,10 @@ images:
       ],
     galleryImages:
       [
-        "../../../images/well-water-systems/well_water_systems_card.webp", 
-        "../../../images/well-water-systems/well_water_systems_card.webp", 
-        "../../../images/well-water-systems/well_water_systems_card.webp", 
-        "../../../images/well-water-systems/well_water_systems_card.webp"
+        "../../../images/plumbing/plumbing1.jpg",
+        "../../../images/plumbing/plumbing2.jpg",
+        "../../../images/plumbing/plumbing3.jpg",
+        "../../../images/plumbing/plumbing4.jpg",
       ],
   }
 ---

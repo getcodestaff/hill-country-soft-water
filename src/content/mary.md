@@ -2,7 +2,7 @@
 cardName: Story2Card
 crumbsPath: 
 crumbsLabel: 
-cardImage: ../../src/images/mary.png
+cardImage: ../images/mary.png
 cardImageAlt: Angies List Review from Mary R.
 title: 
 serviceLink: https://www.angieslist.com/companylist/us/ca/citrus-heights/carruth-home-solutions-reviews-9989194.htm

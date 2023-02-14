@@ -1,89 +1,61 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { getImage } from "gatsby-plugin-image"
 import { Service6Banner } from "./service6-banner"
 import { Services } from "../services"
 import { Badges } from "../../badges"
 import { SampleRow } from "../sample-row"
+import {imageLeft, imageRight } from '../../global'
 
 export const Service6 = () => {
-//   const queryResult = useStaticQuery(
-//     graphql`
-//       query {
-//         allMarkdownRemark(
-//           filter: { frontmatter: { component: { eq: "service6_row" } } }
-//           sort: { frontmatter: { position: ASC } }
-//         ) {
-//           nodes {
-//             frontmatter {
-//               position
-//               rowImage {
-//                 childImageSharp {
-//                   gatsbyImageData(
-//                     layout: FULL_WIDTH
-//                     quality: 50
-//                     webpOptions: { quality: 70 }
-//                   )
-//                 }
-//               }
-//               rowImageAlt
-//             }
-//             html
-//           }
-//         }
-//         markdownRemark(
-//           frontmatter: { component: { eq: "service6_images_row" } }
-//         ) {
-//           frontmatter {
-//             component
-//             images {
-//               galleryImages {
-//                 childImageSharp {
-//                   gatsbyImageData(width: 240)
-//                 }
-//                 name
-//               }
-//             }
-//           }
-//         }
-//       }
-//     `
-//   )
+  const queryResult = useStaticQuery(
+    graphql`
+      query {
+        allMarkdownRemark(
+          filter: { frontmatter: { component: { eq: "service6_row" } } }
+          sort: { frontmatter: { position: ASC } }
+        ) {
+          nodes {
+            frontmatter {
+              position
+              rowImage {
+                childImageSharp {
+                  gatsbyImageData(
+                    layout: FULL_WIDTH
+                    quality: 50
+                    webpOptions: { quality: 70 }
+                  )
+                }
+              }
+              rowImageAlt
+            }
+            html
+          }
+        }
+        markdownRemark(
+          frontmatter: { component: { eq: "service6_images_row" } }
+        ) {
+          frontmatter {
+            component
+            images {
+              galleryImages {
+                childImageSharp {
+                  gatsbyImageData(width: 240)
+                }
+                name
+              }
+              galleryAlts
+            }
+          }
+        }
+      }
+    `
+  )
 
-//   const serviceNodes = queryResult.allMarkdownRemark.nodes
-//   const sampleNodes =
-//     queryResult.markdownRemark.frontmatter.images.galleryImages
-
-//   const imageLeft = (node, image) => {
-//     return (
-//       <div className="md:flex justify around md:m-10">
-//         <div className="w-full md:w-1/2">
-//           <GatsbyImage
-//             className="m-4 md:w-full"
-//             image={image}
-//             alt={node.frontmatter.rowImageAlt}
-//           />
-//         </div>
-//         <div
-//           className="w-full"
-//           dangerouslySetInnerHTML={{ __html: node.html }}
-//         />
-//       </div>
-//     )
-//   }
-
-//   const imageRight = (node, image) => (
-//     <div className="md:flex justify around md:ml-0 md:mr-8">
-//       <div className="w-full" dangerouslySetInnerHTML={{ __html: node.html }} />
-//       <div className="w-full md:w-1/2">
-//         <GatsbyImage
-//           className="m-4: md:w-full"
-//           image={image}
-//           alt={node.frontmatter.rowImageAlt}
-//         />
-//       </div>
-//     </div>
-//   )
+  const serviceNodes = queryResult.allMarkdownRemark.nodes
+  const sampleNodes =
+    queryResult.markdownRemark.frontmatter.images.galleryImages
+  const sampleAlts = queryResult.markdownRemark.frontmatter.images.galleryAlts
 
   return (
     <React.Fragment>
@@ -113,7 +85,7 @@ export const Service6 = () => {
       </style>
 
       {/* BODY */}
-      {/* {serviceNodes.map(node => {
+      {serviceNodes.map(node => {
         const image = getImage(node.frontmatter.rowImage)
         const row2x =
           node.frontmatter.position % 2
@@ -121,9 +93,9 @@ export const Service6 = () => {
             : imageRight(node, image)
 
         return <div key={node.frontmatter.position}>{row2x}</div>
-      })} */}
+      })}
 
-      <SampleRow nodes={sampleNodes} />
+      <SampleRow nodes={sampleNodes} alts={sampleAlts} />
 
       <Services cardsOnly />
 

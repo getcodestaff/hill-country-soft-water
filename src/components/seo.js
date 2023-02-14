@@ -20,8 +20,8 @@ function Seo({
     // image,
     // secure_url
 }) {
-    // console.log('seo title: ', title );
-    // console.log('seo description: ', description );
+    console.log('seo title: ', title );
+    console.log('seo description: ', description );
 
     const { site } = useStaticQuery(
         graphql`

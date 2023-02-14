@@ -12,10 +12,10 @@ images:
       ],
     galleryImages:
       [
-        "../../../images/revers-osmosis/reverse_osmosis_card.webp", 
-        "../../../images/revers-osmosis/reverse_osmosis_card.webp", 
-        "../../../images/revers-osmosis/reverse_osmosis_card.webp", 
-        "../../../images/revers-osmosis/reverse_osmosis_card.webp"
+        "../../../images/windows/windows1.jpg",
+        "../../../images/windows/windows2.jpg",
+        "../../../images/windows/windows3.jpg",
+        "../../../images/windows/windows4.jpg",
       ],
   }
 ---

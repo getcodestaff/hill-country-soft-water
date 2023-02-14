@@ -1,5 +1,5 @@
 ---
-component: "service2_images_row"
+component: "services2_images_row"
 images:
   {
     mainImage: "saved for reference.jpg",
@@ -12,10 +12,10 @@ images:
       ],
     galleryImages:
       [
-        "../../../images/water-filtration/water_filtration_card.webp", 
-        "../../../images/water-filtration/water_filtration_card.webp", 
-        "../../../images/water-filtration/water_filtration_card.webp", 
-        "../../../images/water-filtration/water_filtration_card.webp"
+        "../../../images/balconies/deck_epic_fail.webp",
+        "../../../images/balconies/deck_balcony_anatomy.jpg",
+        "../../../images/balconies/balcony_reno.jpg",
+        "../../../images/balconies/balconies.jpg",
       ],
   }
 ---
