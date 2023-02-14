@@ -5,38 +5,37 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import { FaArrowRight } from "react-icons/fa"
 
-export const Hero = ({cityState}) => {
-//   const queryResult = useStaticQuery(
-//     graphql`
-//       query {
-//         markdownRemark(frontmatter: { component: { eq: "hero" } }) {
-//           frontmatter {
-//             component
-//             date
-//             titleLine1
-//             titleLine2
-//             text
-//             textColor
-//             buttonText
-//             featuredImage {
-//               childImageSharp {
-//                 gatsbyImageData(quality: 50, webpOptions: { quality: 70 })
-//               }
-//               relativePath
-//             }
-//           }
-//         }
-//       }
-//     `
-//   )
-//   const data = queryResult.markdownRemark.frontmatter
+export const Hero = ({ cityState }) => {
+  const queryResult = useStaticQuery(
+    graphql`
+      query {
+        markdownRemark(frontmatter: { component: { eq: "hero" } }) {
+          frontmatter {
+            component
+            date
+            titleLine1
+            titleLine2
+            text
+            textColor
+            buttonText
+            featuredImage {
+              childImageSharp {
+                gatsbyImageData(quality: 50, webpOptions: { quality: 70 })
+              }
+              relativePath
+            }
+          }
+        }
+      }
+    `
+  )
+  const data = queryResult.markdownRemark.frontmatter
 
-//   const image = getImage(data.featuredImage.childImageSharp.gatsbyImageData)
+  const image = getImage(data.featuredImage.childImageSharp.gatsbyImageData)
 
   return (
     <div className="w-[100%] relative">
-        placeholder hero.js
-      {/* <GatsbyImage className="relative z-0" alt="" image={image} />
+      <GatsbyImage className="relative z-0" alt="" image={image} />
       <div className="z-20 absolute top-0 tp-caption l-0 md:ml-20">
         <div
           className="tp-caption1-wd-2 page-indent uppercase whitespace-nowrap"
@@ -61,7 +60,7 @@ export const Hero = ({cityState}) => {
           <FaArrowRight className="inline my-2 ml-4 mr-0" size="18px" />
         </button>
         <br />
-      </div> */}
+      </div>
     </div>
   )
 }
