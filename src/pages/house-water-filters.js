@@ -1,11 +1,11 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { Service2 } from "../components/services/service-pages/service2"
+import { Service7 } from "../components/services/service-pages/service7"
 
-const WaterFiltrationPage = ({ location }) => (
+const HouseWaterFiltersPage = ({ location }) => (
   <Layout location={location}>
-    <Service2 />
+    <Service7 />
   </Layout>
 )
 
@@ -13,4 +13,4 @@ export const Head = ({ location }) => {
   return <Seo url={location.href} />
 }
 
-export default WaterFiltrationPage
+export default HouseWaterFiltersPage

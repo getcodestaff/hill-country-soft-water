@@ -5,10 +5,10 @@ images:
     mainImage: "saved for reference.jpg",
     galleryAlts:
       [
-        "well water systems temporary alt",
-        "well water systems temporary alt",
-        "well water systems temporary alt",
-        "well water systems temporary alt",
+        "Water Well systems temporary alt",
+        "Water Well systems temporary alt",
+        "Water Well systems temporary alt",
+        "Water Well systems temporary alt",
       ],
     galleryImages:
       [

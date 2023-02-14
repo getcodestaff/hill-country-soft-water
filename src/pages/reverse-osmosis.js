@@ -1,12 +1,11 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-// import { Service3 } from "../components/services/service-pages/service3"
+import { Service3 } from "../components/services/service-pages/service3"
 
 const ReverseOsmosisPage = ({ location }) => (
   <Layout location={location}>
-    {/* <Service3 /> */}
-<div>placeholder Service3Page</div>
+    <Service3 />
   </Layout>
 )
 

@@ -2,8 +2,8 @@
 component: service8_row
 position: 1
 rowImage: ../../../images/water-well-systems/water_well_systems_card.webp
-rowImageAlt: well water systems tempoary alt
+rowImageAlt: Water Well systems tempoary alt
 ---
-#  Well Water Systems
+#  Water Well Systems
 
-placeholder Well Water Systems
+placeholder Water Well Systems

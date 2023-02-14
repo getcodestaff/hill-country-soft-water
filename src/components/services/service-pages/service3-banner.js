@@ -37,7 +37,7 @@ export const Service3Banner = () => {
       <div className="relative text-center bg-gray-200">
         <GatsbyImage
           image={image}
-          alt="decking with steps"
+          alt="temporary water servcie alt"
         />
 
         <div className={ `w-[90%] md:w-1/2 p-caption1-wd-2 ${styles.title}`}>
