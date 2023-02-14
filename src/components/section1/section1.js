@@ -54,12 +54,12 @@ export const Section1 = () => {
             </h1>
             <div className="text-direction-b pb-2 space-y-8">
               <p className="m-0 text-black font-medium text-left">
-                Image clean water for your dishes, laundry, showers sinks and
+                Imagine clean water for your dishes, laundry, showers sinks and
                 whole home! No more bottled water runs and spending thousands on
                 plastic waste. Go Green and Provide clean water for your family
                 at the same time.
               </p>
-              <p className="m-0 text-black font-medium  text-left">
+              <p className="m-0 text-black font-medium text-left">
                 Over 50+ years of experience with the hightest standards of
                 service. Performing water softener installation and
                 installations for Reverse Osmosis Water Treatement systems. We

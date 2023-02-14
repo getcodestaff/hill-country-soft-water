@@ -1,7 +1,7 @@
 ---
 component: service1_row
 position: 4
-rowImage: ../../../images/deck/deck4.webp
+rowImage: ../../../images/water-softeners/water_softener_card.webp
 rowImageAlt: decking
 ---
 #  Outdoor Deck
