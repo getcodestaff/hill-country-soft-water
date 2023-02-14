@@ -1,5 +1,5 @@
 ---
-component: balconies_row
+component: services2_row
 position: 1
 rowImage: ../../../images/balconies/deck_epic_fail.webp
 rowImageAlt: hilarious decking disaster

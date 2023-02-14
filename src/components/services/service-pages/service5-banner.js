@@ -7,7 +7,7 @@ export const Service5Banner = () => {
   const queryResult = useStaticQuery(
     graphql`
       query {
-        markdownRemark(frontmatter: { component: { eq: "dry_rot_repairs_banner" } }) {
+        markdownRemark(frontmatter: { component: { eq: "service5_banner" } }) {
           frontmatter {
             component
             date

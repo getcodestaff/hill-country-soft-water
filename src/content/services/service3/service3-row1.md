@@ -1,5 +1,5 @@
 ---
-component: service3_images_row
+component: service3_row
 position: 1
 rowImage: ../../../images/windows/windows1.jpg
 rowImageAlt: hilarious decking disaster

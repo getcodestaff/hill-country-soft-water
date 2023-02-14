@@ -1,5 +1,5 @@
 ---
-component: service3_images_row
+component: service3_row
 position: 2
 rowImage: ../../../images/windows/windows2.jpg
 rowImageAlt: decking

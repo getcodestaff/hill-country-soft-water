@@ -1,5 +1,5 @@
 ---
-component: "doors_images_row"
+component: "service4_images_row"
 images:
   {
     mainImage: "saved for reference.jpg",

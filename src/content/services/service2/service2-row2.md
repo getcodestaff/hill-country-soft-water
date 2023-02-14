@@ -1,5 +1,5 @@
 ---
-component: balconies_row
+component: services2_row
 position: 2
 rowImage: ../../../images/deck/deck2.jpg
 rowImageAlt: decking

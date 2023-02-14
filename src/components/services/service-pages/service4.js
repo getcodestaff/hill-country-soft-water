@@ -33,7 +33,7 @@ export const Service4 = () => {
           }
         }
         markdownRemark(
-          frontmatter: { component: { eq: "doors_images_row" } }
+          frontmatter: { component: { eq: "service4_images_row" } }
         ) {
           frontmatter {
             component
