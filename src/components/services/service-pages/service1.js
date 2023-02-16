@@ -40,7 +40,7 @@ export const Service1 = () => {
             images {
               galleryImages {
                 childImageSharp {
-                  gatsbyImageData(width: 240)
+                  gatsbyImageData(width: 340)
                 }
                 name
               }
