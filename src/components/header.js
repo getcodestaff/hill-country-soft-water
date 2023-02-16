@@ -1,35 +1,63 @@
-import React, { useContext } from 'react';
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
+<<<<<<< HEAD
 //import logo from "../images/logoipsum-289.svg"
+=======
+>>>>>>> dev
 import { Navbar } from "./navbar/navbar"
 import { FaPhone } from "react-icons/fa"
-import { LayoutContext } from '../contexts/layout-context';
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-const Header = () => {
-    const { layout } = useContext(LayoutContext);
-    const phone = layout.siteMetadata.phone
-    const phonelink = `tel:${phone}`   
+const Header = ({ metaData }) => {
+  const queryResult = useStaticQuery(
+    graphql`
+      query {
+        markdownRemark(frontmatter: { component: { eq: "header" } }) {
+          frontmatter {
+            component
+            logoImage {
+              childImageSharp {
+                gatsbyImageData(width: 190)
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+  
+  const data = queryResult.markdownRemark.frontmatter
+
+  const image = getImage(data.logoImage)
+  const alt = `${metaData.businessName} logo`
+
+  const telPhone = `tel:${metaData.phone}`
 
   return (
     <header className="text-black">
       <div className="flex px-5 py-4 items-center justify-between">
-        {/* <div id="left" className="px-0 w-1/4 max-h-48"> */}
         <div className="logo-container">
+<<<<<<< HEAD
           <img alt="Hill Country Soft Water logo" src="https://www.gaines-softwater.com/wp-content/uploads/2016/10/static1.squarespace.com_.png" />
           {/* <Link to="/" className="text-xl font-bold no-underline inline-block pl-4">
                 {siteTitle}
           </Link> */}
+=======
+          <GatsbyImage image={image} alt={alt} />
+>>>>>>> dev
         </div>
 
         <div className="lg:hidden w-3/4">
           <div>
-            <Navbar />
+            <Navbar data={data} />
           </div>
           <div className="hidden md:flex justify-center">
             <div className="hidden md:flex justify-center pb-2">
-              <a href={phonelink} className="submit-button bg-chsblue">
+              <a href={telPhone} className="submit-button bg-chsblue">
                 <span className="nowrap">
-                  <FaPhone size="20px"/>{phone}
+                  <FaPhone size="20px" />
+                  {metaData.phone}
                 </span>
               </a>
             </div>
@@ -42,8 +70,12 @@ const Header = () => {
 
         <div className="hidden lg:flex">
           <div className="hidden md:flex justify-center pb-2">
-            <a href="tel:123-456-7890" className="submit-button bg-chsblue mr-8">
-                <FaPhone className="inline m-2 ml-0" size="20px"/>{phone}
+            <a
+              href={telPhone}
+              className="submit-button bg-chsblue mr-8"
+            >
+              <FaPhone className="inline m-2 ml-0" size="20px" />
+              {metaData.phone}
             </a>
           </div>
         </div>

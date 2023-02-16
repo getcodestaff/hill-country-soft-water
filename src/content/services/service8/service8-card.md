@@ -1,11 +1,11 @@
 ---
-cardName: WaterWellSystemsCard
+cardName: Service8Card
 crumbsPath: 
 crumbsLabel: 
 cardImage: ../../../images/water-well-systems/water_well_systems_card.webp
-cardImageAlt: Plumbing
-title: Plumbing
-serviceLink: /plumbing
-cardDescription: Gas or Electric residential water heaters using best in class products.
+cardImageAlt: Water Well system
+title: Water Well Systems
+serviceLink: /water-well-systems
+cardDescription: Water Well often contains contaminants like nitrates or other harmul things found in ground water. We will come to your well and run tests on a sample of water by a laboratory to find the exact system you need.
 
 ---

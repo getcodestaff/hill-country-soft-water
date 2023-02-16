@@ -5,20 +5,23 @@ import { FooterSocial } from './footer-social';
 import { FooterAccordion } from './footer-accordion';
 import { ServicesLinks } from './services-links';
 import { ServiceAreas } from './service-areas';
+import { FooterContacts } from './footer-contacts';
 
-export const MobileFooter = ({ location }) => {
+export const MobileFooter = ({ data }) => {
+
     return (
         <div className="footer1 block md:hidden">
             <div className="container">
                 <div className="container m-auto">
                     <FooterSocial />
-                    <div className="text-white mb-8 mx-4">
+                    <div className="text-black mb-8 mx-4">
                         <FooterAccordion>
-                            <h4 className="footer-title">OUR SERVICES</h4>
-                            <ServicesLinks />
-                            <h4 className="footer-title">SERVICE AREAS</h4>
-                            <ServiceAreas />
-                            <h4 className="footer-title">CONTACT US</h4>
+                            <h4 className="footer-title">{data.column2header}</h4>
+                            <ServicesLinks data={data} />
+                            <h4 className="footer-title">{data.column3header}</h4>
+                            <ServiceAreas data={data} />
+                            <h4 className="footer-title">{data.column4header}</h4>
+                            <FooterContacts data={data} />
                         </FooterAccordion>
                     </div>
                 </div>

@@ -9,24 +9,20 @@ const Layout = ({ children, location }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
-        site {
-          siteMetadata {
-            title
+      site {
+        siteMetadata {
+          title
             description
+            businessName
             phone
-            addressName
-            addressLine1
-            addressCsz
-          }
         }
       }
+    }
     `
   )
 
   const siteMetadata = site.siteMetadata
   const [layout, setLayout] = useState({location, siteMetadata})
-
-  console.log('layout: ', layout)
 
   const copyrightMobile = () => {
     let titleMobile = site.siteMetadata?.title.split("|")
@@ -41,35 +37,35 @@ const Layout = ({ children, location }) => {
   }
 
   const title = siteMetadata?.title || `Title`
-  
+
   return (
     <React.Fragment>
       <LayoutContext.Provider value={{ layout, setLayout }}>
-        <Header siteTitle={title} />
-        <div
+      <Header metaData={siteMetadata} />
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: `var(--size-content)`,
+          padding: `var(--size-gutter)`,
+        }}
+      >
+        <main>{children}</main>
+        <Footer />
+        <footer
+          className="px-4 md:px-0"
           style={{
-            margin: `0 auto`,
-            maxWidth: `var(--size-content)`,
-            padding: `var(--size-gutter)`,
+            marginTop: `var(--space-5)`,
+            fontSize: `var(--font-sm)`,
           }}
         >
-          <main>{children}</main>
-          <Footer />
-          <footer
-            className="px-4 md:px-0"
-            style={{
-              marginTop: `var(--space-5)`,
-              fontSize: `var(--font-sm)`,
-            }}
-          >
-            <div className="hidden md:block">
-              © {new Date().getFullYear()} &middot; {title}
-            </div>
-            <div className="block md:hidden">
-              © {new Date().getFullYear()} &middot; {copyrightMobile()}
-            </div>
-          </footer>
-        </div>
+          <div className="hidden md:block">
+            © {new Date().getFullYear()} &middot; {title}
+          </div>
+          <div className="block md:hidden">
+            © {new Date().getFullYear()} &middot; {copyrightMobile()}
+          </div>
+        </footer>
+      </div>
       </LayoutContext.Provider>
     </React.Fragment>
   )
