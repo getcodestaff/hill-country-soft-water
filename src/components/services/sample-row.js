@@ -8,10 +8,10 @@ export const SampleRow = ({ nodes, alts }) => {
   nodes.map(galleryImage => arrayOfImages.push(galleryImage))
 
   return (
-    <div className="flex justify-around py-8">
+    <div className="flex flex-col md:flex-row justify-around py-4">
       {arrayOfImages.map((image, index) => (
         <div key={image.name}>
-          <GatsbyImage image={getImage(image)} alt={alts[index]} />
+          <GatsbyImage className="w-full my-2" image={getImage(image)} alt={alts[index]} />
         </div>
       ))}
     </div>
