@@ -1,10 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
-<<<<<<< HEAD
-//import logo from "../images/logoipsum-289.svg"
-=======
->>>>>>> dev
 import { Navbar } from "./navbar/navbar"
 import { FaPhone } from "react-icons/fa"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
@@ -38,14 +34,7 @@ const Header = ({ metaData }) => {
     <header className="text-black">
       <div className="flex px-5 py-4 items-center justify-between">
         <div className="logo-container">
-<<<<<<< HEAD
-          <img alt="Hill Country Soft Water logo" src="https://www.gaines-softwater.com/wp-content/uploads/2016/10/static1.squarespace.com_.png" />
-          {/* <Link to="/" className="text-xl font-bold no-underline inline-block pl-4">
-                {siteTitle}
-          </Link> */}
-=======
           <GatsbyImage image={image} alt={alt} />
->>>>>>> dev
         </div>
 
         <div className="lg:hidden w-3/4">

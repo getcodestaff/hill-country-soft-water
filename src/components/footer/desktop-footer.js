@@ -31,22 +31,9 @@ export const DesktopFooter = ({ location, data }) => {
                 </button>
                 <GatsbyImage image={image} alt={data.logoAlt} />
 
-<<<<<<< HEAD
-                <StaticImage
-                  alt="logo"
-                  src="https://www.gaines-softwater.com/wp-content/uploads/2016/10/static1.squarespace.com_.png"
-                  width={190}
-                />
-              </nav>
-            </div>
-            <div className="p-6">We have been proving the San Antonio Texas Area with Clean Drinking Options
-            for Over 50 Years. We love providing clean water and we tank you for allowing us ot do it. We strive
-            to maintain the highest standards for Water Purity in our Drinking Water.</div>
-=======
               </nav>
             </div>
             <div className="p-6">{data.logoColumnText}</div>
->>>>>>> dev
             <div>
               <FooterSocial data={data} />
             </div>

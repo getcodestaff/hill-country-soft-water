@@ -45,18 +45,6 @@ export const Section1 = () => {
         </div>
         <div className="w-full md:w-1/2">
           <div className="fixwidth flex flex-col space-y-8">
-<<<<<<< HEAD
-            <div className="text-chsblue text-lg font-semibold">Treating Contaminatin, Soft+Hard Water Problems</div>
-            <h1 className="section-title mt-1 text-left">
-              Clean Water Your Whole Family Can Enjoy. Water Filtration and Water Softener Options
-              For Every Situation. 
-            </h1>
-            <div className="text-direction-b pb-2 space-y-8">
-              <p className="m-0 text-black font-medium text-left">
-                Image clean water for your dishes, laundry, showers sinks and whole home!
-                No more bottled water runs and spending thousands on plastic waste. Go Green
-                and Provide clean water for your family at the same time. 
-=======
             <div className="text-chsblue text-lg font-semibold">
               Treating Contaminatin, Soft+Hard Water Problems
             </div>
@@ -70,22 +58,14 @@ export const Section1 = () => {
                 whole home! No more bottled water runs and spending thousands on
                 plastic waste. Go Green and Provide clean water for your family
                 at the same time.
->>>>>>> dev
               </p>
               <p className="m-0 text-black font-medium text-left">
                 Over 50+ years of experience with the hightest standards of
-<<<<<<< HEAD
-                service. Performing water softener installation and installations for
-                Reverse Osmosis Water Treatement systems. We are a local and family owned business. We are
-                centered on providing you with the hightest quality of
-                water for a great value!
-=======
                 service. Performing water softener installation and
                 installations for Reverse Osmosis Water Treatement systems. We
                 are a local and family owned business. We are centered on
                 providing you with the hightest quality of water for a great
                 value!
->>>>>>> dev
               </p>
               <button className="btn-xl btn-info hero-btn bg-chsblue text-white">
                 READ MORE

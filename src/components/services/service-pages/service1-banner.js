@@ -34,20 +34,6 @@ export const Service1Banner = () => {
   return (
     <React.Fragment>
       <div className="relative text-center bg-gray-200">
-<<<<<<< HEAD:src/components/services/service-pages/balconies-banner.js
-        <GatsbyImage image={image} alt="a balcony" />
-        <div
-          className={`tp-caption1-wd-2 ${styles.title} `}
-          style={{ color: data.textColor }}
-        >
-          Water Filtration
-        </div>
-        <div
-          className={`small-hero-text ${styles.subTitle}`}
-          style={{ color: data.textColor }}
-        >
-          {data.text}
-=======
         <GatsbyImage
           image={image}
           alt="temporary water servcie alt"
@@ -59,7 +45,6 @@ export const Service1Banner = () => {
             <div className="tp-caption1-wd-2">{data.title}</div>
             <div className="text-[50%] font-semibold md:text-sm">{data.text}</div>
           </div>
->>>>>>> dev:src/components/services/service-pages/service1-banner.js
         </div>
       </div>
     </React.Fragment>

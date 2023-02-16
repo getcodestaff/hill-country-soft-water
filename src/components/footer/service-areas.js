@@ -50,44 +50,6 @@ export const ServiceAreas = ({ location, classline, data }) => {
                     text-decoration: none;
                 }
               `}
-<<<<<<< HEAD
-            </style>
-            {mapframe ? (
-                <div>
-                    <h4 className="text-white text-base uppercase">
-                        {location.title} DELTA 8 STORE
-                    </h4>
-                    <div className="google-map-code">{mapframe}</div>
-                </div>
-            ) : (
-                <div>
-                    <div>
-            <Link className={classes} to="/">
-                            San Antonio, TX
-                        </Link>
-            <Link className={classes} to="/" >
-                            Boerne, TX
-                        </Link>
-            <Link className={classes} to="/" >
-                            New Braunfels, TX
-                        </Link>
-            <Link className={classes} to="/" >
-                            Canyon Lake, TX
-                        </Link>
-            <Link className={classes} to="/" >
-                            Medina, TX
-                        </Link>
-            <Link className={classes} to="/" >
-                            San Antonio, TX
-                        </Link>
-            <Link className={classes} to="/" >
-                            More...
-                        </Link>                        
-                    </div>
-                </div>
-            )}
-        </React.Fragment>
-=======
       </style>
       {mapframe ? (
         <div>
@@ -109,6 +71,5 @@ export const ServiceAreas = ({ location, classline, data }) => {
         </div>
       )}
     </React.Fragment>
->>>>>>> dev
   )
 }

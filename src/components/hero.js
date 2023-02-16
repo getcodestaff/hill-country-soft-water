@@ -41,16 +41,10 @@ export const Hero = ({cityState}) => {
           className="tp-caption1-wd-2 page-indent uppercase whitespace-nowrap"
           style={{ color: data.textColor }}
         >
-<<<<<<< HEAD
-          San Antonio
-          <br />
-          Water Softeners
-=======
           {data.titleLine1}
           <br />
           {data.titleLine2}
           {cityState ? <div>{cityState}</div> : null}
->>>>>>> dev
         </div>
         <div
           className="small-hero-text page-indent"
@@ -58,18 +52,6 @@ export const Hero = ({cityState}) => {
         >
           {data.text}
         </div>
-<<<<<<< HEAD
-        <div className="hidden">
-          <button
-            className="btn-xl btn-info hero-btn bg-white page-indent"
-            onClick={() => scrollTo("#services")}
-          >
-            SCHEDULE A CALL
-            <FaArrowRight className="inline my-2 ml-4 mr-0" size="18px" />
-          </button>
-          <br />
-        </div>
-=======
         <button
           className="text-xs btn-xl btn-info hero-btn bg-white page-indent whitespace-nowrap"
           onClick={() => scrollTo("#services")}
@@ -78,7 +60,6 @@ export const Hero = ({cityState}) => {
           <FaArrowRight className="inline my-2 ml-4 mr-0" size="18px" />
         </button>
         <br />
->>>>>>> dev
       </div>
     </div>
   )
