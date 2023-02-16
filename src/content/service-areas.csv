@@ -1,17 +1,15 @@
 zip:varchar:5	lat:decimal:10,6	long:decimal:10,6	city:varchar:25	stateshort:varchar:2	state:varchar:20	county:varchar:21
-90001	33.973951	-118.249509	Los Angeles	CA	California	Los Angeles
-90069	33.786594	-118.381697	West Hollywood	CA	California	Los Angeles
-90201	33.976663	-118.171368	Bell	CA	California	Los Angeles
-90202	33.786594	-118.298662	Bell Gardens	CA	California	Los Angeles
-90209	33.786594	-118.298662	Beverly Hills	CA	California	Los Angeles
-90220	33.874815	-118.234451	Compton	CA	California	Los Angeles
-90230	33.786594	-118.393617	Culver City	CA	California	Los Angeles
-90239	33.786594	-118.298662	Downey	CA	California	Los Angeles
-90245	33.786594	-118.404267	El Segundo	CA	California	Los Angeles
-90247	33.888315	-118.297967	Gardena	CA	California	Los Angeles
-90250	33.786594	-118.348083	Hawthorne	CA	California	Los Angeles
-90254	33.786594	-118.399303	Hermosa Beach	CA	California	Los Angeles
-90255	33.977987	-118.217438	Huntington Park	CA	California	Los Angeles
-90260	33.786594	-118.351813	Lawndale	CA	California	Los Angeles
-90262	33.924538	-118.200705	Lynwood	CA	California	Los Angeles
-90263	33.786594	-118.707992	Malibu	CA	California	Los Angeles
+78201	29.399933	-98.537495	San Antonio	TX	Texas	Bexar
+78006	29.893137	-98.685719	Boerne	TX	Texas	Kendall
+78109	29.378081	-98.250136	Converse	TX	Texas	Bexar
+78022	28.302094	-98.104154	George West	TX	Texas	Live Oak
+78148	29.437532	-98.461582	Universal City	TX	Texas	Bexar
+78154	29.578978	-98.277839	Schertz	TX	Texas	Guadalupe
+78130	29.776488	-98.221041	New Braunfels	TX	Texas	Comal
+78064	28.975023	-98.495551	Pleasanton	TX	Texas	Atascosa
+78155	29.578734	-97.951829	Seguin	TX	Texas	Guadalupe
+78861	29.398586	-99.176245	Hondo	TX	Texas	Medina
+78666	29.972907	-97.997166	San Marcos	TX	Texas	Hays
+78640	29.996599	-97.833540	Kyle	TX	Texas	Hays
+78028	29.988525	-99.155469	Kerrville	TX	Texas	Kerr
+78644	29.875405	-97.630472	Lockhart	TX	Texas	Caldwell
