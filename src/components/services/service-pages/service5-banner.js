@@ -7,7 +7,7 @@ export const Service5Banner = () => {
   const queryResult = useStaticQuery(
     graphql`
       query {
-        markdownRemark(frontmatter: { component: { eq: "dry_rot_repairs_banner" } }) {
+        markdownRemark(frontmatter: { component: { eq: "service5_banner" } }) {
           frontmatter {
             component
             date
@@ -37,7 +37,7 @@ export const Service5Banner = () => {
       <div className="relative text-center bg-gray-200">
         <GatsbyImage
           image={image}
-          alt="decking with steps"
+          alt="temporary water servcie alt"
         />
 
         <div className={ `w-[90%] md:w-1/2 p-caption1-wd-2 ${styles.title}`}>

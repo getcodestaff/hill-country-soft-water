@@ -1,9 +1,11 @@
 ---
 cardName: Service6Card
+crumbsPath: 
+crumbsLabel: 
 cardImage: ../../../images/water-treatment/water_treatment_card.webp
-cardImageAlt: over head view of a water treament facility
+cardImageAlt: overhead of water treatment facility
 title: Water Treatment
 serviceLink: /water-treatment
-cardDescription: Water Treatment sed do eiusmod tempor incididunt ut labore et dolore 
+cardDescription: Alkaline Water Systems are so important if you want to maintain a high quality water and alkaline environment for your body. Increasing the ph of the water you drink is linked to huge health benefits.
 
 ---

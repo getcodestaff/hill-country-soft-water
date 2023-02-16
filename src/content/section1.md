@@ -1,6 +1,7 @@
 ---
 component: "section1"
-textColor: white
-featuredImage: ../images/about-us_1_11zon.webp
-featuredImageAlt: girl drinking a glass of water
+text: "A MESSAGE TO BE DETERMINED"
+textColor: black
+featuredImage: ../images/section1.webp
+featuredImageAlt: "about us"
 ---

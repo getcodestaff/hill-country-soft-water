@@ -5,17 +5,17 @@ images:
     mainImage: "saved for reference.jpg",
     galleryAlts:
       [
-        "windows1 temporary alt",
-        "windows2 temporary alt",
-        "windows3 temporary alt",
-        "windows4 temporary alt",
+        "reverse-osmosis temporary alt",
+        "reverse-osmosis temporary alt",
+        "reverse-osmosis temporary alt",
+        "reverse-osmosis temporary alt",
       ],
     galleryImages:
       [
-        "../../../images/revers-osmosis/reverse_osmosis_card.webp", 
-        "../../../images/revers-osmosis/reverse_osmosis_card.webp", 
-        "../../../images/revers-osmosis/reverse_osmosis_card.webp", 
-        "../../../images/revers-osmosis/reverse_osmosis_card.webp"
+        "../../../images/reverse-osmosis/reverse_osmosis_card.webp",
+        "../../../images/reverse-osmosis/reverse_osmosis_card.webp",
+        "../../../images/reverse-osmosis/reverse_osmosis_card.webp",
+        "../../../images/reverse-osmosis/reverse_osmosis_card.webp",
       ],
   }
 ---

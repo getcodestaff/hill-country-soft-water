@@ -50,7 +50,7 @@ export const Section1 = () => {
             </div>
             <h1 className="section-title mt-1 text-left">
               Clean Water Your Whole Family Can Enjoy. Water Filtration and
-              Water Softener Options For Every Situation.
+              Water Softener Options For Every Situation.{" "}
             </h1>
             <div className="text-direction-b pb-2 space-y-8">
               <p className="m-0 text-black font-medium text-left">
@@ -59,7 +59,7 @@ export const Section1 = () => {
                 plastic waste. Go Green and Provide clean water for your family
                 at the same time.
               </p>
-              <p className="m-0 text-black font-medium  text-left">
+              <p className="m-0 text-black font-medium text-left">
                 Over 50+ years of experience with the hightest standards of
                 service. Performing water softener installation and
                 installations for Reverse Osmosis Water Treatement systems. We

@@ -1,10 +1,11 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { getImage } from "gatsby-plugin-image"
 import { Service3Banner } from "./service3-banner"
 import { Services } from "../services"
 import { Badges } from "../../badges"
 import { SampleRow } from "../sample-row"
+import {imageLeft, imageRight } from '../../global'
 
 export const Service3 = () => {
   const queryResult = useStaticQuery(
@@ -43,6 +44,7 @@ export const Service3 = () => {
                 }
                 name
               }
+              galleryAlts
             }
           }
         }
@@ -53,37 +55,7 @@ export const Service3 = () => {
   const serviceNodes = queryResult.allMarkdownRemark.nodes
   const sampleNodes =
     queryResult.markdownRemark.frontmatter.images.galleryImages
-
-  const imageLeft = (node, image) => {
-    return (
-      <div className="md:flex justify around md:m-10">
-        <div className="w-full md:w-1/2">
-          <GatsbyImage
-            className="m-4 md:w-full"
-            image={image}
-            alt={node.frontmatter.rowImageAlt}
-          />
-        </div>
-        <div
-          className="w-full"
-          dangerouslySetInnerHTML={{ __html: node.html }}
-        />
-      </div>
-    )
-  }
-
-  const imageRight = (node, image) => (
-    <div className="md:flex justify around md:ml-0 md:mr-8">
-      <div className="w-full" dangerouslySetInnerHTML={{ __html: node.html }} />
-      <div className="w-full md:w-1/2">
-        <GatsbyImage
-          className="m-4: md:w-full"
-          image={image}
-          alt={node.frontmatter.rowImageAlt}
-        />
-      </div>
-    </div>
-  )
+  const sampleAlts = queryResult.markdownRemark.frontmatter.images.galleryAlts
 
   return (
     <React.Fragment>
@@ -123,7 +95,7 @@ export const Service3 = () => {
         return <div key={node.frontmatter.position}>{row2x}</div>
       })}
 
-      <SampleRow nodes={sampleNodes} />
+      <SampleRow nodes={sampleNodes} alts={sampleAlts} />
 
       <Services cardsOnly />
 

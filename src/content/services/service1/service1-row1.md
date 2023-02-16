@@ -1,8 +1,8 @@
 ---
-component: decking_row
+component: service1_row
 position: 1
 rowImage: ../../../images/water-softeners/water_softener_card.webp
-rowImageAlt: water-softeners
+rowImageAlt: decking
 ---
 #  Maintain your outdoor deck platform without damaging your nearby plants.
 

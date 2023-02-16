@@ -1,9 +1,11 @@
 ---
 cardName: Service4Card
+crumbsPath: 
+crumbsLabel: 
 cardImage: ../../../images/hard-water-filters/hard_water_filters_card.webp
-cardImageAlt: kitchen sink fixture-mounted hard water filter
-title: Hard Water Filters
-serviceLink: /hard-water-filters
-cardDescription: Hard Water Filters sed do eiusmod tempor incididunt ut labore et dolore 
+cardImageAlt: Doors
+title: Doors
+serviceLink: /doors
+cardDescription: Door installations can be very tricky as there are a lot of variations and size openings. We measure the door system(s) for you and assist you with choices to fit your budget.
 
 ---

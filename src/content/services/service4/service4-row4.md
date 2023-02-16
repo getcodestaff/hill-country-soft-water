@@ -1,10 +1,10 @@
 ---
 component: service4_row
 position: 4
-rowImage: ../../../images/doors/doors4.jpg
-rowImageAlt: decking
+rowImage: ../../../images/hard-water-filters/hard_water_filters_card.webp
+rowImageAlt: Hard Water Filters temporary alt
 ---
-#  Doors
+#  Hard Water Filters
 
-Placeholder
+Hard Water Filters Placeholder
 

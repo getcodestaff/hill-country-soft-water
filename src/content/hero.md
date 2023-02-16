@@ -1,5 +1,5 @@
 ---
-component: "hero"
+component: hero
 titleLine1: San Antonio
 titleLine2: Water Softeners
 date: "2023-02-12"

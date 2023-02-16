@@ -27,7 +27,7 @@ export const MobileNavigation = () => {
     <nav className={styles} >
       {open ? closeIcon : hamburgerIcon}
       {open && 
-            <NavLinks mobile styles="block absolute right-5 bg-gray-900 border-2 border-orange-500 p-2 leading-8 z-50 text-xl" />
+            <NavLinks mobile styles="block absolute right-35 bg-chsltblue border-2 border-orange-500 p-2 leading-8 z-50 text-xl mt-6" />
         }
     </nav>
   )

@@ -1,9 +1,11 @@
 ---
 cardName: Service5Card
+crumbsPath: 
+crumbsLabel: 
 cardImage: ../../../images/water-testing/water_testing_card.webp
-cardImageAlt: hand with a test tube over a water source
-title: Water Testing
+cardImageAlt: test tube in hand over water surface
+title: Alkaline Water
 serviceLink: /water-testing
-cardDescription: Water Testing sed do eiusmod tempor incididunt ut labore et dolore 
+cardDescription: Get your water tested by a pro in San Antonio. Our experts have over 50 years of experience. We have been in business since 1969. Water Well Testing, Hard Water Testing, Soft Water Testing in Texas.
 
 ---

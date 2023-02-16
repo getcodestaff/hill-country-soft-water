@@ -1,9 +1,9 @@
 ---
 component: service6_row
 position: 4
-rowImage: ../../../images/siding/siding4.jpg
-rowImageAlt: decking
+rowImage: ../../../images/water-treatment/water_treatment_card.webp
+rowImageAlt: temporary water treatment alt
 ---
-#  Siding
+#  Water Treatemetn
 
-We can install board and batt, T1-11, redwood and other plank siding. We work together to choose what works best for you and your home. 
+placeholder Water Treatemetn
