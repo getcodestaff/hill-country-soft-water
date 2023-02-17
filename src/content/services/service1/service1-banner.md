@@ -2,7 +2,7 @@
 component: "service1_banner"
 date: "2023-01-25"
 title: WATER SOFTENERS
-text: A MESSAGE TO BE DETERMINED. MADE EXTRA LONG TO EXAMINE THE EFFECTS OF WRAPPING. A MESSAGE TO BE DETERMINED. MADE EXTRA LONG TO EXAMINE THE EFFECTS OF WRAPPING
+text: San Antonio Water Softener Systems Installation, Service and Repair. Home Water Softeners in San Antonio. 
 textColor: white
 featuredImage: ../../../images/service_banner.webp
 ---
