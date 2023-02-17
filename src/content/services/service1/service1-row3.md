@@ -2,7 +2,7 @@
 component: service1_row
 position: 3
 rowImage: ../../../images/water-softeners/water_softener_card.webp
-rowImageAlt: soft water problems
+rowImageAlt: soft water problems sa texas
 ---
 
 #  Replace or Recycle your Residential Water Softener in San Antonio

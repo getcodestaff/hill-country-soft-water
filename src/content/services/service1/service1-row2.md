@@ -2,7 +2,7 @@
 component: service1_row
 position: 2
 rowImage: ../../../images/water-softeners/water_softener_card.webp
-rowImageAlt: decking
+rowImageAlt: water softener install san antonio
 ---
 #  Installation For Soft Water Systems San Antonio, TX
 
