@@ -5,7 +5,7 @@ logoAlt: Whole House Filtration San Antonio
 logoColumnText: Your Home For Water Treatment and Drinking Water Professionals in San Antonio, Texas. 
 social: facebook | twitter | google | instagram | pinterest
 column2header: OUR SERVICES
-column2labels: Water Softeners | Water Filtrations | Reverse Osmosis | Doors | Dry Rot Repairs | Siding | Pergolas | Plumbing
+column2labels: Water Softeners | Water Filtrations | Reverse Osmosis | Well Water Systems | Under Sink Systems | Hard Water Systems | Alkaline Water Filters | Whole House Water Filtration Systems
 column2links: decking | balconies | windows | doors | dry-rot-repairs | siding | pergolas | plumbing
 column3header: SERVICE AREAS
 column3labels: San Antonio | Boerne | New Braunfels | Universal City | Pleasanton | San Marcos | More...
