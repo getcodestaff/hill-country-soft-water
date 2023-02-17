@@ -4,13 +4,10 @@ position: 1
 rowImage: ../../../images/water-softeners/water_softener_card.webp
 rowImageAlt: decking
 ---
-#  Maintain your outdoor deck platform without damaging your nearby plants.
+#  San Antonio Water Softener & Soft Water Systems
 
-Designing, creating, building, modifying and/or repairing home projects, for you, is something we
-LOVE doing! Doing it well is our passion!
+We have been in business for over 30 years in the San Antonio area and have helped many people become self sufficient when it comes to their water needs. 
 
-Over 60+ years of experience with the highest standards of service. Performing renovations, repairs
-and installations for your home. We are a local and family owned business. We are centered on
-providing you with the highest quality of craftsmanship for a great value!
+Water Softeners are a necessity here in Texas and we want your experience to be fast, easy and of the highest quality. The first question you need to ask is Do you Need a water softener in San Antonio? What Kind of Water Softener do I need in San Antonio? What does a water softener even do?
 
-Your outdoor deck get a lot of foot traffic. From muddy shoes, to spilled food, and your wet dogs that keep on running back & forth, your deck will get dirty, stained and smelly.
+We would love to answer these questions for you in an easy-to-do water test. Our water test check the quality of your water for hardness, minerals and other problems that might be in your water.
