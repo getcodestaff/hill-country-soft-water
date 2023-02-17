@@ -1,14 +1,16 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "hill-country-soft-water",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with the Services template",
+  "description": "A website for Hill Country Soft Water",
   "version": "0.1.0",
   "author": "Dean Witcraft <dean.witcraft@outlook.com>",
   "dependencies": {
     "@fontsource/montserrat": "^4.5.14",
     "gatsby": "^5.5.0",
+    "gatsby-plugin-google-tagmanager": "^5.6.0",
     "gatsby-plugin-image": "^3.5.0",
     "gatsby-plugin-sharp": "^5.5.0",
+    "gatsby-plugin-sitemap": "^6.6.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^5.5.0",
     "gatsby-transformer-csv": "^5.6.0",

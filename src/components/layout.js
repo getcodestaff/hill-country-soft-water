@@ -32,6 +32,10 @@ const Layout = ({ children, location }) => {
         {titleMobile[0]}
         <br />
         {titleMobile[1]}
+        <br />
+        <a className="text-xs" href="/sitemap-0.xml">
+          sitemap
+        </a>
       </>
     )
   }
@@ -58,8 +62,11 @@ const Layout = ({ children, location }) => {
             fontSize: `var(--font-sm)`,
           }}
         >
-          <div className="hidden md:block">
-            © {new Date().getFullYear()} &middot; {title}
+            <div className="hidden md:flex md:flex-row justify-between content-start">
+              © {new Date().getFullYear()} &middot; {title}&nbsp;
+              <a className="text-xs" href="/sitemap-0.xml">
+                sitemap
+              </a>
           </div>
           <div className="block md:hidden">
             © {new Date().getFullYear()} &middot; {copyrightMobile()}
