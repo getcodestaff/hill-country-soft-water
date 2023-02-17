@@ -2,11 +2,12 @@
 component: service1_row
 position: 3
 rowImage: ../../../images/water-softeners/water_softener_card.webp
-rowImageAlt: decking
+rowImageAlt: soft water problems
 ---
 
-#  Outdoor Deck
+#  Replace or Recycle your Residential Water Softener in San Antonio
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
+Water Softeners go through a lot in the San Antonio Area. Because of this,
+a lot of the more inexpensive systms break down from the use or need to be serviced. Replacing your System can be expensive so some people request information on recycling their softener systems in san antonio. Give us a call and we would be glad to help get your system properly recycled.  
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Replcing your Residential Water Softener can typically be easier than inatlling a new one. We woudln't need to create any housings or run any new pipes or lay any foundations. We can simply recycle your current water softer, send you a check from the recycler, and install a new water softener if your are a home owner in the san antonio area. 
