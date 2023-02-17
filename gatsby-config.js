@@ -6,7 +6,7 @@ module.exports = {
     title: `San Antonio Water Softerner Experts | Hill Country Soft Water`,
     description: `todo add a better description than A website for Hill Country Soft Water`,
     siteUrl: "https://watersoftenersanantonio.co",
-    phone: "210-635-7418",
+    phone: "210-942-7683",
     businessName: "Hill Country Soft Water",
     author: `@witcradg`,
   },
