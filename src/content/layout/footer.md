@@ -1,8 +1,8 @@
 ---
 component: footer
 logoImage: ../../images/layout/logoipsum-289.jpg
-logoAlt: logo
-logoColumnText: some lorum ipsum content as a messge under logo
+logoAlt: Whole House Filtration San Antonio
+logoColumnText: Your Home For Water Treatment and Drinking Water Professionals in San Antonio, Texas. 
 social: facebook | twitter | google | instagram | pinterest
 column2header: OUR SERVICES
 column2labels: Water Softeners | Water Filtrations | Reverse Osmosis | Doors | Dry Rot Repairs | Siding | Pergolas | Plumbing
