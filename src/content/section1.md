@@ -1,6 +1,6 @@
 ---
 component: "section1"
-text: "A MESSAGE TO BE DETERMINED"
+text: "In Business For 30 Years"
 textColor: black
 featuredImage: ../images/section1.webp
 featuredImageAlt: "about us"
