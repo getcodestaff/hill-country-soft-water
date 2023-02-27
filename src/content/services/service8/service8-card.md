@@ -1,7 +1,5 @@
 ---
 cardName: Service8Card
-crumbsPath: 
-crumbsLabel: 
 cardImage: ../../../images/water-well-systems/water_well_systems_card.webp
 cardImageAlt: Water Well system
 title: Water Well Systems

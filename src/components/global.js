@@ -28,3 +28,18 @@ export const imageRight = (node, image) => (
     </div>
   </div>
 )
+
+export const formatWithCityState = (message, city, state) => {
+  const c = (city && state) ? city : ''
+  const s = (city && state) ? state : ''
+
+  let formattedMessage = message
+    .replaceAll("$", "")
+    .replaceAll("{city}", c)
+    .replaceAll("{state}", s)
+    .trim()
+
+  return (city && state) 
+    ? formattedMessage 
+    : formattedMessage.slice(0, -3) //remove trailing punctuation
+}

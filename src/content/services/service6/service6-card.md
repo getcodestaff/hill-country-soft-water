@@ -1,7 +1,5 @@
 ---
 cardName: Service6Card
-crumbsPath: 
-crumbsLabel: 
 cardImage: ../../../images/water-treatment/water_treatment_card.webp
 cardImageAlt: overhead of water treatment facility
 title: Water Treatment

@@ -1,7 +1,5 @@
 ---
 cardName: Story3Card
-crumbsPath:
-crumbsLabel:
 cardImage: ../images/dan.png
 cardImageAlt: Angies List Review from Dan H.
 title:

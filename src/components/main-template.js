@@ -5,10 +5,10 @@ import { Services } from "./services/services"
 import { Stories } from "./stories/stories"
 import { Badges } from "./badges"
 
-export const MainTemplate = ({ cityState }) => {
+export const MainTemplate = () => {
   return (
     <React.Fragment>
-      <Hero cityState={cityState} />
+      <Hero />
       <Section1 />
       <Services cardsOnly="false" />
       <Stories />

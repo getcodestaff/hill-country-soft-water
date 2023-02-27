@@ -1,7 +1,5 @@
 ---
 cardName: Story2Card
-crumbsPath: 
-crumbsLabel: 
 cardImage: ../images/mary.png
 cardImageAlt: Angies List Review from Mary R.
 title: 

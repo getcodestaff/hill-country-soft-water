@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from 'gatsby';
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { MainTemplate } from "../components/main-template"
@@ -8,8 +8,7 @@ export default function ServiceAreasTemplate({
   pageContext: { props },
   location,
 }) {
-
-  const cityCommaState = `${props.city_varchar_25}, ${props.stateshort_varchar_2}`
+  //   const cityCommaState = `${props.city_varchar_25}, ${props.stateshort_varchar_2}`
 
   location.city = props.city_varchar_25
   location.stateshort = props.stateshort_varchar_2
@@ -17,7 +16,7 @@ export default function ServiceAreasTemplate({
   return (
     <Layout location={location}>
       <React.Fragment>
-        <MainTemplate cityState={cityCommaState} />
+        <MainTemplate />
       </React.Fragment>
     </Layout>
   )
@@ -48,4 +47,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

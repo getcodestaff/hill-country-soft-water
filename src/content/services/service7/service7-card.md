@@ -1,7 +1,5 @@
 ---
 cardName: Service7Card
-crumbsPath: 
-crumbsLabel: 
 cardImage: ../../../images/house-water-filters/house_water_filters_card.webp
 cardImageAlt: house water filters temporary alt
 title: House Water Systems

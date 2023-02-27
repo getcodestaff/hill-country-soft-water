@@ -1,17 +1,16 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import * as styles from "../service.module.css"
+import * as styles from '../components/services/service.module.css'
 
-export const Service1Banner = () => {
+export const Banner = ({ title }) => {
   const queryResult = useStaticQuery(
     graphql`
       query {
-        markdownRemark(frontmatter: { component: { eq: "service1_banner" } }) {
+        markdownRemark(frontmatter: { component: { eq: "about_us_banner" } }) {
           frontmatter {
             component
             date
-            title
             text
             textColor
             featuredImage {
@@ -35,18 +34,15 @@ export const Service1Banner = () => {
   return (
     <React.Fragment>
       <div className="relative text-center bg-gray-200">
-        <GatsbyImage
-          image={image}
-          alt="temporary water servcie alt"
-        />
+        <GatsbyImage image={image} alt="decking with steps" />
 
         <div className={ `w-[90%] md:w-1/2 p-caption1-wd-2 ${styles.title}`}>
-          <div  style={{ color: data.textColor }}
-          >
-            <div className="tp-caption1-wd-2">{data.title}</div>
+          <div style={{ color: data.textColor }}>
+            <div className="tp-caption1-wd-2">ABOUT US</div>
             <div className="text-[50%] font-semibold md:text-sm">{data.text}</div>
           </div>
         </div>
+      
       </div>
     </React.Fragment>
   )

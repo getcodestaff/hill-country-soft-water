@@ -1,7 +1,5 @@
 ---
 cardName: Story1Card
-crumbsPath: 
-crumbsLabel: 
 cardImage: ../images/chris.png
 cardImageAlt: Angies List Review from Chris M
 title: 

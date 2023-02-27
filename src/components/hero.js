@@ -1,11 +1,13 @@
 //https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-plugin-image#background-images
-import React from "react"
+import React, { useContext } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { LayoutContext } from "../contexts/layout-context"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import { FaArrowRight } from "react-icons/fa"
+import { formatWithCityState } from "./global"
 
-export const Hero = ({cityState}) => {
+export const Hero = () => {
   const queryResult = useStaticQuery(
     graphql`
       query {
@@ -29,6 +31,8 @@ export const Hero = ({cityState}) => {
       }
     `
   )
+  const { layout } = useContext(LayoutContext)
+
   const data = queryResult.markdownRemark.frontmatter
 
   const image = getImage(data.featuredImage.childImageSharp.gatsbyImageData)
@@ -44,13 +48,13 @@ export const Hero = ({cityState}) => {
           {data.titleLine1}
           <br />
           {data.titleLine2}
-          {cityState ? <div>{cityState}</div> : null}
+          {/* {cityState ? <div>{cityState}</div> : null} */}
         </div>
         <div
           className="small-hero-text page-indent"
           style={{ color: data.textColor }}
         >
-          {data.text}
+          {formatWithCityState(data.text, layout.location.city, layout.location.stateshort)}
         </div>
         <button
           className="text-xs btn-xl btn-info hero-btn bg-white page-indent whitespace-nowrap"
