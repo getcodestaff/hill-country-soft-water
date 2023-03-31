@@ -55,20 +55,20 @@ const Layout = ({ children, location }) => {
       >
         <main>{children}</main>
         <Footer />
-        <footer
-          className="px-4 md:px-0"
+        <footer id='copyright'
+          className="px-4 lg:px-0"
           style={{
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
           }}
         >
-            <div className="hidden md:flex md:flex-row justify-between content-start">
+            <div className="hidden lg:flex lg:flex-row justify-between content-start">
               © {new Date().getFullYear()} &middot; {title}&nbsp;
               <a className="text-xs" href="/sitemap-0.xml">
                 sitemap
               </a>
           </div>
-          <div className="block md:hidden">
+          <div className="block lg:hidden">
             © {new Date().getFullYear()} &middot; {copyrightMobile()}
           </div>
         </footer>

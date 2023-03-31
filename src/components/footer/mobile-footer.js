@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { FooterSocial } from './footer-social';
 import { FooterAccordion } from './footer-accordion';
 import { ServicesLinks } from './services-links';
@@ -8,6 +8,8 @@ import { ServiceAreas } from './service-areas';
 import { FooterContacts } from './footer-contacts';
 
 export const MobileFooter = ({ data }) => {
+
+    let image = getImage(data.logoImage)
 
     return (
         <div className="footer1 block md:hidden">
@@ -29,11 +31,7 @@ export const MobileFooter = ({ data }) => {
 
             <div className="">
                 <Link className="text-center m-auto block pb-8" to="/">
-                    <StaticImage
-                        alt="logo"
-                        src="../../images/layout/footer-logo_11_11zon.webp"
-                        height={50}
-                    />
+                    <GatsbyImage image={image} alt={data.logoAlt} />
                 </Link>
             </div>
         </div>

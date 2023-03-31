@@ -19,7 +19,7 @@ exports.createPages = async gatsbyUtilities => {
   if (!posts.length) {
     return
   }
-console.log({posts})
+
   // If there are posts, create pages for them
   await createIndividualBlogPostPages({ posts, gatsbyUtilities })
 
@@ -32,9 +32,8 @@ console.log({posts})
  */
 const createIndividualBlogPostPages = async ({ posts, gatsbyUtilities }) =>
   Promise.all(
-    posts.map(({ previous, post, next }) => {
-        console.log(post.uri)
-          // createPage is an action passed to createPages
+    posts.map(({ previous, post, next }) =>
+      // createPage is an action passed to createPages
       // See https://www.gatsbyjs.com/docs/actions#createPage for more info
       gatsbyUtilities.actions.createPage({
         // Use the WordPress uri as the Gatsby page path
@@ -57,7 +56,6 @@ const createIndividualBlogPostPages = async ({ posts, gatsbyUtilities }) =>
           nextPostId: next ? next.id : null,
         },
       })
-    }
     )
   )
 
@@ -90,7 +88,7 @@ async function createBlogPostArchive({ posts, gatsbyUtilities }) {
           // we want the first page to be "/" and any additional pages
           // to be numbered.
           // "/blog/2" for example
-          return page === 1 ? `/` : `/blog/${page}`
+          return page === 1 ? `/blog` : `/blog/${page}`
         }
 
         return null
@@ -134,20 +132,15 @@ async function createBlogPostArchive({ posts, gatsbyUtilities }) {
 async function getPosts({ graphql, reporter }) {
   const graphqlResult = await graphql(/* GraphQL */ `
     query WpPosts {
-      # Query all WordPress blog posts sorted by date
-      allWpPost(sort: { fields: [date], order: DESC }) {
+      allWpPost(sort: { date: DESC }) {
         edges {
           previous {
             id
           }
-
-          # note: this is a GraphQL alias. It renames "node" to "post" for this query
-          # We're doing this because this "node" is a post! It makes our code more readable further down the line.
           post: node {
             id
             uri
           }
-
           next {
             id
           }

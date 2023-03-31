@@ -1,23 +1,18 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-
 import favicon from '../images/favicon.ico'
 
+/*
+url: url of the page (content)
+image: url of the image
+*/
 function Seo({
     title,
     description,
     url,
     type,
-    // amount,
-    // image,
+    image,
     // secure_url
 }) {
     // console.log('seo title: ', title );
@@ -52,22 +47,33 @@ function Seo({
             <title>{seo.metaTitle}</title>
             <meta name="title" content={seo.metaTitle} />
             <meta name="description" content={seo.metaDescription} />
-            {/* <meta property="og:site_name" content={`Delta 8 Gummies`} />
-            <meta property="og:url" content={seo.metaUrl} />
+
+            {/* https://ogp.me/ basic Metadata  */}
+            {/* see also https://ahrefs.com/blog/open-graph-meta-tags/ */}
             <meta property="og:title" content={seo.metaTitle} />
-            <meta property="og:description" content={seo.metaDescription} />
             <meta property="og:type" content={seo.metaType} />
-            <meta property="og:price:amount" content={seo.metaAmount} />
-            <meta property="og:price:currency" content="USD" />
             <meta property="og:image" content={image} />
+            <meta property="og:url" content={seo.metaUrl} /> 
+            {/* The URL of the content. */}
+
+            {/* og optional Metatdata */}
+            <meta property="og:site_name" content={`Carruth Home Solutions`} />
+            <meta property="og:description" content={seo.metaDescription} />
+            {/* should we use Carruth Home Solutions? */}           
+
+            {/* structured properties */}
+            {/* og:image:url - Identical to og:image.
+            og:image:secure_url - An alternate url to use if the webpage requires HTTPS.
+            og:image:alt - A description of what is in the image (not a caption). 
+            If the page specifies an og:image it should specify og:image:alt. */}
             <meta property="og:image:secure_url" content={seo.metaSecureUrl} />
-            <meta name="twitter:site" content={seo.metaDescription} />
-            <meta name="twitter:site" content="@delta8edible" />
-            <meta name="twitter:creator" content="@delta8edible" />
+
+            <meta name="twitter:site" content="@HomeCarruth" />
+            <meta name="twitter:creator" content="@HomeCarruth" />
             <meta name="twitter:title" content={seo.metaTitle} />
             <meta name="twitter:description" content={seo.metaDescription} />
             <meta name="twitter:card" content="summary" />
-            <meta property="msvalidate.01" content="D048CE80725ED64F9ACE12EEEDE36A61" /> */}
+            {/* <meta property="msvalidate.01" content="D048CE80725ED64F9ACE12EEEDE36A61" /> */}
         </>
     );
 }

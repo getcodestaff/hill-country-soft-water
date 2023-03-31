@@ -21,7 +21,7 @@ export const NavLinks = props => {
   )
 
   const data = queryResult.markdownRemark.frontmatter
-  
+console.log({data})
   const topLevelMenu = data.mainMenu.split("|")
   const topLevelLinks = data.mainMenuLinks.split("|")
   const dropdownLabels = data.dropdown.split("|")
@@ -68,8 +68,11 @@ export const NavLinks = props => {
             })}
           </div>
         </Nav.Menu>
-        <Nav.Item href="/contact/" className="mx-4 menu-item font-semibold">
-          Contact
+        <Nav.Item href={topLevelLinks[3]} className="mx-4 menu-item font-semibold">
+          {topLevelMenu[3]}
+        </Nav.Item>
+        <Nav.Item href={topLevelLinks[4]} className="mx-4 menu-item font-semibold">
+          {topLevelMenu[4]}
         </Nav.Item>
       </Nav>
 

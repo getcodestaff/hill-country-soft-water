@@ -4,33 +4,6 @@
   "description": "A website for Hill Country Soft Water",
   "version": "0.1.0",
   "author": "Dean Witcraft <dean.witcraft@outlook.com>",
-  "dependencies": {
-    "@fontsource/montserrat": "^4.5.14",
-    "gatsby": "^5.5.0",
-    "gatsby-plugin-google-tagmanager": "^5.6.0",
-    "gatsby-plugin-image": "^3.5.0",
-    "gatsby-plugin-sharp": "^5.5.0",
-    "gatsby-plugin-sitemap": "^6.6.0",
-    "gatsby-plugin-smoothscroll": "^1.2.0",
-    "gatsby-source-filesystem": "^5.5.0",
-    "gatsby-source-wordpress": "^7.7.0",
-    "gatsby-transformer-csv": "^5.6.0",
-    "gatsby-transformer-remark": "^6.5.0",
-    "gatsby-transformer-sharp": "^5.5.0",
-    "html-react-parser": "^3.0.12",
-    "lodash": "^4.17.21",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
-    "rsuite": "^5.25.0"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "gatsby-plugin-postcss": "^6.5.0",
-    "postcss": "^8.4.21",
-    "prettier": "^2.8.3",
-    "tailwindcss": "^3.2.4"
-  },
   "keywords": [
     "gatsby"
   ],
@@ -44,11 +17,31 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  "dependencies": {
+    "@fontsource/montserrat": "^4.5.14",
+    "gatsby": "^5.8.1",
+    "gatsby-plugin-google-tagmanager": "^5.8.0",
+    "gatsby-plugin-image": "^3.8.0",
+    "gatsby-plugin-sharp": "^5.8.1",
+    "gatsby-plugin-sitemap": "^6.8.0",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
+    "gatsby-source-filesystem": "^5.8.0",
+    "gatsby-source-wordpress": "^7.8.0",
+    "gatsby-transformer-csv": "^5.8.0",
+    "gatsby-transformer-remark": "^6.8.0",
+    "gatsby-transformer-sharp": "^5.8.0",
+    "html-react-parser": "^3.0.15",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "rsuite": "^5.29.0"
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "gatsby-plugin-postcss": "^6.8.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.7",
+    "tailwindcss": "^3.3.1"
   }
 }
