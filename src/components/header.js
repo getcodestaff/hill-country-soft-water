@@ -1,9 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 import { Navbar } from "./navbar/navbar"
 import { FaPhone } from "react-icons/fa"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Header = ({ metaData }) => {
   const queryResult = useStaticQuery(

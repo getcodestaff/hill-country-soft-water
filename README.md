@@ -1,110 +1,75 @@
-# Gatsby Service Starter
-#### based on a website for Carruth Home Solutions (chs-v2)
-Jan 26, 2023
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<p align="center">
+  <a href="https://www.gatsbyjs.com">
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby WordPress blog starter
+</h1>
 
-The current state of this project will necessitate a significant amount work if it is to be generic. This work can be done piecemeal.
+Kick off your wordpress gatsby project with this blog boilerplate. This starter ships with the main Gatsby Wordpress configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-<ul>
-<li>extract hard coded values into configuration files (probably markdown).
-<li>genericize hard coded filenames (instead of windows.js, doors.js, etc. they should be named service1, service2, etc.)
-<li>the creation of service area pages from CSV (or other source).
-</ul>
+_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
 
-As I work on the above list, I'll try to be thorough in the namiming of commits to that git log --oneline will clearly show what has been done.
+## 🚀 Quick start
 
-## Installation
+To get your project started or to just try it out, you can **follow the [Gatsby Wordpress Quickstart](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/getting-started.md#quick-start)** instructions
 
-```
-gatsby new <new projet name> git@github.com:witcradg/gatsby-service-starter.git
+## 🧐 What's inside?
 
-cd <new project name>
-npm install --legacy-peer-deps
+A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-```
-[Ideally it would be good to figure out how to remove the need for --legacy-peer deps]
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── .prettierrc
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
 
-## Additional Steps
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-use npm-check-updates to update the package.json
+2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-```
-ncu [default behavior will show prospective changes]
-ncu -u [use this to actually change package.json]
-npm install --legacy-peer-deps
-```
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-#### Install tailwindcss with `https://tailwindcss.com/docs/guides/gatsby`
+4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-#### install react-icons and rsuite
-```
-npm install react-icons rsuite
-```
+5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-npm install react-icons and rsuite setup repository. setup host
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail). **\*Wordpress Users:** This is where you configure your wordpress URL, and provide other plugin settings.\*
 
-#### Replace siteMetadata values in gatsby-config.js with client specific values
+7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process. **\*Wordpress Users:** This is where you customize how gatsby consumes your wordpress graphql schema, and generates your gatsby content schema. The starter will handle post and blog types.\*
 
-```
-  siteMetadata: {
-    title: `Gatsby Service Starter | A template for service oriented business websites`,
-    description: `A quick start on creating service oriented websites`,
-    siteUrl: "https://www.witcraft.io",
-    author: `@witcradg`,
-  },
-```    
+8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-============= 
+9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
 
-## History
-### The following work was completed as part of the original chs-v2 website
-#### These steps are already included as part of the gatsby-service-starter
-#### Do not do these steps    
+10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-Jan 11, 2023
+11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-<ul>
-<li>Install with `gatsby new`
-<li>Remove all defaults from index.js, images, extra pages, etc.
-<li>Install tailwindcss with `https://tailwindcss.com/docs/guides/gatsby`
-<li>npm install react-icons and rsuite and gatsby-transformer-remark
-<li>Install fonts (e.g. Montserrat)
-<li>Set up custom colors
-<li>Setup Seo by copying the component
-<li>Setup index page with Head and Seo
-<li>Copy and setup Layout commenting out as needed (e.g. Header)
-<li>Add (copy) Header and style as needed.
-<li>Add Hero section (may be useful for delineating the Header if header background is white)
-<li>Install fonts (e.g. Montserrat)
-<li>Set up custom colors
-<ul>
+12. **`README.md`**: A text file containing useful reference information about your project.
 
-Here's a stab at a generic local-seo workflow of tasks 
+## 🎓 Learning Gatsby
 
-Task 1 with subtasks
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
 
-Setup new project. 
-<ul>
-<li>Install with `gatsby new`
-<li>Remove all defaults from index.js, images, extra pages, etc.
-<li>Install tailwindcss with `https://tailwindcss.com/docs/guides/gatsby`
-<li>npm install react-icons and rsuite
-<li>setup repository.
-<li>setup host
-</ul>
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
-Setup Layout, Header, Footer with default template values (1 task)
-    copy all three components from template source code and setup with configured default values (e.g. markdown or json files)
+- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-Build out Layout, Header, Footer with client details 
-    Design must be approved first.
-    Images must be available before this can be finished.
+## 💫 Deploy
 
-Setup Homepage Tasks
-    highly specific based on design, but we could do a task list based on Steve's design.
+Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
-Set up templated pages (about, contact, faq, etc.)
-    These pages can easily be copied and client specific details copied in place.
+[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-wordpress-blog)
 
-Set up client back pages
-    for CHS these are the services pages. We could set up a template for these, but it might be overkill.
-
+<!-- AUTO-GENERATED-CONTENT:END -->

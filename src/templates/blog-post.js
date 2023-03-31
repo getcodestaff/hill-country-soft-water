@@ -8,8 +8,8 @@ import parse from "html-react-parser"
 // version used by the Gatsby and @wordpress packages that causes build
 // failures.
 // @todo update this once @wordpress upgrades their postcss version
-import "../styles/@wordpress/block-library/build-style/style.css"
-import "../styles/@wordpress/block-library/build-style/theme.css"
+import "../css/@wordpress/block-library/build-style/style.css"
+import "../css/@wordpress/block-library/build-style/theme.css"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -108,7 +108,7 @@ export const pageQuery = graphql`
             childImageSharp {
               gatsbyImageData(
                 quality: 100
-                placeholder: BLURRED
+                placeholder: TRACED_SVG
                 layout: FULL_WIDTH
               )
             }

@@ -10,9 +10,9 @@ export const MainTemplate = () => {
     <React.Fragment>
       <Hero />
       <Section1 />
-      <Services cardsOnly="false" />
-      <Stories />
-      <Badges />
+       <Services cardsOnly="false" />
+      <Stories /> 
+      <Badges /> 
     </React.Fragment>
   )
 }
