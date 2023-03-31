@@ -29,41 +29,49 @@ const BlogIndex = ({
     <Layout isHomePage>
       <Seo title="All posts" />
 
-      <Bio />
+      <div className="global-wrapper">
+        <header className="global-header">
+          <h1 className="main-heading mb-8">
+            <Link to="/">HCSW BLOG</Link>
+          </h1>
+          <Bio />
+          <ol style={{ listStyle: `none` }}>
+            {posts.map(post => {
+              const title = post.title
 
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
-          const title = post.title
+              return (
+                <li key={post.uri}>
+                  <article
+                    className="post-list-item"
+                    itemScope
+                    itemType="http://schema.org/Article"
+                  >
+                    <header>
+                      <h2>
+                        <Link to={post.uri} itemProp="url">
+                          <span itemProp="headline">{parse(title)}</span>
+                        </Link>
+                      </h2>
+                      <small>{post.date}</small>
+                    </header>
+                    <section itemProp="description">
+                      {parse(post.excerpt)}
+                    </section>
+                  </article>
+                </li>
+              )
+            })}
+          </ol>
 
-          return (
-            <li key={post.uri}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.uri} itemProp="url">
-                      <span itemProp="headline">{parse(title)}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.date}</small>
-                </header>
-                <section itemProp="description">{parse(post.excerpt)}</section>
-              </article>
-            </li>
-          )
-        })}
-      </ol>
-
-      {previousPagePath && (
-        <>
-          <Link to={previousPagePath}>Previous page</Link>
-          <br />
-        </>
-      )}
-      {nextPagePath && <Link to={nextPagePath}>Next page</Link>}
+          {previousPagePath && (
+            <>
+              <Link to={previousPagePath}>Previous page</Link>
+              <br />
+            </>
+          )}
+          {nextPagePath && <Link to={nextPagePath}>Next page</Link>}
+        </header>
+      </div>
     </Layout>
   )
 }

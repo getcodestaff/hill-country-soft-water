@@ -258,6 +258,7 @@ a:focus {
 .main-heading {
   font-size: var(--fontSize-7);
   margin: 0;
+  font-weight: var(--fontWeight-black);
 }
 
 .post-list-item {
