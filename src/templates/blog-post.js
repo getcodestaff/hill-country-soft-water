@@ -25,64 +25,68 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
     <Layout>
       <Seo title={post.title} description={post.excerpt} />
 
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
-        <header>
-          <h1 itemProp="headline">{parse(post.title)}</h1>
+      <div className="global-wrapper">
+        <header className="global-header">
+          <article
+            className="blog-post"
+            itemScope
+            itemType="http://schema.org/Article"
+          >
+            <header>
+              <h1 className="headline" itemProp="headline">{parse(post.title)}</h1>
 
-          <p>{post.date}</p>
+              <p className="mb-4">{post.date}</p>
 
-          {/* if we have a featured image for this post let's display it */}
-          {featuredImage?.data && (
-            <GatsbyImage
-              image={featuredImage.data}
-              alt={featuredImage.alt}
-              style={{ marginBottom: 50 }}
-            />
-          )}
+              {/* if we have a featured image for this post let's display it */}
+              {featuredImage?.data && (
+                <GatsbyImage
+                  image={featuredImage.data}
+                  alt={featuredImage.alt}
+                  style={{ marginBottom: 50 }}
+                />
+              )}
+            </header>
+
+            {!!post.content && (
+              <section className="articleBody" itemProp="articleBody">{parse(post.content)}</section>
+            )}
+
+            <hr />
+
+            <footer>
+              <Bio />
+            </footer>
+          </article>
+
+          <nav className="blog-post-nav">
+            <ul
+              style={{
+                display: `flex`,
+                flexWrap: `wrap`,
+                justifyContent: `space-between`,
+                listStyle: `none`,
+                padding: 0,
+              }}
+            >
+              <li>
+                {previous && (
+                  <Link to={previous.uri} rel="prev">
+                    ← {parse(previous.title)}
+                  </Link>
+                )}
+              </li>
+
+              <li>
+                {next && (
+                  <Link to={next.uri} rel="next">
+                    {parse(next.title)} →
+                  </Link>
+                )}
+              </li>
+            </ul>
+          </nav>
         </header>
-
-        {!!post.content && (
-          <section itemProp="articleBody">{parse(post.content)}</section>
-        )}
-
-        <hr />
-
-        <footer>
-          <Bio />
-        </footer>
-      </article>
-
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.uri} rel="prev">
-                ← {parse(previous.title)}
-              </Link>
-            )}
-          </li>
-
-          <li>
-            {next && (
-              <Link to={next.uri} rel="next">
-                {parse(next.title)} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+      </div>
     </Layout>
   )
 }
