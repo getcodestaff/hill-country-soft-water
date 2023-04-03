@@ -57,7 +57,7 @@ function Seo({
             {/* The URL of the content. */}
 
             {/* og optional Metatdata */}
-            <meta property="og:site_name" content={`Carruth Home Solutions`} />
+            <meta property="og:site_name" content={`Water Softener Company San Antonio`} />
             <meta property="og:description" content={seo.metaDescription} />
 
             {/* structured properties */}
