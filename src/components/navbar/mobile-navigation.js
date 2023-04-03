@@ -3,7 +3,7 @@ import { NavLinks } from "./navlinks"
 import { CgMenu } from "react-icons/cg"
 import { CgClose } from "react-icons/cg"
 
-const styles = "md:hidden font-sans font-light"
+const styles = "lg:hidden font-sans font-light"
 
 export const MobileNavigation = () => {
   const [open, setOpen] = useState(false)

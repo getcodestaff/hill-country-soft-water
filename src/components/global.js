@@ -3,10 +3,10 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 export const imageLeft = (node, image) => {
   return (
-    <div className="md:flex justify around md:m-10">
-      <div className="w-full md:w-1/2">
+    <div className="lg:flex justify around lg:m-10">
+      <div className="w-full lg:w-1/2">
         <GatsbyImage
-          className="m-4 md:w-full"
+          className="m-4 lg:w-full"
           image={image}
           alt={node.frontmatter.rowImageAlt}
         />
@@ -17,11 +17,11 @@ export const imageLeft = (node, image) => {
 }
 
 export const imageRight = (node, image) => (
-  <div className="md:flex justify around md:ml-0 md:mr-8">
+  <div className="lg:flex justify around lg:ml-0 lg:mr-8">
     <div className="w-full" dangerouslySetInnerHTML={{ __html: node.html }} />
-    <div className="w-full md:w-1/2">
+    <div className="w-full lg:w-1/2">
       <GatsbyImage
-        className="m-4: md:w-full"
+        className="m-4: lg:w-full"
         image={image}
         alt={node.frontmatter.rowImageAlt}
       />

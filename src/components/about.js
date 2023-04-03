@@ -10,24 +10,24 @@ const About = () => (
   <main className="site-main">
     <Banner />
     <div className="w-full p-[5%]">
-      <section className="content-body md:flex">
-        <div className="margin-auto w-full">
+      <section className="content-body lg:flex">
+        <div className="m-auto w-full">
           <img className="" src={threeCarruths} alt="Micha, Steve and Judah" />
           <h5 className="text-center" id="steve-judah-title">
             Micah, Steve, and Judah
           </h5>
         </div>
-        <div className="m-4 md:flex md:flex-col md:justify-center md:text-lg">
+        <div className="m-4 lg:flex lg:flex-col lg:justify-center lg:text-lg">
           We are a family team that has over 60 years of combined experience! We
           have a blast working with each other! We use both old and new school
           methods for the best results and value. We service Roseville, Citrus
-          Heights, Rocklin, Auburn, Fair Oaks, Carmichael, El Dorado Hill,
+          Heights, Rocklin, Auburn, Fair Oaks, Carmichael, El Dorado Hills,
           Folsom, Orangevale and more.
         </div>
       </section>
 
-      <section className="content-body md:flex">
-        <div className="m-4 md:flex md:flex-col md:justify-center md:text-lg">
+      <section className="content-body lg:flex">
+        <div className="m-4 lg:flex lg:flex-col lg:justify-center lg:text-lg">
           Judah is the one who started our business, several years ago, while
           trying to make extra money for his young family. Judah has been in the
           trades for over 25 years learning from his dad and working side by
@@ -39,18 +39,22 @@ const About = () => (
           insists that each project is done right the first time and that no
           corners are ever cut!
         </div>
-        <div className="margin-auto w-full">
-          <img className="" src={Judah} alt="Judah" />
+        <div className="w-full">
+          <div>
+            <img className="m-auto" src={Judah} alt="Judah" />
+          </div>
           <h5 className="text-center">Judah</h5>
         </div>
       </section>
 
-      <section className="content-body md:flex">
-        <div className="margin-auto w-full">
-          <img className="" src={Micah} alt="Micah" />
+      <section className="content-body lg:flex">
+        <div className="w-full">
+          <div>
+            <img className="m-auto" src={Micah} alt="Micah" />
+          </div>
           <h5 className="text-center">Micah</h5>
         </div>
-        <div className="m-4 md:flex md:flex-col md:justify-center md:text-lg">
+        <div className="m-4 lg:flex lg:flex-col lg:justify-center lg:text-lg">
           Micah’s background is somewhat similar to Judah’s in that he began
           learning the trades from his dad and work crew. When he was just 11 he
           was introduced to plumbing by helping his dad re-plumb drain and sewer
@@ -64,8 +68,8 @@ const About = () => (
         </div>
       </section>
 
-      <section className="content-body md:flex">
-        <div className="m-4 md:flex md:flex-col md:justify-center md:text-lg">
+      <section className="content-body lg:flex">
+        <div className="m-4 lg:flex lg:flex-col lg:justify-center lg:text-lg">
           Steve (the dad) is Sacramento raised. Steve raised 7 kids within the
           same community he grew up in. He has been in the trades since the age
           of 13 having a natural aptitude for all things trade related. At 25 he
@@ -74,19 +78,21 @@ const About = () => (
           Steve takes special care that each project is designed and built to
           code and done with the best results possible.
         </div>
-        <div className="margin-auto w-full">
-          <img className="" src={Steve} alt="Steve" />
+        <div className="w-full">
+          <div>
+            <img className="m-auto" src={Steve} alt="Steve" />
+          </div>
           <h5 className="text-center">Steve</h5>
         </div>
       </section>
       <section>
-        <div className="m-4 md:m-16 md:mb-0 md:text-lg">
-          We are a full-service residential home repair/renovation and
-          plumbing company. We hold licenses for general construction, C-36
-          Plumbing, and C-20 (HVAC). We are also bonded and insured. We take
-          pride in our company on reliability, great communication, integrity,
-          and quality work for a great value! Our motto is:&nbsp;<strong>We treat all our
-          customers like family!</strong>
+        <div className="m-4 lg:m-16 lg:mb-0 lg:text-lg">
+          We are a full-service residential home repair/renovation and plumbing
+          company. We hold licenses for general construction, C-36 Plumbing, and
+          C-20 (HVAC). We are also bonded and insured. We take pride in our
+          company on reliability, great communication, integrity, and quality
+          work for a great value! Our motto is:&nbsp;
+          <strong>We treat all our customers like family!</strong>
         </div>
       </section>
     </div>

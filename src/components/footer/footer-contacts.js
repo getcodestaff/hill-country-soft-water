@@ -15,7 +15,7 @@ export const FooterContacts = ({ data }) => {
         <div className="whitespace-nowrap mt-2 font-semibold">
           {layout.siteMetadata.phone}
         </div>
-        <div className="whitespace-nowrap mt-2 font-semibold">{data.email}</div>
+        <div className="whitespace-nowrap mt-2 font-semibold text-xs">{data.email}</div>
       </div>
     </div>
   )

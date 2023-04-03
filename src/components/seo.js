@@ -59,7 +59,6 @@ function Seo({
             {/* og optional Metatdata */}
             <meta property="og:site_name" content={`Carruth Home Solutions`} />
             <meta property="og:description" content={seo.metaDescription} />
-            {/* should we use Carruth Home Solutions? */}           
 
             {/* structured properties */}
             {/* og:image:url - Identical to og:image.

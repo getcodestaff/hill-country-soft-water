@@ -1,7 +1,6 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
-
 module.exports = {
   siteMetadata: {
     title: `San Antonio Water Softerner Experts | Hill Country Soft Water`,
@@ -52,9 +51,9 @@ module.exports = {
     {
       resolve: `gatsby-transformer-csv`,
       options: {
-        extensions: [`csv`],
-        delimiter: "\t",
-      },
+            extensions: [ `tsv` ],
+            delimiter: '\t'
+        }
     },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,

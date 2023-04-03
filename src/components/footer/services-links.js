@@ -5,6 +5,7 @@ export const ServicesLinks = ({ classline, data }) => {
   let classes = `links ${classline}`
 
   const services = data.column2labels.split("|")
+  const links = data.column2links.split("|")
 
   return (
     <div>
@@ -17,10 +18,10 @@ export const ServicesLinks = ({ classline, data }) => {
             }
         `}
       </style>
-      {services.map(item => {
+      {services.map((item, index) => {
+        const itemLink = `/${links[index].trim()}`
         return (
-            // todo change key to itemlinks to avoid spaces in key
-          <Link key={item} className={classes} to="/">
+          <Link key={itemLink} className={classes} to={itemLink}>
             {item}
           </Link>
         )

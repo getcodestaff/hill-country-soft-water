@@ -10,7 +10,7 @@ export const Stories = () => {
     <div className="text-center">
       <div className="mt-8">
         <img
-          className="margin-auto"
+          className="m-auto"
           src={AngiesListLogo}
           alt="Angies List Logo"
         />
@@ -20,14 +20,14 @@ export const Stories = () => {
       </h1>
 
       <div style={{ margin: "auto" }}>
-        <div className="flex flex-col md:flex-row justify-around px-8 md:px-16">
+        <div className="flex flex-col lg:flex-row justify-around px-8 lg:px-16">
           <Story1Card />
           <Story2Card />
           <Story3Card />
         </div>
         <a
-          href="https://www.homeadvisor.com/"
-          className="text-xs md:text-xl btn-xl btn-info hero-btn bg-chsblue text-white mb-8"
+          href="https://www.homeadvisor.com"
+          className="mb-0 mt-4 text-xs lg:text-xl btn-xl btn-info hero-btn bg-chsblue text-white mb-8"
         >
           WATER FILTRATION
           <FaArrowRight className="inline my-2 ml-4 mr-0" />

@@ -21,21 +21,23 @@ export const NavLinks = props => {
   )
 
   const data = queryResult.markdownRemark.frontmatter
-
+  
   const topLevelMenu = data.mainMenu.split("|")
-  const topLevelLinks = data.mainMenuLinks.split("|")
+  const topLevelLinks = data.mainMenuLinks.split("|").map(elem => {
+    return (`${elem.trim()}`)
+  })
+
   const dropdownLabels = data.dropdown.split("|")
   const dropdownLinks = data.dropdownLinks.split("|")
 
-  const dropdown = []
-  dropdownLabels.forEach((item, index) => {
+  const dropdown = dropdownLabels.map((item, index) => {
     let obj = {}
     obj.label = item
-    obj.link = `/${dropdownLinks[index].trim()}/`
-    dropdown[index] = obj
+    obj.link = `${dropdownLinks[index].trim()}`
+    return obj
   })
 
-  let navclasses = "text-black flex"
+  let navclasses = "text-black flex whitespace-nowrap"
   if (props.mobile) {
     navclasses = "text-black font-extrabold uppercase flex flex-col"
   }
@@ -51,16 +53,18 @@ export const NavLinks = props => {
         </Nav.Item>
         <Nav.Menu
           title={topLevelMenu[2]}
+          noCaret={true}
           className="pl-3 menu-item font-semibold"
         >
           <div
-            className="absolute m-2 ml-8 p-2 text-white md:text-black bg-chsltblue
+            className="absolute m-2 ml-8 p-2 text-white lg:text-black bg-chsltblue
                     text-xl text-left leading-relaxed z-40 rounded-md"
           >
             {dropdown.map(item => {
+                const link = `/${item.link}/`
               return (
-                <Nav.Item key={item.link}>
-                  <Link to={item.link} className="menu-item font-medium">
+                <Nav.Item key={link}>
+                  <Link to={link} className="menu-item font-medium">
                     {item.label}
                   </Link>
                 </Nav.Item>
@@ -73,7 +77,7 @@ export const NavLinks = props => {
         </Nav.Item>
         <Nav.Item href={topLevelLinks[4]} className="mx-4 menu-item font-semibold">
           {topLevelMenu[4]}
-        </Nav.Item>
+        </Nav.Item>        
       </Nav>
 
       <div className="mx-2 my-3 md:hidden">

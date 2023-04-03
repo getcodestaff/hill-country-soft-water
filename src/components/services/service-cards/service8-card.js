@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { CardCore } from '../../card-core';
+import { ServiceCardCore } from '../../service-card-core';
 
 export const Service8Card = () => {
 	const queryResult = useStaticQuery(
@@ -26,6 +26,6 @@ export const Service8Card = () => {
 	);
 
 	return (
-		<CardCore data={queryResult.markdownRemark.frontmatter} />
+		<ServiceCardCore data={queryResult.markdownRemark.frontmatter} />
 	);	
 };

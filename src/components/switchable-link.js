@@ -3,12 +3,14 @@ import React from "react"
 
 export const SwitchableLink = ({ lnk, children }) => {
   const externalLink = lnk.includes("http")
+  const link = externalLink ? lnk : `/${lnk}/`
+  
   return (
     <React.Fragment>
       {externalLink ? (
-        <a href={lnk}>{children}</a>
+        <a href={link}>{children}</a>
       ) : (
-        <Link to={lnk}>{children}</Link>
+        <Link to={link}>{children}</Link>
       )}
     </React.Fragment>
   )

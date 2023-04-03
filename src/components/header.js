@@ -1,9 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 import { Navbar } from "./navbar/navbar"
 import { FaPhone } from "react-icons/fa"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Header = ({ metaData }) => {
   const queryResult = useStaticQuery(
@@ -41,11 +41,11 @@ const Header = ({ metaData }) => {
           <div>
             <Navbar data={data} />
           </div>
-          <div className="hidden md:flex justify-center">
-            <div className="hidden md:flex justify-center pb-2">
+          <div className="hidden lg:flex justify-center">
+            <div className="hidden lg:flex justify-center pb-2">
               <a href={telPhone} className="submit-button bg-chsblue">
-                <span className="nowrap">
-                  <FaPhone size="20px" />
+                <span className="whitespace-nowrap flex">
+                  <FaPhone size="20px" />&nbsp;
                   {metaData.phone}
                 </span>
               </a>
@@ -58,13 +58,12 @@ const Header = ({ metaData }) => {
         </div>
 
         <div className="hidden lg:flex">
-          <div className="hidden md:flex justify-center pb-2">
-            <a
-              href={telPhone}
-              className="submit-button bg-chsblue mr-8"
-            >
+          <div className="hidden lg:flex justify-center pb-2">
+            <a href={telPhone} className="submit-button bg-chsblue mr-8">
+              <span className="whitespace-nowrap">
               <FaPhone className="inline m-2 ml-0" size="20px" />
               {metaData.phone}
+              </span>
             </a>
           </div>
         </div>

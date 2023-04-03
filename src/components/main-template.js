@@ -5,10 +5,15 @@ import { Services } from "./services/services"
 import { Stories } from "./stories/stories"
 import { Badges } from "./badges"
 
-export const MainTemplate = () => {
+export const MainTemplate = ({ title }) => {
   return (
     <React.Fragment>
       <Hero />
+      <div>
+        <div className="tp-caption1-wd-2 uppercase text-sm w-3/5 pt-2 m-auto">
+          {title && <h1 className="text-black">{title}</h1>}
+        </div>
+      </div>
       <Section1 />
        <Services cardsOnly="false" />
       <Stories /> 

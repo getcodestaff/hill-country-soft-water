@@ -22,25 +22,35 @@ export const Footer = () => {
             social
             column2header
             column2labels
+            column2links
             column3header
             column3labels
+            column3links
             column4header
             addressLine1
             addressCsz
             email
           }
         }
+        allServiceAreasTsv {
+          nodes {
+            city_varchar_25
+            state_varchar_20
+            stateshort_varchar_2
+          }
+        }
       }
     `
   )
-
   const data = queryResult.markdownRemark.frontmatter
+  const areas = queryResult.allServiceAreasTsv.nodes
+
   const [footer, setFooter] = useState({ data })
 
   return (
     <FooterContext.Provider value={{ footer, setFooter }}>
       <footer className={styles.footer_background}>
-        <DesktopFooter data={data} />
+        <DesktopFooter data={data} areas={areas} />
         <MobileFooter data={data} />
       </footer>
     </FooterContext.Provider>

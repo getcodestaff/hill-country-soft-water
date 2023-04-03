@@ -40,7 +40,7 @@ export const Hero = () => {
   return (
     <div className="w-[100%] relative">
       <GatsbyImage className="relative z-0" alt="" image={image} />
-      <div className="z-20 absolute top-0 tp-caption l-0 md:ml-20">
+      <div className="z-20 absolute top-0 tp-caption l-0 lg:ml-20">
         <div
           className="tp-caption1-wd-2 page-indent uppercase whitespace-nowrap"
           style={{ color: data.textColor }}
@@ -48,16 +48,20 @@ export const Hero = () => {
           {data.titleLine1}
           <br />
           {data.titleLine2}
-          {/* {cityState ? <div>{cityState}</div> : null} */}
         </div>
+
         <div
           className="small-hero-text page-indent"
           style={{ color: data.textColor }}
         >
-          {formatWithCityState(data.text, layout.location.city, layout.location.stateshort)}
+          {formatWithCityState(
+            data.text,
+            layout.location.city,
+            layout.location.stateshort
+          )}
         </div>
         <button
-          className="text-xs btn-xl btn-info hero-btn bg-white page-indent whitespace-nowrap"
+          className="text-xs btn-sm lg:btn-xl btn-info hero-btn bg-white page-indent whitespace-nowrap"
           onClick={() => scrollTo("#services")}
         >
           {data.buttonText}
