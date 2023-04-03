@@ -87,7 +87,7 @@ export const DesktopFooter = ({ data, areas }) => {
     </footer>
 
       <div id="all-service-areas">
-        {areasToggle === true || location?.pathname?.includes("california") ? (
+        {areasToggle === true || location?.pathname?.includes("texas") ? (
           <section id="service-areas" className="bg-white">
             <div className="mx-6 lg:mx-20 mb-4">
               <h4 className="font-bold mb-2 text-center">Service Areas</h4>
