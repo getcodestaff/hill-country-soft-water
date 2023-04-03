@@ -37,7 +37,7 @@ function Seo({
         metaTitle: title || site.siteMetadata?.title,
         metaDescription: description || site.siteMetadata.description,
         metaType: type || 'page',
-        metaUrl: url || 'https://chsforme.com/',
+        metaUrl: url || 'https://watersoftenersanantonio.co/',
         // metaSecureUrl: secure_url || image
     };
 
@@ -67,8 +67,8 @@ function Seo({
             If the page specifies an og:image it should specify og:image:alt. */}
             <meta property="og:image:secure_url" content={seo.metaSecureUrl} />
 
-            <meta name="twitter:site" content="@HomeCarruth" />
-            <meta name="twitter:creator" content="@HomeCarruth" />
+            <meta name="twitter:site" content="#" />
+            <meta name="twitter:creator" content="#" />
             <meta name="twitter:title" content={seo.metaTitle} />
             <meta name="twitter:description" content={seo.metaDescription} />
             <meta name="twitter:card" content="summary" />

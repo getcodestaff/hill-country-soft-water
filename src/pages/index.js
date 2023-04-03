@@ -10,8 +10,8 @@ const IndexPage = ({ location }) => (
 )
 
 export const Head = ({ location }) => {
-  const title = "Carruth Home Solutions | Residential Plumbing & Residential Construction Sacramento"
-  const description = "Carruth Home Solutions is a Sacramento Residential Plumbing & Rooter Service Professional. Residential Construction Services include Decking, Pergolas, Siding, Windows, Doors & Water Filtration."
+  const title = "Water Softener San Antonio | Whole House Water Filtration"
+  const description = "Installation and Service Water Softener Systems in San Antonio. Whole House Water Filtration System San Antonio Texas."
   return <Seo url={location.href} title={title} description={description} />
 }
 
