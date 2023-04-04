@@ -12,7 +12,7 @@ export const Service8Card = () => {
 						title
 						cardImage {
 							childImageSharp {
-								gatsbyImageData
+								gatsbyImageData(layout: FULL_WIDTH)
 							}
 							publicURL
 						}
