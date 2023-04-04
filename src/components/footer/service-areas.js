@@ -63,7 +63,7 @@ function showLocationsColumn(areas, areaLinks, classes, showAreasToggle) {
     <div>
       <div>
         {areas.map((area, index) => {
-          const to = `/california/${areaLinks[index].trim()}`
+          const to = `/texas/${areaLinks[index].trim()}`
           return (
             <Link key={to} className={classes} to={to}>
               {area}
