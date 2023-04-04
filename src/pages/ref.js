@@ -34,10 +34,13 @@ const Ref = () => {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>Items Need To Be Consistent and Aligned Horizontally</h1>
+      <h1 className="font-bold mt-4 text-3xl">WORKSHEET</h1>  
+      <h2 style={styles.title}>
+        Items Need To Be Consistent and Aligned Horizontally
+      </h2>
       <div style={styles.columns}>
         <div style={styles.column}>
-          <h2 style={styles.header}>Card (Service 1-8 order)</h2>
+          <h3 style={styles.header}>Card (Service 1-8 order)</h3>
           <div style={styles.item}>water softeners</div>
           <div style={styles.item}>water filtration</div>
           <div style={styles.item}>reverse osmosis</div>
@@ -48,7 +51,7 @@ const Ref = () => {
           <div style={styles.item}>well water systems (word order?)</div>
         </div>
         <div style={styles.column}>
-          <h2 style={styles.header}>Footer Links</h2>
+          <h3 style={styles.header}>Footer Links</h3>
           <div style={styles.item}>water-softeners</div>
           <div style={styles.item}>water-filtrations</div>
           <div style={styles.item}>reverse-osmosis</div>
@@ -59,7 +62,7 @@ const Ref = () => {
           <div style={styles.item}>well-water-systems</div>
         </div>
         <div style={styles.column}>
-          <h2 style={styles.header}>Menu Order</h2>
+          <h3 style={styles.header}>Menu Order</h3>
           <div style={styles.item}>WATER SOFTENERS</div>
           <div style={styles.item}>WATER FILTRATION</div>
           <div style={styles.item}>REVERSE OSMOSIS</div>
@@ -70,7 +73,7 @@ const Ref = () => {
           <div style={styles.item}>WATER WELL SYSTEMS</div>
         </div>
         <div style={styles.column}>
-          <h2 style={styles.header}>Pages</h2>
+          <h3 style={styles.header}>Pages</h3>
           <div style={styles.item}>water-softeners.js</div>
           <div style={styles.item}>water-filtration.js</div>
           <div style={styles.item}>reverse-osmosis.js</div>
@@ -81,20 +84,23 @@ const Ref = () => {
           <div style={styles.item}>water-treatment.js</div>
         </div>
       </div>
-      <div className="w-[80%]">
-        <p>
-          Cards: Cards are listed in the order currently coded and presented on the
-          homepage.
-        </p>
-        <p>
-          Pages: Page order in vscode is alphabetical. Make sure the other
-          columns align and just arrange this to align with them.
-        </p>
-        <p>
-          Services: Service1...Service8 should match the card order for easy
-          visual reference.
-        </p>
-      </div>
+      <ul className="w-[75%] font-medium list-disc">
+        <li>
+          Cards are listed in the order currently presented on the homepage. The
+          4th card is still CHS content and does not match the image. Other
+          columns have been moved to best align with the cards and do not
+          reflect the current code. Once we have resolved the issues, I will
+          code it to match this grid.
+        </li>
+        <li>
+          Page order in vscode is alphabetical. Make sure the other columns
+          align and just arrange this to align with them.
+        </li>
+        <li>
+          Service1...Service8 should match the card order for easy visual
+          reference.
+        </li>
+      </ul>
     </div>
   )
 }
