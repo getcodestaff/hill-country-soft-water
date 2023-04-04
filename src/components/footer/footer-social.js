@@ -18,7 +18,7 @@ export const FooterSocial = () => {
   const isInUse = item => socials.includes(item)
 
   return (
-    <div className="flex flex-wrap items-center justify-around flex-col mb-8 pl-2 pr-8">
+    <div id='footer-social' className="flex flex-wrap items-center justify-around flex-col mb-8 pl-2 pr-8">
       <div className="flex self-stretch justify-around text-xl">
         {isInUse("facebook") ? (
           <div className={styles.social_icon}>
@@ -36,7 +36,7 @@ export const FooterSocial = () => {
         ) : null}
         {isInUse("google") ? (
           <div className={styles.social_icon}>
-            <a href="https://www.google.com/maps/place/Carruth+Home+Solutions,+7812+Pomeroy+Way,+Citrus+Heights,+CA+95610/@38.6931618,-121.2754895,13z/data=!4m6!3m5!1s0x809adf1616fb9d8d:0x61e6d7a1ef1b71be!8m2!3d38.6931618!4d-121.2754895!16s%2Fg%2F11qwgbfxyj">
+            <a href="#footer-social">
             <FaGoogle className="inline-block text-chsblue" />
             </a>
           </div>
@@ -60,8 +60,7 @@ export const FooterSocial = () => {
 
         {isInUse("apple") ? (
           <div className={styles.social_icon}>
-            {/* carruth home solutions  */}
-            <a href="https://maps.apple.com/?address=7812%20Pomeroy%20Way,%20Citrus%20Heights,%20CA%20%2095610,%20United%20States&auid=4658356625366678561&ll=38.693148,-121.275435&lsp=9902&q=Carruth%20Home%20Solutions&_ext=CjMKBQgEEOIBCgQIBRADCgUIBhCwAQoECAoQAAoECFIQBAoECFUQAAoECFkQBgoFCKQBEAESJikYusjkJVhDQDHn5RkD/1FewDmWj+5ATFlDQEFXsCRxQlFewFAE&t=m">
+            <a href="#footer-social">
               <FaApple className="inline-block text-chsblue" />
             </a>
           </div>

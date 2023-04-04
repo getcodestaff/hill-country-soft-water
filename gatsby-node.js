@@ -1,6 +1,8 @@
 const path = require(`path`)
 const chunk = require(`lodash/chunk`)
 
+const limit = process.env.AREAS || 999999
+
 // This is a simple debugging tool
 // dd() will prettily dump to the terminal and kill the process
 // const { dd } = require(`dumper.js`)
@@ -25,7 +27,55 @@ exports.createPages = async gatsbyUtilities => {
 
   // And a paginated archive
   await createBlogPostArchive({ posts, gatsbyUtilities })
+
+  await createLocationsPages({gatsbyUtilities})
 }
+
+const createLocationsPages = async ({ gatsbyUtilities }) => {
+
+    const serviceAreasTemplate = path.resolve(`src/templates/service-areas.js`)
+
+    const result = await gatsbyUtilities.graphql(`
+    query myQuery {
+        allServiceAreasTsv {
+          nodes {
+            zip_varchar_5
+            lat_decimal_10_6
+            long_decimal_10_6
+            city_varchar_25
+            stateshort_varchar_2
+            state_varchar_20
+            county_varchar_21
+            herotitle_varchar_50
+            seodescription_varchar_200
+            seotitle_varchar_100
+            maps_varchar_250
+          }
+        }
+      }
+  `)
+  console.log(result)
+
+  result.data.allServiceAreasTsv.nodes.every((node, index) => {
+    if (index > limit) return false
+
+    const usState = node.state_varchar_20.toLowerCase()
+    const usCity = node.city_varchar_25.toLowerCase()
+    let slug = `${usState}/${usCity}/`.replace(/ /g, "-")
+
+    gatsbyUtilities.actions.createPage({
+      path: slug,
+      component: serviceAreasTemplate,
+      context: {
+        props: node,
+      },
+    })
+
+    return true
+  })
+
+}
+
 
 /**
  * This function creates all the individual blog pages in this site
