@@ -34,35 +34,33 @@ export const Services = props => {
       <div style={{ margin: "auto" }}>
         {servicesTitle(props, data)}
 
-        <div style={{ margin: "auto" }}>
-          <div className="flex flex-col md:flex-row justify-around">
-            <div className="w-full">
+        <div className="service-card-container">
+          <div className="service-card">
               <Service1Card />
             </div>
-            <div className="w-full">
+          <div className="service-card">
               <Service2Card />
             </div>
-            <div className="w-full">
+          <div className="service-card">
               <Service3Card />
             </div>
-            <div className="w-full">
+          <div className="service-card">
               <Service4Card />
             </div>
-          </div>
-          <div className="flex flex-col md:flex-row justify-around">
-            <div className="w-full">
+          <div className="service-card">
               <Service5Card />
             </div>
-            <div className="w-full">
+          <div className="service-card">
               <Service6Card />
             </div>
-            <div className="w-full">
+          <div className="service-card">
               <Service7Card />
             </div>
-            <div className="w-full">
+          <div className="service-card">
               <Service8Card />
             </div>
           </div>
+        <div className="m-auto">
           <div className="text-center mt-6">
             {data.contactText}{" "}
             <span className="text-chsblue font-semibold whitespace-nowrap">
