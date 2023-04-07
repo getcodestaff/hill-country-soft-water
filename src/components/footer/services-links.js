@@ -7,6 +7,13 @@ export const ServicesLinks = ({ classline, data }) => {
   const services = data.column2labels.split("|")
   const links = data.column2links.split("|")
 
+//   console.log('links: ', links)
+
+//   services.map((item, index) => {
+//     console.log(index, links[index])
+//   })
+
+
   return (
     <div>
       <style>

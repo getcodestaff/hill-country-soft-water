@@ -5,8 +5,8 @@ logoAlt: logo
 logoColumnText: some lorum ipsum content as a messge under logo
 social: facebook | twitter | google | instagram | pinterest | apple
 column2header: OUR SERVICES
-column2labels: Water Softeners | Water Filtrations | Reverse Osmosis | Well Water Systems | Under Sink Systems | Hard Water Systems | Alkaline Water Filters | Whole House Water Filtration Systems
-column2links: water-softeners | water-filtrations | reverse-osmosis | well-water-systems | under-sink-systems | hard-water-systems | alkaline-water-filters | whole-house-water-filtrations-systems
+column2labels: Water Softeners | Water Filtration | Reverse Osmosis | Hard Water Filters | Water Testing | Water Treatement | Whole House Water Filtration Systems | Well Water Systems
+column2links: water-softeners | water-filtration | reverse-osmosis | hard-water-filters | water-testing | water-treatment | whole-house-water-filtration-systems | well-water-systems
 column3header: SERVICE AREAS
 column3labels: San Antonio | Boerne | New Braunfels | Universal City | Pleasanton | San Marcos |
 column3links: san-antonio | boerne | new-braunfels | universal-city | pleasanton | san-marcos | 

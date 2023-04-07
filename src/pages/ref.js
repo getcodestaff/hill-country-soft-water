@@ -44,32 +44,32 @@ const Ref = () => {
           <div style={styles.item}>water softeners</div>
           <div style={styles.item}>water filtration</div>
           <div style={styles.item}>reverse osmosis</div>
-          <div style={styles.item}>**Doors**</div>
-          <div style={styles.item}>**Alkaline Water**</div>
+          <div style={styles.item}>hard water filters</div>
+          <div style={styles.item}>water testing</div>
           <div style={styles.item}>water treatment</div>
-          <div style={styles.item}>house water systems</div>
-          <div style={styles.item}>well water systems (word order?)</div>
+          <div style={styles.item}>whole house systems</div>
+          <div style={styles.item}>water well systems</div>
         </div>
         <div style={styles.column}>
           <h3 style={styles.header}>Footer Links</h3>
           <div style={styles.item}>water-softeners</div>
-          <div style={styles.item}>water-filtrations</div>
+          <div style={styles.item}>water-filtration</div>
           <div style={styles.item}>reverse-osmosis</div>
-          <div style={styles.item}>under-sink-systems</div>
-          <div style={styles.item}>alkaline-water-filters</div>
-          <div style={styles.item}>hard-water-systems</div>
-          <div style={styles.item}>whole-house-water-filtrations-systems</div>
-          <div style={styles.item}>well-water-systems</div>
+          <div style={styles.item}>hard-water-filters</div>
+          <div style={styles.item}>water-testing</div>
+          <div style={styles.item}>water-treatment</div>
+          <div style={styles.item}>whole-house-water-filtration-systems</div>
+          <div style={styles.item}>water-well-systems</div>
         </div>
         <div style={styles.column}>
           <h3 style={styles.header}>Menu Order</h3>
           <div style={styles.item}>WATER SOFTENERS</div>
           <div style={styles.item}>WATER FILTRATION</div>
           <div style={styles.item}>REVERSE OSMOSIS</div>
-          <div style={styles.item}>&nbsp;</div>
-          <div style={styles.item}>WATER TESTING</div>
           <div style={styles.item}>HARD WATER FILTERS</div>
-          <div style={styles.item}>HOUSE WATER FILTERS</div>
+          <div style={styles.item}>WATER TESTING</div>
+          <div style={styles.item}>WATER TREATMENT</div>
+          <div style={styles.item}>WHOLE HOUSE SYSTEMS</div>
           <div style={styles.item}>WATER WELL SYSTEMS</div>
         </div>
         <div style={styles.column}>
@@ -77,11 +77,11 @@ const Ref = () => {
           <div style={styles.item}>water-softeners.js</div>
           <div style={styles.item}>water-filtration.js</div>
           <div style={styles.item}>reverse-osmosis.js</div>
-          <div style={styles.item}>&nbsp;</div>
-          <div style={styles.item}>water-testing.js</div>
           <div style={styles.item}>hard-water-filters.js</div>
-          <div style={styles.item}>house-water-filters.js</div>
+          <div style={styles.item}>water-testing.js</div>
           <div style={styles.item}>water-treatment.js</div>
+          <div style={styles.item}>whole-house-water-filtration-systems.js</div>
+          <div style={styles.item}>water-well-systems.js</div>
         </div>
       </div>
       <ul className="w-[75%] font-medium list-disc">

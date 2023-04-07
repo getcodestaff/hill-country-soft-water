@@ -7,5 +7,4 @@ text: San Antonio Water Softerners for Homes and Businesses. Drinking water trea
 textColor: white
 featuredImage: ../images/hero_banner.webp
 buttonText: SCHEDULE A WATER TEST
-
 ---

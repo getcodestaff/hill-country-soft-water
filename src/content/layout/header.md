@@ -1,10 +1,26 @@
 ---
 component: header
 logoImage: ../../images/layout/logoipsum-289.jpg
-mainMenu: HOME | ABOUT | SERVICES | BLOG | CONTACT
-mainMenuLinks: / | about | services | blog | contact
-dropdown: Water Softeners | Water Filtration | Reverse Osmosis | Hard Water Filters | Water Testing | Alkaline Water | House Water Filters | Water Well Systems 
-dropdownLinks: water-softeners | water-filtration | reverse-osmosis | hard-water-filters | water-testing | alkaline-water | house-water-filters | water-well-systems 
+menu:
+  {
+    mainMenu:
+      [
+        { label: "HOME", link: "/" },
+        { label: "ABOUT", link: "/about/" },
+        { label: "SERVICES", link: "/no-op: dropdown/" },
+        { label: "BLOG", link: "/blog/" },
+        { label: "CONTACT", link: "/contact/" },
+      ],
+    dropdown:
+      [
+        { label: "Water Softeners", link: "/water-softeners/" },
+        { label: "Water Filtration", link: "/water-filtration/" },
+        { label: "Reverse Osmosis", link: "/reverse-osmosis/" },
+        { label: "Hard Water Filters", link: "/hard-water-filters/" },
+        { label: "Water Testing", link: "/water-testing/" },
+        { label: "Water Treatement", link: "/water-treatment/" },
+        { label: "Whole House Water Filters", link: "/whole-house-water-filtration-systems/" },
+        { label: "Water Well Systems", link: "/water-well-systems/" },
+      ],
+  }
 ---
-
-
