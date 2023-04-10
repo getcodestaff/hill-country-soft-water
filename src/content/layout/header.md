@@ -1,6 +1,6 @@
 ---
 component: header
-logoImage: ../../images/layout/logoipsum-289.jpg
+logoImage: ../../images/layout/gaines-logo.png
 menu:
   {
     mainMenu:

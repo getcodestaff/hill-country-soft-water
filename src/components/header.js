@@ -14,7 +14,7 @@ const Header = ({ metaData }) => {
             component
             logoImage {
               childImageSharp {
-                gatsbyImageData(width: 190)
+                gatsbyImageData
               }
             }
           }
