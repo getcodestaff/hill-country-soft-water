@@ -19,7 +19,13 @@ export const Footer = () => {
             }
             logoAlt
             logoColumnText
-            social
+            social  {
+                socials {
+                  label
+                  link
+                  enable
+                }
+              }
             column2header
             column2labels
             column2links
