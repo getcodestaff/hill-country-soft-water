@@ -54,7 +54,6 @@ const createLocationsPages = async ({ gatsbyUtilities }) => {
         }
       }
   `)
-  console.log(result)
 
   result.data.allServiceAreasTsv.nodes.every((node, index) => {
     if (index > limit) return false

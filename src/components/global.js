@@ -30,16 +30,12 @@ export const imageRight = (node, image) => (
 )
 
 export const formatWithCityState = (message, city, state) => {
-  const c = (city && state) ? city : ''
-  const s = (city && state) ? state : ''
+  const c = city || "city not set"
+  const s = state || "state not set"
 
-  let formattedMessage = message
+  return message
     .replaceAll("$", "")
     .replaceAll("{city}", c)
     .replaceAll("{state}", s)
     .trim()
-
-  return (city && state) 
-    ? formattedMessage 
-    : formattedMessage.slice(0, -3) //remove trailing punctuation
 }
