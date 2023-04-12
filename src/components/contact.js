@@ -12,10 +12,10 @@ export const Contact = () => {
             <div className="text-center lg:text-xl">
               <h1 className="my-4 text-lg">CONTACT US</h1>
               <p className="text-xs lg:text-sm xl:text-base w-[80%] m-auto">
-                 We treat all our customers like family!
+                 Contact a home water treatment professional today.
               </p>
             </div>
-            <form target="_blank" action="https://formsubmit.co/14fa3f608c1933683d0c254ac3aafe05" method="POST">
+            <form target="_blank" action="https://formsubmit.co/" method="POST">
               <div className="text-black flex flex-col xl:flex-row justify-center lg:w-[80%] lg:m-auto">
                 <input
                   type="text"
@@ -66,9 +66,7 @@ export const Contact = () => {
           <p
             className="text-center text-xl visible mb-4"
           >
-            Carruth Home Solutions does not provide, rent, or sell email
-            addresses or any other personal information to anyone outside the
-            company.
+            Hill Country Soft Water
           </p>
         </div>
       </div>
