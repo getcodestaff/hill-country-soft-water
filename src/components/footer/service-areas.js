@@ -9,8 +9,7 @@ export const ServiceAreas = ({
 }) => {
   let classes = `links ${classline}`
 
-  const areas = data.column3labels.split("|")
-  const areaLinks = data.column3links.split("|")
+  const column3 = data.column3.elements
 
   let mapframe = ""
 
@@ -42,7 +41,7 @@ export const ServiceAreas = ({
 
       {mapframe
         ? showMap(mapframe, location?.city)
-        : showLocationsColumn(areas, areaLinks, classes, showAreasToggle)}
+        : showLocationsColumn(column3, classes, showAreasToggle)}
     </React.Fragment>
   )
 }
@@ -58,15 +57,14 @@ function showMap(mapframe, city) {
   return null
 }
 
-function showLocationsColumn(areas, areaLinks, classes, showAreasToggle) {
+function showLocationsColumn(column3, classes, showAreasToggle) {
   return (
     <div>
       <div>
-        {areas.map((area, index) => {
-          const to = `/texas/${areaLinks[index].trim()}`
+        {column3.map(elem => {
           return (
-            <Link key={to} className={classes} to={to}>
-              {area}
+            <Link key={elem.link} className={classes} to={elem.link}>
+              {elem.label}
             </Link>
           )
         })}

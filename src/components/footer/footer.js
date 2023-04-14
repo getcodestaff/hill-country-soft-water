@@ -30,8 +30,12 @@ export const Footer = () => {
             column2labels
             column2links
             column3header
-            column3labels
-            column3links
+            column3 {
+                elements {
+                    label
+                    link
+                }
+            }
             column4header
             addressLine1
             addressCsz
