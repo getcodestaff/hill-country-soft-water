@@ -9,20 +9,23 @@ const Layout = ({ children, location }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
-      site {
-        siteMetadata {
-          title
+        site {
+          siteMetadata {
+            title
             description
             businessName
             phone
+            defaultCity
+          }
         }
       }
-    }
     `
   )
 
   const siteMetadata = site.siteMetadata
-  const [layout, setLayout] = useState({location, siteMetadata})
+  const [layout, setLayout] = useState({ location, siteMetadata })
+
+  layout.location.city = layout.location.city || siteMetadata.defaultCity
 
   const copyrightMobile = () => {
     let titleMobile = site.siteMetadata?.title.split("|")
@@ -45,34 +48,35 @@ const Layout = ({ children, location }) => {
   return (
     <React.Fragment>
       <LayoutContext.Provider value={{ layout, setLayout }}>
-      <Header metaData={siteMetadata} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
-      >
-        <main>{children}</main>
-        <Footer />
-        <footer id='copyright'
-          className="px-4 lg:px-0"
+        <Header metaData={siteMetadata} />
+        <div
           style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
+            margin: `0 auto`,
+            maxWidth: `var(--size-content)`,
+            padding: `var(--size-gutter)`,
           }}
         >
+          <main>{children}</main>
+          <Footer />
+          <footer
+            id="copyright"
+            className="px-4 lg:px-0"
+            style={{
+              marginTop: `var(--space-5)`,
+              fontSize: `var(--font-sm)`,
+            }}
+          >
             <div className="hidden lg:flex lg:flex-row justify-between content-start">
               © {new Date().getFullYear()} &middot; {title}&nbsp;
               <a className="text-xs" href="/sitemap-0.xml">
                 sitemap
               </a>
-          </div>
-          <div className="block lg:hidden">
-            © {new Date().getFullYear()} &middot; {copyrightMobile()}
-          </div>
-        </footer>
-      </div>
+            </div>
+            <div className="block lg:hidden">
+              © {new Date().getFullYear()} &middot; {copyrightMobile()}
+            </div>
+          </footer>
+        </div>
       </LayoutContext.Provider>
     </React.Fragment>
   )

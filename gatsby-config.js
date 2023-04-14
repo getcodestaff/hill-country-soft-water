@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: "https://watersoftenersanantonio.co",
     phone: "210-942-7683",
     businessName: "Hill Country Soft Water",
+    defaultCity: "San Antonio",
     author: `@witcradg`,
   },
   plugins: [

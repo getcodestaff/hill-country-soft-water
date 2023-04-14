@@ -19,7 +19,6 @@ export const Hero = () => {
             titleLine2
             text
             textColor
-            defaultCity
             buttonText
             featuredImage {
               childImageSharp {
@@ -35,8 +34,6 @@ export const Hero = () => {
 
   const { layout } = useContext(LayoutContext)
   const data = queryResult.markdownRemark.frontmatter
-
-  layout.location.city = layout.location.city || data.defaultCity
 
   const image = getImage(data.featuredImage.childImageSharp.gatsbyImageData)
 
