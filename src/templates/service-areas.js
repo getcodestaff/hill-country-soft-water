@@ -31,7 +31,7 @@ export const Head = ({ location, pageContext, data }) => {
     <Seo
       type="page"
       title={props.seotitle_varchar_100}
-      description={props.seodescription_varchar_200}
+      description={props.seodescription_varchar_250}
       url={metaUrl}
     />
   )

@@ -47,7 +47,7 @@ const createLocationsPages = async ({ gatsbyUtilities }) => {
             state_varchar_20
             county_varchar_21
             herotitle_varchar_50
-            seodescription_varchar_200
+            seodescription_varchar_250
             seotitle_varchar_100
             maps_varchar_250
           }
