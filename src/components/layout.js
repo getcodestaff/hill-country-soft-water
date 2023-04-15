@@ -25,7 +25,9 @@ const Layout = ({ children, location }) => {
   const siteMetadata = site.siteMetadata
   const [layout, setLayout] = useState({ location, siteMetadata })
 
-  layout.location.city = layout.location.city || siteMetadata.defaultCity
+  if (layout.location) {
+    layout.location.city = layout.location.city || siteMetadata.defaultCity
+  }
 
   const copyrightMobile = () => {
     let titleMobile = site.siteMetadata?.title.split("|")
