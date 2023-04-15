@@ -45,7 +45,7 @@ export const Section1 = () => {
         </div>
         <div className="w-full xl:w-1/2">
           <div className="fixwidth flex flex-col space-y-8">
-            <div className="text-chsblue text-lg font-semibold">ABOUT US</div>
+            <div className="text-chsblue text-lg font-semibold">Whole House Water Filtration Systems</div>
             <h1 className="section-title mt-1 text-left">
               Clean Water Your Whole Family Can Enjoy. Water Filtration and
               Water Softener Options For Every Situation.{" "}
