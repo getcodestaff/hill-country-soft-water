@@ -19,22 +19,22 @@ export const Footer = () => {
             }
             logoAlt
             logoColumnText
-            social  {
-                socials {
-                  label
-                  link
-                  enable
-                }
+            social {
+              socials {
+                label
+                link
+                enable
               }
+            }
             column2header
             column2labels
             column2links
             column3header
             column3 {
-                elements {
-                    label
-                    link
-                }
+              elements {
+                label
+                link
+              }
             }
             column4header
             addressLine1
@@ -42,25 +42,17 @@ export const Footer = () => {
             email
           }
         }
-        allServiceAreasTsv {
-          nodes {
-            city_varchar_25
-            state_varchar_20
-            stateshort_varchar_2
-          }
-        }
       }
     `
   )
   const data = queryResult.markdownRemark.frontmatter
-  const areas = queryResult.allServiceAreasTsv.nodes
 
   const [footer, setFooter] = useState({ data })
 
   return (
     <FooterContext.Provider value={{ footer, setFooter }}>
       <footer className={styles.footer_background}>
-        <DesktopFooter data={data} areas={areas} />
+        <DesktopFooter data={data} />
         <MobileFooter data={data} />
       </footer>
     </FooterContext.Provider>

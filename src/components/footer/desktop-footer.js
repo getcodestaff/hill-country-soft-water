@@ -7,8 +7,9 @@ import { FooterSocial } from "./footer-social.js"
 import { ServicesLinks } from "./services-links.js"
 import { FooterContacts } from "./footer-contacts.js"
 import * as styles from "./footer.module.css"
+import { AllServiceAreas } from "./all-service-areas"
 
-export const DesktopFooter = ({ data, areas }) => {
+export const DesktopFooter = ({ data }) => {
   const { layout } = useContext(LayoutContext)
   const location = layout.location
   const lcState = location?.lcState
@@ -92,7 +93,10 @@ export const DesktopFooter = ({ data, areas }) => {
       </footer>
 
       {/* more... */}
-      <div id="all-service-areas">
+      {areasToggle === true || location?.pathname?.includes(lcState) ? (
+        <AllServiceAreas />
+      ) : null}
+      {/* <div id="all-service-areas">
         {areasToggle === true || location?.pathname?.includes(lcState) ? (
           <section id="service-areas" className="bg-white">
             <div className="mx-6 lg:mx-20 mb-4">
@@ -115,7 +119,7 @@ export const DesktopFooter = ({ data, areas }) => {
             </div>
           </section>
         ) : null}
-      </div>
+      </div> */}
     </React.Fragment>
   )
 }
