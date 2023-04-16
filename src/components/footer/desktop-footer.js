@@ -1,5 +1,4 @@
 import React, { useState, useContext } from "react"
-import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { LayoutContext } from "../../contexts/layout-context"
 import { ServiceAreas } from "./service-areas.js"
@@ -63,8 +62,9 @@ export const DesktopFooter = ({ data }) => {
                   />
                 </nav>
               </div>
-              <div className="p-6">{data.logoColumnText}</div>
-              <div>
+              <div className="p-6 pb-0">{data.logoColumnText}</div>
+              {location?.map ? <div className="px-6">in {location.zips}</div> : null}
+              <div className="pt-6">
                 <FooterSocial data={data} />
               </div>
             </div>
