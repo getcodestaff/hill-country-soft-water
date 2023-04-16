@@ -11,7 +11,9 @@ export default function ServiceAreasTemplate({
 
   location.city = props.city_varchar_25
   location.stateshort = props.stateshort_varchar_2
+  location.lcState = props.state_varchar_20.toLowerCase()
   location.map = props.maps_varchar_250
+  location.zips = props.zip_varchar_5
 
   return (
     <Layout location={location}>
