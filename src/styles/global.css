@@ -99,6 +99,8 @@ body {
 
     .tp-caption1-wd-2 {
         font-family: MontserratExtraBold, sans-serif;
+        font-size: 30px;
+        line-height: 1.2;
     }
 
     .hero-shop-now-btn {
@@ -130,7 +132,8 @@ body {
     }
 
     .tp-caption1-wd-2 {
-        font-size: 40px;
+        font-size: 30px;
+        line-height: 1.2;
     }
 
     .small-hero-text {
@@ -162,16 +165,16 @@ body {
         line-height: 1.2;
     }
 
-    .tp-caption1-wd-2 {
+    /* .tp-caption1-wd-2 {
         font-size  : 60px;
         line-height: 1;
-    }
+    } */
 
     .small-hero-text {
         font-weight   : 500;
-        font-size     : 23px !important;
-        line-height   : 1.2;
-        width         : 300px;
+        font-size     : 15px !important;
+        line-height   : 1.1;
+        width         : 400px;
         padding-top   : .7rem;
         padding-bottom: 1rem;
     }
