@@ -61,7 +61,7 @@ export const Hero = () => {
           )}
         </div>
         <button
-          className="text-xs btn-sm lg:btn-xl btn-info hero-btn bg-white page-indent whitespace-nowrap"
+          className="text-lg btn-sm lg:btn-xl btn-info hero-btn bg-red-500 text-white page-indent whitespace-nowrap"
           onClick={() => scrollTo("#services")}
         >
           {data.buttonText}

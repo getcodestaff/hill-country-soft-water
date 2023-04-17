@@ -10,7 +10,7 @@ export const MainTemplate = ({ title }) => {
     <React.Fragment>
       <Hero />
       <div>
-        <div className="tp-caption1-wd-2 uppercase text-sm w-3/5 pt-2 m-auto">
+        <div className="tp-caption1-wd-2 uppercase text-sm w-3/5 pt-5 m-auto">
           {title && <h1 className="text-black">{title}</h1>}
         </div>
       </div>
