@@ -17,7 +17,7 @@ As I work on the above list, I'll try to be thorough in the namiming of commits 
 ## Installation
 
 ```
-gatsby new <new projet name> git@github.com:witcradg/gatsby-service-starter.git
+gatsby new <new projet name> git@github.com:getcodestaff/gatsby-service-starter.git
 
 cd <new project name>
 npm install --legacy-peer-deps
