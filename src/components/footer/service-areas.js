@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import scrollTo from "gatsby-plugin-smoothscroll"
+
 
 export const ServiceAreas = ({
   location,
@@ -72,6 +74,7 @@ function showLocationsColumn(column3, classes, showAreasToggle) {
       <button
         className={classes}
         onClick={() => {
+          scrollTo("#sitemap")
           showAreasToggle()
         }}
       >

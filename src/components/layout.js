@@ -70,14 +70,18 @@ const Layout = ({ children, location }) => {
           >
             <div className="hidden lg:flex lg:flex-row justify-between content-start">
               © {new Date().getFullYear()} &middot; {title}&nbsp;
-              <a className="text-xs" href="/sitemap-0.xml">
-                sitemap
-              </a>
             </div>
             <div className="block lg:hidden">
               © {new Date().getFullYear()} &middot; {copyrightMobile()}
             </div>
           </footer>
+          <a
+            id="sitemap"
+            className="text-xs block text-right w-full"
+            href="/sitemap-0.xml"
+          >
+            sitemap
+          </a>
         </div>
       </LayoutContext.Provider>
     </React.Fragment>
