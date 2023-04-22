@@ -1,6 +1,6 @@
 ---
 component: footer
-logoImage: ../../images/layout/logoipsum-289.jpg
+logoImage: ../../images/layout/logoipsum-289.png
 logoAlt: logo
 logoColumnText: Whole House Water Filtration Systam and Water Softener Supplier and Installer for 30+ Years.
 social:
