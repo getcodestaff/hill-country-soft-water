@@ -1,7 +1,7 @@
 ---
 component: footer
-logoImage: ../../images/layout/logoipsum-289.jpg
-logoAlt: logo
+logoImage: ../../images/layout/logoipsum-289.png
+logoAlt: water softeners sa texas
 logoColumnText: Whole House Water Filtration Systam and Water
 Softener Supplier and Installer for 30+ Years.
 social:
