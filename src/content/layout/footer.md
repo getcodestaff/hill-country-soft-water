@@ -2,7 +2,8 @@
 component: footer
 logoImage: ../../images/layout/logoipsum-289.jpg
 logoAlt: logo
-logoColumnText: some lorum ipsum content as a messge under logo
+logoColumnText: Whole House Water Filtration Systam and Water
+Softener Supplier and Installer for 30+ Years.
 social:
   {
     socials:

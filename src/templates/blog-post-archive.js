@@ -32,7 +32,7 @@ const BlogIndex = ({
       <div className="global-wrapper">
         <header className="global-header">
           <h1 className="main-heading mb-8">
-            <Link to="/">HCSW BLOG</Link>
+            <Link to="/">SAN ANTONIO WATER FILTRATION FAQ</Link>
           </h1>
           <Bio />
           <ol style={{ listStyle: `none` }}>
