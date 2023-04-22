@@ -25,7 +25,7 @@ module.exports = {
       options: {
         // the only required plugin option for WordPress is the GraphQL url.
         url:
-          process.env.WPGRAPHQL_URL || `https://d8gblog.wpengine.com/graphql`,
+          process.env.WPGRAPHQL_URL || `https://watersa.wpengine.com/graphql`,
         auth: {
           htaccess: {
             username: "demo",
