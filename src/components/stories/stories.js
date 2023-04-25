@@ -26,7 +26,7 @@ export const Stories = () => {
           <Story3Card />
         </div>
         <a
-          href="https://www.homeadvisor.com"
+          href="https://watersoftenersanantonio.co/water-filtration/"
           className="mb-0 mt-4 text-xs lg:text-xl btn-xl btn-info hero-btn bg-chsblue text-white mb-8"
         >
           WATER FILTRATION
