@@ -4,7 +4,7 @@ import { Banner } from "./banner"
 import threeCarruths from "../images/about-us/three-carruths.jpg"
 import Judah from "../images/google.webp"
 import Steve from "../images/bing.webp"
-import Micah from ".../images/google-review.webp"
+import Micah from "../images/google-review.webp"
 
 const About = () => (
   <main className="site-main">
