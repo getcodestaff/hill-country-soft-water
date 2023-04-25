@@ -1,8 +1,8 @@
 ---
 component: service4_row
 position: 3
-rowImage: ../../../images/hard-water-filters/hard_water_filters_card.webp
-rowImageAlt: Hard Water Filters temporary alt
+rowImage: ../../../images/hard-water-filters/filter-hard-water.webp
+rowImageAlt: Filter hard water
 ---
 #  Hard Water Filters Issues
 
