@@ -5,17 +5,17 @@ images:
     mainImage: "saved for reference.jpg",
     galleryAlts:
       [
-        "water_softener_card temporary alt",
-        "water_softener_card temporary alt",
-        "water_softener_card temporary alt",
-        "water_softener_card temporary alt",
+        "Fix Hard Water San Antonio",
+        "Home Water Softener Systems",
+        "Commercial Water Softeners for Business",
+        "Drinking Filtered Water Happily",
       ],
     galleryImages:
       [
-        "../../../images/water-softeners/water_softener_card.webp",
-        "../../../images/water-softeners/water_softener_card.webp",
-        "../../../images/water-softeners/water_softener_card.webp",
-        "../../../images/water-softeners/water_softener_card.webp",
+        "../../../images/water-softeners/hard-water-softener.webp",
+        "../../../images/water-softeners/water-softener-system.webp",
+        "../../../images/water-softeners/commercial-water-softener.webp",
+        "../../../images/water-softeners/drink-filtered-water.webp",
       ],
   }
 ---

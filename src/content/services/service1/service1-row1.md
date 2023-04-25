@@ -1,7 +1,7 @@
 ---
 component: service1_row
 position: 1
-rowImage: ../../../images/water-softeners/water_softener_card.webp
+rowImage: ../../../images/water-softeners/san-antonio-water-softener.webp
 rowImageAlt: San Antonio Soft Water Systems
 ---
 #  San Antonio Water Softener & Soft Water Systems
