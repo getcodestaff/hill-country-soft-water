@@ -12,10 +12,10 @@ images:
       ],
     galleryImages:
       [
-        "../../../images/water-well-systems/water_well_systems_card.webp",
-        "../../../images/water-well-systems/water_well_systems_card.webp",
-        "../../../images/water-well-systems/water_well_systems_card.webp",
-        "../../../images/water-well-systems/water_well_systems_card.webp",
+        "../../../images/well-water-systems/well-water-whole-home-filter.webp",
+        "../../../images/well-water-systems/well-water-whole-home-filter.webp",
+        "../../../images/well-water-systems/well-water-whole-home-filter.webp",
+        "../../../images/well-water-systems/well-water-whole-home-filter.webp",
       ],
   }
 ---
