@@ -1,5 +1,5 @@
 import React from "react"
-import AngiesListLogo from "../../images/angies-list-logo.webp"
+import AngiesListLogo from "../../images/google-review.webp"
 import { FaArrowRight } from "react-icons/fa"
 import { Story1Card } from "./story1-card"
 import { Story2Card } from "./story2-card"
