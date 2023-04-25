@@ -12,10 +12,10 @@ images:
       ],
     galleryImages:
       [
-        "../../../images/well-water-systems/well-water-whole-home-filter.webp",
-        "../../../images/well-water-systems/well-water-whole-home-filter.webp",
-        "../../../images/well-water-systems/well-water-whole-home-filter.webp",
-        "../../../images/well-water-systems/well-water-whole-home-filter.webp",
+        "../../../images/well-water-systems/well-water-systems-san-antonio.webp",
+        "../../../images/well-water-systems/well-water-systems-san-antonio.webp",
+        "../../../images/well-water-systems/well-water-systems-san-antonio.webp",
+        "../../../images/well-water-systems/well-water-systems-san-antonio.webp",
       ],
   }
 ---
