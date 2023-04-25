@@ -1,7 +1,7 @@
 ---
 component: service7_row
 position: 4
-rowImage: ../../../images/house-water-filters/house_water_filters_card.webp
+rowImage: ../../../images/house-water-filters/whole-house-water-filtration-system.webp
 rowImageAlt: house water filter system
 ---
 #  Whole House Water Filtration San Antonio, Texas

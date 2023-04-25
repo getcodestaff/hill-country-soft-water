@@ -1,6 +1,6 @@
 ---
 cardName: Service7Card
-cardImage: ../../../images/house-water-filters/house_water_filters_card.webp
+cardImage: ../../../images/house-water-filters/whole-house-water-filtration-system.webp
 cardImageAlt: house water filters temporary alt
 title: Whole House Systems
 serviceLink: whole-house-water-filtration-systems
