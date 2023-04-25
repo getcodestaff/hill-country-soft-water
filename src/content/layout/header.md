@@ -20,7 +20,7 @@ menu:
         { label: "Water Testing", link: "/water-testing/" },
         { label: "Water Treatement", link: "/water-treatment/" },
         { label: "Whole House Water Filters", link: "/whole-house-water-filtration-systems/" },
-        { label: "Water Well Systems", link: "/water-well-systems/" },
+        { label: "Well Water Systems", link: "/well-water-systems/" },
       ],
   }
 ---
