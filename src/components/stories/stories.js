@@ -12,7 +12,7 @@ export const Stories = () => {
         <img
           className="m-auto"
           src={AngiesListLogo}
-          alt="Angies List Logo"
+          alt="Google Water Softener Reviews"
         />
       </div>
       <h1 className="section-title mt-1 mb-4">
