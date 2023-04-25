@@ -1,6 +1,6 @@
 ---
 cardName: Story1Card
-cardImage: ../images/google.png
+cardImage: ../images/google.webp
 cardImageAlt: Reviews for Watersoftenersanantonio.co
 title: 
 serviceLink: https://watersoftenersanantonio.co/reviews/
