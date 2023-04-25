@@ -1,8 +1,8 @@
 ---
 component: service3_row
 position: 3
-rowImage: ../../../images/reverse-osmosis/reverse_osmosis_card.webp
-rowImageAlt: temporary alt Reverse Osmosis
+rowImage: ../../../images/reverse-osmosis/reverse-osmosis-water-system.webp
+rowImageAlt: Water Systems Reverse Osmosis
 ---
 #  Reverse Osmosis
 
