@@ -2,9 +2,9 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Banner } from "./banner"
 import threeCarruths from "../images/about-us/three-carruths.jpg"
-import Judah from "../images/water-softeners/hard-water-softener.webp"
-import Steve from "../images/water-softeners/water-softener-system.webp"
-import Micah from "../images/water-softeners/commercial-water-softener.webp"
+import Judah from "../..../images/water-softeners/hard-water-softener.webp"
+import Steve from "../..../images/water-softeners/water-softener-system.webp"
+import Micah from "../..../images/water-softeners/commercial-water-softener.webp"
 
 const About = () => (
   <main className="site-main">
