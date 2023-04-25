@@ -1,6 +1,6 @@
 ---
 cardName: Story3Card
-cardImage: ../images/google.wepb
+cardImage: ../images/google.webp
 cardImageAlt: Google Water Filter Review 
 title:
 serviceLink: https://watersoftenersanantonio.co/reviews/

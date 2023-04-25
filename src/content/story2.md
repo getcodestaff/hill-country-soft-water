@@ -1,6 +1,6 @@
 ---
 cardName: Story2Card
-cardImage: ../images/bing.wepb
+cardImage: ../images/bing.webp
 cardImageAlt: Bing review water filter company
 title: 
 serviceLink: https://watersoftenersanantonio.co/reviews/
