@@ -10,7 +10,9 @@ const ReverseOsmosisPage = ({ location }) => (
 )
 
 export const Head = ({ location }) => {
-  return <Seo url={location.href} />
-}
+    const title = "Sacramento Deck Installation | Decking in Sacramento"
+    const description = "Sacramento Deck Installation | Decking in Sacramento"
+    return <Seo url={location.href} title={title} description={description} />
+  }
 
 export default ReverseOsmosisPage
