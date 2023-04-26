@@ -11,7 +11,7 @@ const IndexPage = ({ location }) => (
 
 export const Head = ({ location }) => {
   const title = "Water Softener San Antonio Since 1989 | Whole House Water Filtration San Antonio, TX"
-  const description = "Installation and Service Water Softener Systems in San Antonio. Whole House Water Filtration System San Antonio Texas."
+  const description = "Water Softeners in  San Antonio Since 1989. Installation and Service of Water Softener Systems in San Antonio, Texas for 30+ Years. Whole House Water Filtration System San Antonio Texas."
   return <Seo url={location.href} title={title} description={description} />
 }
 
