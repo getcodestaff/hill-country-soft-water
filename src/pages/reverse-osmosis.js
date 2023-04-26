@@ -10,8 +10,8 @@ const ReverseOsmosisPage = ({ location }) => (
 )
 
 export const Head = ({ location }) => {
-    const title = "Sacramento Deck Installation | Decking in Sacramento"
-    const description = "Sacramento Deck Installation | Decking in Sacramento"
+    const title = "Reverse Osmosis Systems San Antonio, TX | Since 1989"
+    const description = "Reverse Osmosis Systems San Antonio, TX | Since 1989"
     return <Seo url={location.href} title={title} description={description} />
   }
 

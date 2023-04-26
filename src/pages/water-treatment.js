@@ -10,7 +10,9 @@ const WaterTreatmentPage = ({ location }) => (
 )
 
 export const Head = ({ location }) => {
-  return <Seo url={location.href} />
+  const title = "Water Treatment Systems San Antonio, TX | Since 1989"
+  const description = "Water Treatment Systems San Antonio, TX | Since 1989"
+  return <Seo url={location.href} title={title} description={description} />
 }
 
 export default WaterTreatmentPage
