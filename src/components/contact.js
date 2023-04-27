@@ -15,7 +15,7 @@ export const Contact = () => {
                  Contact a home water treatment professional today.
               </p>
             </div>
-            <form target="_blank" action="https://formsubmit.co/" method="POST">
+            <form target="_blank" action="https://formsubmit.co/info@watersoftenersanantonio.co" method="POST">
               <div className="text-black flex flex-col xl:flex-row justify-center lg:w-[80%] lg:m-auto">
                 <input
                   type="text"
