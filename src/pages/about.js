@@ -18,8 +18,8 @@ const AboutPage = ({ location }) => {
 }
 
 export const Head = ({ location }) => {
-  const title = "About Carruth Home Solutions"
-  const description = "Carruth Home Solutions is a family owned and operated business serving the Sacramento Area."
+  const title = "About Water Softener San Antonio, TX "
+  const description = "About Water Softener Company Serving San Antonio, TX Since 1989."
   return <Seo url={location.href} title={title} description={description} />
 }
 
