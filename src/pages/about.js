@@ -6,9 +6,9 @@ import Seo from "../components/seo"
 const AboutPage = ({ location }) => {
   return (
     <Layout
-      title={"About Carruth Home Solutions"}
+      title={"About Water Softeners San Antonio, TX."}
       description={
-        "Get to know the Father and Son team at Carruth Home Solutions"
+        "Get to know the water filtration company at Water Softeners San Antonio"
       }
       location={location}
     >
