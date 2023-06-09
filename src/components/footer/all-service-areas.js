@@ -18,7 +18,7 @@ export const AllServiceAreas = () => {
   const areas = queryResult.allServiceAreasTsv.nodes
 
   return (
-    <div id="all-service-areas debug-red">
+    <div id="all-service-areas">
       <section id="service-areas" className="bg-white">
         <div className="mx-6 lg:mx-20 mb-4">
           <h4 className="font-bold mb-2 text-center">Service Areas</h4>

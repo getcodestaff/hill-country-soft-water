@@ -11,7 +11,7 @@ menu:
         { label: "BLOG", link: "/blog/" },
         { label: "CONTACT", link: "/contact/" },
       ],
-    dropdown:
+    dropdown1:
       [
         { label: "Water Softeners", link: "/water-softeners/" },
         { label: "Water Filtration", link: "/water-filtration/" },

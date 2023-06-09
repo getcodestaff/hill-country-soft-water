@@ -4,6 +4,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import { Footer } from "./footer"
 import { LayoutContext } from "../contexts/layout-context"
+import { MenuContext } from "../contexts/menu-context"
+import { NavLinks } from "./navbar/navlinks.js"
 
 const Layout = ({ children, location }) => {
   const { site } = useStaticQuery(
@@ -23,11 +25,9 @@ const Layout = ({ children, location }) => {
   )
 
   const siteMetadata = site.siteMetadata
-  const [layout, setLayout] = useState({ location, siteMetadata })
 
-  if (layout.location) {
-    layout.location.city = layout.location.city || siteMetadata.defaultCity
-  }
+  const [menuOpen, setMenuOpen] = useState({ menuOpen: false })
+  const [layout, setLayout] = useState({ location, siteMetadata })
 
   const copyrightMobile = () => {
     let titleMobile = site.siteMetadata?.title.split("|")
@@ -48,7 +48,7 @@ const Layout = ({ children, location }) => {
   const title = siteMetadata?.title || `Title`
 
   return (
-    <React.Fragment>
+    <MenuContext.Provider value={{ menuOpen, setMenuOpen }}>
       <LayoutContext.Provider value={{ layout, setLayout }}>
         <Header metaData={siteMetadata} />
         <div
@@ -58,7 +58,12 @@ const Layout = ({ children, location }) => {
             padding: `var(--size-gutter)`,
           }}
         >
+          {menuOpen === true ? (
+            <NavLinks styles="mobile-nav" />
+          ) : (
           <main>{children}</main>
+          )}
+
           <Footer />
           <footer
             id="copyright"
@@ -84,7 +89,7 @@ const Layout = ({ children, location }) => {
           </a>
         </div>
       </LayoutContext.Provider>
-    </React.Fragment>
+    </MenuContext.Provider>
   )
 }
 

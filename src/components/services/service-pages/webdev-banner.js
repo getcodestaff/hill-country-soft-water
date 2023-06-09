@@ -34,7 +34,7 @@ export const WebDevBanner = () => {
       <div className="relative text-center bg-gray-200">
         <GatsbyImage
           image={image}
-          alt="decking with steps"
+          alt="Best in Sacramento, CA"
         />
       </div>
     </React.Fragment>

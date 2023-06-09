@@ -1,6 +1,6 @@
 import React from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import * as styles from "../service.module.css"
+import * as styles from "./service.module.css"
 
 export const BannerCore = ({ data }) => {
   const image = getImage(data.featuredImage)
@@ -8,7 +8,7 @@ export const BannerCore = ({ data }) => {
   return (
     <React.Fragment>
       <div className="relative text-center bg-gray-200">
-        <GatsbyImage image={image} alt="decking with steps" />
+        <GatsbyImage image={image} alt="Sacramento eCommerce Developer" />
 
         <div className={`w-[90%] lg:w-1/2 p-caption1-wd-2 ${styles.title}`}>
           <div style={{ color: data.textColor }}>

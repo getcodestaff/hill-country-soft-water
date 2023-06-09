@@ -1,11 +1,11 @@
 import React from "react"
-import { MobileNavigation } from "./mobile-navigation"
-import { NavLinks } from "./navlinks"
+import { Hamburger } from "./hamburger"
+import { NavLinks } from "./navlinks.js"
 
 export const Navbar = () => {
   return (
     <div>
-      <MobileNavigation />
+      <Hamburger />
       <NavLinks styles={'hidden lg:flex flex-row font-sans font-light justify-center space-between px-3 pb-2 text-black text-2xl'} />
     </div>
   )

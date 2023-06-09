@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { BannerCore } from "./banner-core.js"
+import { BannerCore } from "../banner-core.js"
 
 export const Service1Banner = () => {
   const queryResult = useStaticQuery(
