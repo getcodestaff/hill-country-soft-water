@@ -4,6 +4,7 @@ import { Section1 } from "./section1/section1"
 import { Services } from "./services/services"
 import { Stories } from "./stories/stories"
 import { Badges } from "./badges"
+import { QandA } from "./qanda"
 
 export const MainTemplate = ({ title }) => {
   return (
@@ -17,6 +18,7 @@ export const MainTemplate = ({ title }) => {
       <Section1 />
        <Services cardsOnly="false" />
       <Stories /> 
+      <QandA />
       <Badges /> 
     </React.Fragment>
   )

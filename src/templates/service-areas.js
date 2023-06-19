@@ -8,9 +8,9 @@ export default function ServiceAreasTemplate({
   pageContext: { props },
   location,
 }) {
-
   location.city = props.city_varchar_25
   location.stateshort = props.stateshort_varchar_2
+  location.state = props.state_varchar_20
   location.lcState = props.state_varchar_20.toLowerCase()
   location.map = props.maps_varchar_250
   location.zips = props.zip_varchar_5
@@ -25,7 +25,6 @@ export default function ServiceAreasTemplate({
 }
 
 export const Head = ({ location, pageContext, data }) => {
-
   const { props } = pageContext
   const metaUrl = `${data.site.siteMetadata.siteUrl}/${location.pathname}`
 
