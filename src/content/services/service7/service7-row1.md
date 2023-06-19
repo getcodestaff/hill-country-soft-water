@@ -1,7 +1,7 @@
 ---
 component: service7_row
 position: 1
-rowImage: ../../../images/house-water-filters/house_water_filters_card.webp
+rowImage: ../../../images/house-water-filters/house-filters.webp
 rowImageAlt: house water filter system
 ---
 #  House Water Filters

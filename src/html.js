@@ -29,7 +29,13 @@ export default function HTML(props) {
                     `,
           }}
         />
+
+<script
+  type="text/javascript"
+  src="//static.klaviyo.com/onsite/js/klaviyo.js?company_id=VpLcVW"
+></script>
       </head>
+  
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
         <div

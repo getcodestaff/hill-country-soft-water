@@ -45,7 +45,7 @@ export const ServiceCardCore = ({ data }) => {
         </SwitchableLink>
 
         <div className="flex justify-around whitespace-nowrap xl:pt-4">
-          <Link className="relative" to={serviceLink}>
+          <Link className="relative" to={`/${serviceLink}/`}> 
             <div className="absolute" style={{ left: "-50px" }}>
               <div
                 className="flex justify-center my-4"

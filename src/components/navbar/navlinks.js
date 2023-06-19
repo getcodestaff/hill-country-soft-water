@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
-// import { Social } from "./social"
 import { Nav } from "rsuite"
 
 export const NavLinks = props => {
@@ -15,7 +14,7 @@ export const NavLinks = props => {
                 label
                 link
               }
-              dropdown {
+              dropdown1 {
                 label
                 link
               }
@@ -28,48 +27,44 @@ export const NavLinks = props => {
 
   const data = queryResult.markdownRemark.frontmatter
   const topLevelMenu = data.menu.mainMenu
-  const dropdown = data.menu.dropdown
+  const dropdown1 = data.menu.dropdown1
 
-  let navclasses = "text-black flex whitespace-nowrap"
-  if (props.mobile) {
-    navclasses = "text-black font-extrabold uppercase flex flex-col"
-  }
+  //todo when all the products are assigned, remove the index from the key and use the link as the key.
 
   return (
     <div className={props.styles}>
-      <Nav className={navclasses}>
+      <Nav className="menuWrapper">
         <Nav.Item
           href={topLevelMenu[0].link}
-          className="mx-2 menu-item font-semibold"
+          className="lg:mx-2 menu-item font-semibold"
         >
           {topLevelMenu[0].label}
         </Nav.Item>
 
         <Nav.Item
           href={topLevelMenu[1].link}
-          className="mx-4 menu-item font-semibold"
+          className="lg:mx-4 menu-item font-semibold"
         >
           {topLevelMenu[1].label}
         </Nav.Item>
 
-        {/* dropdown */}
+        {/* dropdown 1*/}
         <Nav.Menu
           title={topLevelMenu[2].label}
-          noCaret={true}
-          className="pl-3 menu-item font-semibold"
+          noCaret={false}
+          className="lg:pl-3 menu-item font-semibold relative"
         >
-          <div
-            className="absolute right-0 m-2 ml-8 p-2 text-white lg:text-black bg-chsltblue
-                    text-xl text-left leading-relaxed z-40 rounded-md"
-          >
-            {dropdown.map(item => {
+          <div className="dropdownWrapper lg:absolute" >
+            {dropdown1.map((item, index) => {
               const link = `${item.link}`
+              const key = `${item.link}${index}`
+
               return (
-                <Nav.Item key={link} style={{ marginBottom: "0" }}>
-                  <Link
-                    to={link}
-                    className="menu-item font-medium whitespace-nowrap"
+                <Nav.Item
+                  key={key}
+                  className="leading-loose mb-0 font-medium"
                   >
+                  <Link to={link} className="menu-item whitespace-nowrap">
                     {item.label}
                   </Link>
                 </Nav.Item>
@@ -80,7 +75,7 @@ export const NavLinks = props => {
 
         <Nav.Item
           href={topLevelMenu[3].link}
-          className="mx-4 menu-item font-semibold"
+          className="lg:mx-4 menu-item font-semibold"
         >
           {topLevelMenu[3].label}
         </Nav.Item>

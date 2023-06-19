@@ -47,8 +47,8 @@ export const MobileFooter = ({ data }) => {
       <div className="">
         <Link className="text-center m-auto block pb-8" to="/">
           <StaticImage
-            alt="logo"
-            src="../../images/layout/footer-logo_11_11zon.webp"
+            alt="Water Filtration San Antonio"
+            src="../../images/layout/footer-logo_11_11zon.png"
             height={50}
           />
         </Link>

@@ -18,6 +18,7 @@ export const Hero = () => {
             titleLine1
             titleLine2
             text
+            homeText
             textColor
             buttonText
             featuredImage {
@@ -33,6 +34,8 @@ export const Hero = () => {
   )
 
   const { layout } = useContext(LayoutContext)
+  const isCityPage = layout.location?.city
+
   const data = queryResult.markdownRemark.frontmatter
 
   const image = getImage(data.featuredImage.childImageSharp.gatsbyImageData)
@@ -54,11 +57,13 @@ export const Hero = () => {
           className="small-hero-text page-indent"
           style={{ color: data.textColor }}
         >
-          {formatWithCityState(
+          {isCityPage
+            ? formatWithCityState(
             data.text,
             layout.location.city,
             layout.location.stateshort
-          )}
+              )
+            : data.homeText}
         </div>
         <button
           className="text-lg btn-sm lg:btn-xl btn-info hero-btn bg-red-500 text-white page-indent whitespace-nowrap"

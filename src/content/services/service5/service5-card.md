@@ -1,6 +1,6 @@
 ---
 cardName: Service5Card
-cardImage: ../../../images/water-testing/water_testing_card.webp
+cardImage: ../../../images/water-testing/test-water-san-antonio.webp
 cardImageAlt: test tube in hand over water surface
 title: Water Testing
 serviceLink: water-testing

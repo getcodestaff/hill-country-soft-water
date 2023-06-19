@@ -10,7 +10,9 @@ const WaterSoftenersPage = ({ location }) => (
 )
 
 export const Head = ({ location }) => {
-  return <Seo url={location.href} />
+  const title = "Water Softener Systems San Antonio, TX | Since 1989"
+  const description = "Water Softener Systems San Antonio, TX | Since 1989"
+  return <Seo url={location.href} title={title} description={description} />
 }
 
 export default WaterSoftenersPage

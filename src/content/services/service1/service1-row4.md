@@ -1,7 +1,7 @@
 ---
 component: service1_row
 position: 4
-rowImage: ../../../images/water-softeners/water_softener_card.webp
+rowImage: ../../../images/water-softeners/test-service-san-antonio-water.webp
 rowImageAlt: Testing, Repairing or Servicing your San Antonio Water Softener
 ---
 #  Maintenance for San Antonio Soft Water Systems

@@ -1,8 +1,8 @@
 ---
 cardName: Service7Card
-cardImage: ../../../images/house-water-filters/house_water_filters_card.webp
-cardImageAlt: house water filters temporary alt
+cardImage: ../../../images/house-water-filters/whole-house-water-filtration-system.webp
+cardImageAlt: whole house water filtration san antonio
 title: Whole House Systems
 serviceLink: whole-house-water-filtration-systems
-cardDescription: House water filters description
+cardDescription: House water filters for the whole home. Protect your whole house with filtered water your appliances and surfaces and enjoy.
 ---

@@ -10,7 +10,9 @@ const WaterTestingPage = ({ location }) => (
 )
 
 export const Head = ({ location }) => {
-  return <Seo url={location.href} />
+  const title = "Water Testing San Antonio, TX | Since 1989"
+  const description = "Residential Water Testing in San Antonio, TX Since 1989."
+  return <Seo url={location.href} title={title} description={description} />
 }
 
 export default WaterTestingPage

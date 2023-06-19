@@ -10,7 +10,9 @@ const ReverseOsmosisPage = ({ location }) => (
 )
 
 export const Head = ({ location }) => {
-  return <Seo url={location.href} />
-}
+    const title = "Reverse Osmosis Systems San Antonio, TX | Since 1989"
+    const description = "Reverse Osmosis Systems San Antonio, TX | Since 1989"
+    return <Seo url={location.href} title={title} description={description} />
+  }
 
 export default ReverseOsmosisPage

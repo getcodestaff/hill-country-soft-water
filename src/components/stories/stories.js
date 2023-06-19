@@ -1,5 +1,5 @@
 import React from "react"
-import AngiesListLogo from "../../images/angies-list-logo.webp"
+import AngiesListLogo from "../../images/google-review.webp"
 import { FaArrowRight } from "react-icons/fa"
 import { Story1Card } from "./story1-card"
 import { Story2Card } from "./story2-card"
@@ -12,7 +12,7 @@ export const Stories = () => {
         <img
           className="m-auto"
           src={AngiesListLogo}
-          alt="Angies List Logo"
+          alt="Google Water Softener Reviews"
         />
       </div>
       <h1 className="section-title mt-1 mb-4">
@@ -26,7 +26,7 @@ export const Stories = () => {
           <Story3Card />
         </div>
         <a
-          href="https://www.homeadvisor.com"
+          href="https://watersoftenersanantonio.co/water-filtration/"
           className="mb-0 mt-4 text-xs lg:text-xl btn-xl btn-info hero-btn bg-chsblue text-white mb-8"
         >
           WATER FILTRATION

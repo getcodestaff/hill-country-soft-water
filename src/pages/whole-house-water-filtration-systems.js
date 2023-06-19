@@ -10,7 +10,9 @@ const HouseWaterFiltersPage = ({ location }) => (
 )
 
 export const Head = ({ location }) => {
-  return <Seo url={location.href} />
+  const title = "Whole House Filtration San Antonio, TX | Since 1989"
+  const description = "Whole House Filtration Systems San Antonio, TX. Serving the local residents of San Antonio Since 1989"
+  return <Seo url={location.href} title={title} description={description} />
 }
 
 export default HouseWaterFiltersPage

@@ -1,8 +1,8 @@
 ---
 component: badges
 badgeImage: ../../images/badges/badge1.webp
-badgeAlt: Link to where?
-badgeLink: https:www.codestaff.io
+badgeAlt: GE water filter
+badgeLink: /
 classNames: "my-4"
 
 ---

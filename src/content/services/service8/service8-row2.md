@@ -1,8 +1,8 @@
 ---
 component: service8_row
 position: 2
-rowImage: ../../../images/plumbing/plumbing2.jpg
-rowImageAlt: well water systems
+rowImage: ../../../images/well-water-systems/well-water-drinking-water-system.webp
+rowImageAlt: well water systems for drinking
 ---
 #  Well Water Drinking Water System
 

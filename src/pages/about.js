@@ -6,9 +6,9 @@ import Seo from "../components/seo"
 const AboutPage = ({ location }) => {
   return (
     <Layout
-      title={"About Carruth Home Solutions"}
+      title={"About Water Softeners San Antonio, TX."}
       description={
-        "Get to know the Father and Son team at Carruth Home Solutions"
+        "Get to know the water filtration company at Water Softeners San Antonio"
       }
       location={location}
     >
@@ -18,8 +18,8 @@ const AboutPage = ({ location }) => {
 }
 
 export const Head = ({ location }) => {
-  const title = "About Carruth Home Solutions"
-  const description = "Carruth Home Solutions is a family owned and operated business serving the Sacramento Area."
+  const title = "About Water Softener San Antonio, TX "
+  const description = "About Water Softener Company Serving San Antonio, TX Since 1989."
   return <Seo url={location.href} title={title} description={description} />
 }
 

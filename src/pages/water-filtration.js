@@ -10,7 +10,9 @@ const WaterFiltrationPage = ({ location }) => (
 )
 
 export const Head = ({ location }) => {
-  return <Seo url={location.href} />
+  const title = "Water Filtration Systems San Antonio, TX | Since 1989"
+  const description = "Water Filtration Systems San Antonio, TX | Since 1989"
+  return <Seo url={location.href} title={title} description={description} />
 }
 
 export default WaterFiltrationPage

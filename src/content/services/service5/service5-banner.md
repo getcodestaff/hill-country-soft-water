@@ -1,8 +1,8 @@
 ---
 component: "service5_banner"
 date: "2023-01-25"
-title: WATER TESTING
+title: WATER TESTING SAN ANTONIO, TX
 text: "WATER TESTING FOR NITRATES, SULFATES, CHORINE, CONTAMINANTS AND HEAVY METALS IN SAN ANTONIO. FREE WATER TESTING SAN ANTONIO FOR RESIDENTIAL OR WELL WATER TESTS. LAB WATER TESTING ALSO AVAILABLE."
 textColor: white
-featuredImage: ../../../images/service_banner.webp
+featuredImage: ../../../images/gaines-water-filtration.webp
 ---

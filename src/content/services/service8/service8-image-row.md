@@ -5,17 +5,17 @@ images:
     mainImage: "saved for reference.jpg",
     galleryAlts:
       [
-        "Water Well systems temporary alt",
-        "Water Well systems temporary alt",
-        "Water Well systems temporary alt",
-        "Water Well systems temporary alt",
+        "commercial well water filter",
+        "san antonio well water contaminants",
+        "whole home house well water filter",
+        "is drinking well water safe",
       ],
     galleryImages:
       [
-        "../../../images/water-well-systems/water_well_systems_card.webp",
-        "../../../images/water-well-systems/water_well_systems_card.webp",
-        "../../../images/water-well-systems/water_well_systems_card.webp",
-        "../../../images/water-well-systems/water_well_systems_card.webp",
+        "../../../images/well-water-systems/commercial-well-water-filter.webp",
+        "../../../images/well-water-systems/san-antonio-well-water-contaminants.webp",
+        "../../../images/well-water-systems/whole-home-house-well-water-filter.webp",
+        "../../../images/well-water-systems/drink-well-water-safe.webp",
       ],
   }
 ---

@@ -37,7 +37,7 @@ const Header = ({ metaData }) => {
           <GatsbyImage image={image} alt={alt} />
         </div>
 
-        <div className="lg:hidden w-3/4">
+        <div className="lg:hidden w-full">
           <div>
             <Navbar data={data} />
           </div>
