@@ -7,7 +7,7 @@ const styles = "lg:hidden font-sans font-light justify-between"
 
 export const Hamburger = () => {
   const [open, setOpen] = useState(false)
-  const { menuOpen, setMenuOpen } = useContext(MenuContext)
+  const { setMenuOpen } = useContext(MenuContext)
 
   const toggleHamburger = () => {
     setMenuOpen(!open)
