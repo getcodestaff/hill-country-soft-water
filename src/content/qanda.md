@@ -5,21 +5,21 @@ defaultShortState: "TX"
 defaultState: "Texas"
 content:
   {
-    title: "CLEAN VALLEY WATER LAS VEGAS FAQ",
+    title: "WATER SOFTENER SAN ANTONIO FAQ",
     questions:
       [
-        "How long has Clean Valley Water in ${city}, ${shortState} been in business?",
+        "How long has Gaines Soft Water in ${city}, ${shortState} been in business?",
         "Why Should I Test My Water in ${city}, ${shortState}",
         "How Can I Test My Water in ${city}, ${state}",
-        "Isn’t my city water good enough in ${city}, ${shortState} without a Clean Valley Water filtration system?",
-        "How does a Clean Valley water softening system remove hardness in ${city} Water?",
+        "Isn’t my city water good enough in ${city}, ${shortState} without a Gaines Soft Water filtration system?",
+        "How does a Gaines Soft Water softening system remove hardness in ${city} Water?",
         "What kind of salt should I be using for my ${city} Water Softener?",
         "How often do I need to add salt to the backflush tank in ${city}?",
         "What maintenance is required for my ${city} Water Softener?",
       ],
     answers:
       [
-        "As of 2023, Clean Valley Water has entered its 8th year in business, while our manufacturer has been in business since 1947. We are proud of our story, and in 2023, Clean Valley Water will be expanding to our new ${city} office!",
+        "As of 2023, Gaines Soft Water has entered its 8th year in business, while our manufacturer has been in business since 1947. We are proud of our story, and in 2023, Gaines Soft Water will be expanding to our new ${city} office!",
 
         "We recommend testing your water in ${city}, ${state} to understand how hard it truly is, its current pH level, and an overall insight and tarting point perspective on the situation. Water is neutral at a pH level of 7, while the best-tasting alkaline rinking water pH level is 9.5. Contact us today about our state-of-the-art reverse osmosis unit that will deliver he best-tasting drinking water for you and your family.",
 
