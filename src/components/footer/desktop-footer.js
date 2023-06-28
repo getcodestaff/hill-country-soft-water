@@ -13,7 +13,8 @@ export const DesktopFooter = ({ data }) => {
   const location = layout.location
   const lcState = location?.lcState
 
-  const [areasToggle, setAreasToggle] = useState(false)
+  const showInitially = layout.location?.city ? true : false
+  const [areasToggle, setAreasToggle] = useState(showInitially)
 
   const toggle = () => {
     setAreasToggle(!areasToggle)
