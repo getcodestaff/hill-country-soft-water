@@ -8,20 +8,26 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Bio = () => {
-  const { author } = useStaticQuery(graphql`
+const Bio = ({ authorId }) => {
+  const data = useStaticQuery(graphql`
     query BioQuery {
-      # if there was more than one user, this would need to be filtered
-      author: wpUser {
+      allWpUser {
+        nodes {
+          id
         firstName
         twitter: name
         description
         avatar {
           url
+          }
         }
       }
     }
   `)
+
+  const authors = data.allWpUser.nodes
+
+  const author = authors.find(author => author.id === authorId)
 
   const avatarUrl = author?.avatar?.url
 

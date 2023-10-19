@@ -16,6 +16,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const BlogPostTemplate = ({ data: { previous, next, post } }) => {
+  const authorId = post.authorId
+
   const featuredImage = {
     data: post.featuredImage?.node?.localFile?.childImageSharp?.gatsbyImageData,
     alt: post.featuredImage?.node?.alt || ``,
@@ -54,7 +56,7 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
             <hr />
 
             <footer>
-              <Bio />
+              <Bio authorId={authorId} />
             </footer>
           </article>
 

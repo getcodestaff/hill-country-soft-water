@@ -8,4 +8,5 @@ homeText: San Antonio Water Softerners and Filtration for Homes and Businesses. 
 textColor: white
 featuredImage: ../images/hero_banner.webp
 buttonText: SCHEDULE A WATER TEST
+buttonLink: https://gatsby-water-starter.vercel.app/schedule-online-water-test/
 ---

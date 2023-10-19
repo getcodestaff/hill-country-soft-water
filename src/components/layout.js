@@ -38,9 +38,6 @@ const Layout = ({ children, location }) => {
         <br />
         {titleMobile[1]}
         <br />
-        <a className="text-xs" href="/sitemap-0.xml">
-          sitemap
-        </a>
       </>
     )
   }

@@ -21,6 +21,7 @@ export const Hero = () => {
             homeText
             textColor
             buttonText
+            buttonLink
             featuredImage {
               childImageSharp {
                 gatsbyImageData(quality: 50, webpOptions: { quality: 70 })
@@ -65,6 +66,7 @@ export const Hero = () => {
               )
             : data.homeText}
         </div>
+        <a href={data.buttonLink}>
         <button
           className="text-lg btn-sm lg:btn-xl btn-info hero-btn bg-red-500 text-white page-indent whitespace-nowrap"
           onClick={() => scrollTo("#services")}
@@ -72,6 +74,7 @@ export const Hero = () => {
           {data.buttonText}
           <FaArrowRight className="inline my-2 ml-4 mr-0" size="18px" />
         </button>
+        </a>
         <br />
       </div>
     </div>

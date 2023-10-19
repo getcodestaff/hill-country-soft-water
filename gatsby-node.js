@@ -1,5 +1,8 @@
 const path = require(`path`)
 const chunk = require(`lodash/chunk`)
+const citySlug = require(`./gatsby-config`).siteMetadata.citySlug
+const slugify = require(`./src/components/slug-helper`).slugify
+
 
 const limit = process.env.AREAS || 999999
 
@@ -16,7 +19,6 @@ const limit = process.env.AREAS || 999999
 exports.createPages = async gatsbyUtilities => {
   // Query our posts from the GraphQL server
   const posts = await getPosts(gatsbyUtilities)
-
   // If there are no posts in WordPress, don't do anything
   if (!posts.length) {
     return
@@ -55,18 +57,16 @@ const createLocationsPages = async ({ gatsbyUtilities }) => {
       }
   `)
 
-  result.data.allServiceAreasTsv.nodes.every((node, index) => {
+  result.data.allServiceAreasTsv.nodes.every((TsvData, index) => {
     if (index > limit) return false
 
-    const usState = node.state_varchar_20.toLowerCase()
-    const usCity = node.city_varchar_25.toLowerCase()
-    let slug = `${usState}/${usCity}/`.replace(/ /g, "-")
+    const slug = `${slugify(citySlug, TsvData)}/`
 
     gatsbyUtilities.actions.createPage({
       path: slug,
       component: serviceAreasTemplate,
       context: {
-        props: node,
+        props: TsvData,
       },
     })
 
@@ -208,3 +208,16 @@ async function getPosts({ graphql, reporter }) {
 
   return graphqlResult.data.allWpPost.edges
 }
+
+exports.createSchemaCustomization = ({ actions }) => {
+    const { createTypes } = actions;
+  
+    const typeDefs = `
+      type ServiceAreasTsv implements Node {
+        seodescription_varchar_250: String
+        seotitle_varchar_200: String
+      }
+    `;
+  
+    createTypes(typeDefs);
+  };

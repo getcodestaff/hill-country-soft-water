@@ -7,6 +7,7 @@ import {
   FaInstagram,
   FaPinterest,
   FaApple,
+  FaLinkedin,
 } from "react-icons/fa"
 
 import * as styles from "./footer.module.css"
@@ -15,7 +16,8 @@ export const FooterSocial = () => {
   const { footer } = useContext(FooterContext)
   const socials = footer.data.social.socials
 
-  const isInUse = label => socials.find(social => social.label === label)?.enable
+  const isInUse = label =>
+ socials.find(social => social.label === label)?.enable
   const getLink = label => socials.find(social => social.label === label)?.link
   
   return (
@@ -66,6 +68,14 @@ export const FooterSocial = () => {
           <div className={styles.social_icon}>
            <a href={getLink("apple")}>
               <FaApple className="inline-block text-chsblue" />
+            </a>
+          </div>
+        ) : null}
+
+        {isInUse("linkedin") ? (
+          <div className={styles.social_icon}>
+            <a href={getLink("linkedin")}>
+              <FaLinkedin className="inline-block text-chsblue" />
             </a>
           </div>
         ) : null}

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { FooterSocial } from "./footer-social"
 import { FooterAccordion } from "./footer-accordion"
 import { ServicesLinks } from "./services-links"
@@ -8,11 +8,15 @@ import { ServiceAreas } from "./service-areas"
 import { FooterContacts } from "./footer-contacts"
 import { LayoutContext } from "../../contexts/layout-context"
 import { AllServiceAreas } from "./all-service-areas"
+import * as styles from "./footer.module.css"
+
 
 export const MobileFooter = ({ data }) => {
   const { layout } = useContext(LayoutContext)
   const location = layout.location
-  const lcState = location?.lcState
+  const lcState = location?.usState?.toLowerCase()
+  const image = getImage(data.logoImage)
+  const alt =  data.logoAlt
 
   const [areasToggle, setAreasToggle] = useState(false)
 
@@ -46,11 +50,12 @@ export const MobileFooter = ({ data }) => {
 
       <div className="">
         <Link className="text-center m-auto block pb-8" to="/">
-          <StaticImage
-            alt="Water Filtration San Antonio"
+            <GatsbyImage image={image} alt={alt} />
+
+            {/* alt="Water Filtration San Antonio"
             src="../../images/layout/footer-logo_11_11zon.png"
             height={50}
-          />
+          /> */}
         </Link>
       </div>
     </div>

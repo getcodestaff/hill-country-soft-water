@@ -37,8 +37,7 @@ function Seo({
         metaTitle: title || site.siteMetadata?.title,
         metaDescription: description || site.siteMetadata.description,
         metaType: type || 'page',
-        metaUrl: url || 'https://watersoftenersanantonio.co/',
-        // metaSecureUrl: secure_url || image
+        metaUrl: url || site.siteMetadata.siteUrl,
     };
 
     return (

@@ -11,7 +11,7 @@ import { AllServiceAreas } from "./all-service-areas"
 export const DesktopFooter = ({ data }) => {
   const { layout } = useContext(LayoutContext)
   const location = layout.location
-  const lcState = location?.lcState
+  const lcState = location?.usState?.toLowerCase()
 
   const showInitially = layout.location?.city ? true : false
   const [areasToggle, setAreasToggle] = useState(showInitially)
@@ -97,30 +97,6 @@ export const DesktopFooter = ({ data }) => {
       {areasToggle === true || location?.pathname?.includes(lcState) ? (
         <AllServiceAreas />
       ) : null}
-      {/* <div id="all-service-areas">
-        {areasToggle === true || location?.pathname?.includes(lcState) ? (
-          <section id="service-areas" className="bg-white">
-            <div className="mx-6 lg:mx-20 mb-4">
-              <h4 className="font-bold mb-2 text-center">Service Areas</h4>
-              <div className="columns-2 lg:columns-5">
-                {areas.map(elem => {
-                  const to = `/${elem.state_varchar_20}/${elem.city_varchar_25}`
-                    .replace(/ /g, "-")
-                    .toLowerCase()
-
-                  return (
-                    <Link key={elem.city_varchar_25} to={to}>
-                      <div className="whitespace-no-wrap text-base">
-                        {elem.city_varchar_25}
-                      </div>
-                    </Link>
-                  )
-                })}
-              </div>
-            </div>
-          </section>
-        ) : null}
-      </div> */}
     </React.Fragment>
   )
 }

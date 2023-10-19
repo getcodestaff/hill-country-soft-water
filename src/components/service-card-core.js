@@ -13,7 +13,7 @@ export const ServiceCardCore = ({ data }) => {
   return (
     <div className="my-4 lg:m-4">
       <div className="flex flex-col card bg-white curved">
-        <SwitchableLink lnk={serviceLink}>
+        <SwitchableLink link={serviceLink}>
           {image ? (
             <GatsbyImage
               className="curved w-full"
@@ -26,7 +26,7 @@ export const ServiceCardCore = ({ data }) => {
           )}
         </SwitchableLink>
 
-        <SwitchableLink lnk={serviceLink}>
+        <SwitchableLink link={serviceLink}>
           <div className="m-0 py-2">
             <CardUnderset title={data.title} anchor={serviceLink}>
               <div className="text-xs h-16 text-left">
@@ -45,7 +45,7 @@ export const ServiceCardCore = ({ data }) => {
         </SwitchableLink>
 
         <div className="flex justify-around whitespace-nowrap xl:pt-4">
-          <Link className="relative" to={`/${serviceLink}/`}> 
+          <Link className="relative" to={serviceLink}> 
             <div className="absolute" style={{ left: "-50px" }}>
               <div
                 className="flex justify-center my-4"

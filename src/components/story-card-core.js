@@ -11,7 +11,7 @@ export const StoryCardCore = ({ data }) => {
   return (
     <div className="my-4 m-auto max-w-sm md:max-w-md">
       <div className="flex flex-col card bg-white curved">
-        <SwitchableLink lnk={serviceLink}>
+        <SwitchableLink link={serviceLink}>
           {image ? (
             <GatsbyImage
               className="curved w-full"
@@ -24,7 +24,7 @@ export const StoryCardCore = ({ data }) => {
           )}
         </SwitchableLink>
 
-        <SwitchableLink lnk={serviceLink}>
+        <SwitchableLink link={serviceLink}>
           <div className="m-0 py-2">
             <CardUnderset title={data.title} anchor={serviceLink}>
               <div className="text-xs sm:text-sm h-16 text-left">

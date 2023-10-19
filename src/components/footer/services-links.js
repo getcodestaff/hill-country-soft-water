@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
+import MenuQuery from "../services/menu-query"
 
-export const ServicesLinks = ({ classline, data }) => {
+export const ServicesLinks = ({ classline }) => {
   let classes = `links ${classline}`
 
-  const services = data.column2labels.split("|")
-  const links = data.column2links.split("|")
+  const services = MenuQuery().menu.servicesMenu
 
   return (
     <div>
@@ -18,11 +18,11 @@ export const ServicesLinks = ({ classline, data }) => {
             }
         `}
       </style>
-      {services.map((item, index) => {
-        const itemLink = `/${links[index].trim()}`
+      
+      {services.map((item) => {
         return (
-          <Link key={itemLink} className={classes} to={itemLink}>
-            {item}
+          <Link key={item.link} className={classes} to={item.link}>
+            {item.label}
           </Link>
         )
       })}

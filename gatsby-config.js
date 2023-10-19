@@ -9,6 +9,11 @@ module.exports = {
     phone: "210-942-7683",
     businessName: "Hill Country Soft Water",
     defaultCity: "San Antonio",
+    defaultState: 'TX',
+    defaultSeoTitle: 'Water Softener San Antonio Since 1989 | Whole House Water Filtration San Antonio, TX',
+    defaultSeoDescription: 'Water Softeners in  San Antonio Since 1989. Installation and Service of Water Softener Systems in San Antonio, Texas for 30+ Years. Whole House Water Filtration System San Antonio Texas.',
+    cityKeyword: "Water Filtration ${city}, ${state}. Whole House Water Filters in ${city}, ${state}",
+    citySlug: "STATE/CITY",
     author: `@witcradg`,
   },
   plugins: [

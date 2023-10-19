@@ -5,14 +5,14 @@ import { LayoutContext } from "../contexts/layout-context"
 
 let city = ""
 let shortState = ""
-let state = ""
+let usState = ""
 
 const formatMessage = (message) => {
     return message
       .replaceAll("$", "")
       .replaceAll("{city}", city)
       .replaceAll("{shortState}", shortState)      
-      .replaceAll("{state}", state)
+      .replaceAll("{state}", usState)
       .trim()
   }
 
@@ -57,7 +57,7 @@ export const QandA = ({ title }) => {
 
   city = location?.city || queryResult.markdownRemark.frontmatter.defaultCity
   shortState = location?.stateshort || queryResult.markdownRemark.frontmatter.defaultShortState
-  state = location?.state || queryResult.markdownRemark.frontmatter.defaultState
+  usState = location?.usState || queryResult.markdownRemark.frontmatter.defaultState
 
   return (
     <div className="bg-gray-100 py-4">

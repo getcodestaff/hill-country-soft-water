@@ -17,11 +17,11 @@ social:
           enable: true,
         },
         { label: "apple", link: "#footer-social", enable: true },
+        { label: "linkedin", link: "https://www.linkedin.com/", enable: true },
+
       ],
   }
 column2header: OUR SERVICES
-column2labels: Water Softeners | Water Filtration | Reverse Osmosis | Hard Water Filters | Water Testing | Water Treatement | Whole House Water Filtration Systems | Well Water Systems
-column2links: water-softeners | water-filtration | reverse-osmosis | hard-water-filters | water-testing | water-treatment | whole-house-water-filtration-systems | well-water-systems
 column3header: SERVICE AREAS
 column3:
   {

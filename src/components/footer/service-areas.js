@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
-
 export const ServiceAreas = ({
   location,
   classline,
@@ -28,6 +27,25 @@ export const ServiceAreas = ({
       />
     )
   }
+else if (location?.city) {
+    const city = location.city.replace(/ /g, "+")
+    const stateAbrev = location.stateshort
+    const title = `${city} ${stateAbrev}`
+    const key='AIzaSyCBow3F7oDBoVkt_6SEfztFex9s_ZDZkbo'
+    const srcString = `https://www.google.com/maps/embed/v1/place?key=${key}&q=${city}+${stateAbrev}`
+
+    mapframe = (
+      <iframe
+        title={title}
+        width="225"
+        height="275"
+        style={{ border: "0" }}
+        allowFullScreen
+        loading="lazy"
+        src={srcString}
+      />
+    )
+}
 
   return (
     <React.Fragment>
@@ -49,13 +67,14 @@ export const ServiceAreas = ({
 }
 
 function showMap(mapframe, city) {
-  if (mapframe)
+  if (mapframe) {
     return (
       <div>
         <h4 className="text-black text-base uppercase">{city}</h4>
         <div className="google-map-code">{mapframe}</div>
       </div>
     )
+  }
   return null
 }
 
@@ -65,7 +84,7 @@ function showLocationsColumn(column3, classes, showAreasToggle) {
       <div>
         {column3.map(elem => {
           return (
-            <Link key={elem.link} className={classes} to={elem.link}>
+            <Link key={elem.label} className={classes} to={elem.link}>
               {elem.label}
             </Link>
           )
@@ -78,6 +97,7 @@ function showLocationsColumn(column3, classes, showAreasToggle) {
           showAreasToggle()
         }}
       >
+        {/* show AllServiceAreas */}
         More...
       </button>
     </div>

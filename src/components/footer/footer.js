@@ -27,8 +27,6 @@ export const Footer = () => {
               }
             }
             column2header
-            column2labels
-            column2links
             column3header
             column3 {
               elements {
